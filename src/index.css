@@ -40,8 +40,20 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-  background-color: var(--color2) !important;
   padding: 0 !important;
+  transition: 1s ease;
+}
+
+body.theme-1 {
+  background-color: var(--color41) !important;
+}
+
+body.theme-2 {
+  background-color: var(--color61) !important;
+}
+
+body.theme-3 {
+  background-color: var(--color22) !important;
 }
 
 a {
@@ -232,10 +244,11 @@ body.theme-1 .highlight-text::before {
   .scroll-div {
     margin-top: 6rem;
   }
-  .scroll{
+
+  .scroll {
     font-size: 20px;
   }
-  
+
 }
 
 @media only screen and (min-width: 992px) {

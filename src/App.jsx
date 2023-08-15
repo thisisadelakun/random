@@ -62,7 +62,7 @@ function App() {
   };
 
   return (
-    <div className="app">
+    <>
       <HelmetProvider>
         <QueryClientProvider client={queryClient}>
           <BrowserRouter>
@@ -83,7 +83,7 @@ function App() {
           </BrowserRouter>
         </QueryClientProvider>
       </HelmetProvider>
-    </div>
+    </>
   )
 }
 

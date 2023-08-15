@@ -70,7 +70,7 @@ button .custom-close-button {
 }
 
 .flex-grow-1 {
-    margin-top: -1rem !important;
+    margin-top: 2rem !important;
     text-align: left;
     display: flex;
 }
@@ -91,7 +91,7 @@ button .custom-close-button {
     font-family: 'Roboto Serif', serif;
 }
 
-.title-logo p::before {
+.title-logo p::after {
     content: '';
     position: absolute;
     bottom: 1px;
@@ -101,8 +101,8 @@ button .custom-close-button {
 }
 
 .canvas-body li {
-    font-size: 17px;
-    line-height: 1.2;
+    font-size: 23px;
+    line-height: 1.5;
     font-weight: 500 !important;
     font-family: 'Caprasimo', cursive;
     color: var(--color1);
@@ -166,7 +166,7 @@ button .custom-close-button {
 
 .let-contact-me p {
     line-height: 1.2;
-    font-weight: 17px;
+    font-size: 16px;
     margin-bottom: 5px;
     color: rgba(0, 128, 128, 0.575) !important;
     overflow: hidden;
@@ -177,10 +177,15 @@ button .custom-close-button {
     display: inline-flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 1rem;
+    width: 100%;
+    margin: 1.5rem auto;
     gap: 0.8rem;
     padding: 5px 0;
     color: var(--color1) !important;
+}
+
+.nav-link-socios a{
+    font-size: 26px;
 }
 
 .nav-link-socios a:hover {
