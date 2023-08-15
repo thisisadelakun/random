@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink, Link, useLocation } from 'react-router-dom';
-import '../NavBar/NavBar.css';
+import './NavBar.css';
 import '../../models/logo/Logo.css'
 
 import { CgClose, CgMenuRight } from 'react-icons/cg';
