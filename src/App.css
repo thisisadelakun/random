@@ -1,0 +1,13 @@
+.app{
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.content-fade-in {
+    opacity: 0;
+    transition: opacity 5s ease;
+}
+
+.content-fade-in.fade-in {
+    opacity: 1;
+}

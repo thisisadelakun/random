@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Kanit:wght@400;500;600;700;800;900&family=Montserrat:wght@400;500;700;900&family=Poppins:wght@400;500;700&family=Rhodium+Libre&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+  overflow-x: hidden;
+}
+
+:root {
+  --color1: #008080;
+  --color11: #b3e6e6;
+  --color12: #006666;
+  --color2: #f9f9f9;
+  --color21: #f9faf993;
+  --color22: #EBECF0;
+  --color3: #0D1117;
+  --color31: #0d1117b0;
+  --color32: #000;
+  --color4: #e9a920bf;
+  --color41: #e9a920;
+  --color5: #e11462bf;
+  --color51: #e11463;
+  --color6: #3db88fbf;
+  --color61: #3db88f;
+  --color7: #6fcadcbf;
+  --color71: #6fcadc;
+  --color8: red;
+  --color9: #0034D1;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh !important;
+  line-height: 1.6;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  background-color: var(--color2) !important;
+  padding: 0 !important;
+}
+
+a {
+  font-weight: 500;
+  color: var(--color12) !important;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.6;
+}
+
+h3 {
+  font-size: 2.2em !important;
+  line-height: 1.4;
+  padding: 10px 0;
+  font-family: 'Caprasimo', cursive;
+  color: var(--color12) !important;
+}
+
+button {
+  border-radius: 8px;
+  border: none;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: transparent;
+  color: teal;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  background-color: teal;
+  color: white;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.highlight-text {
+  position: relative;
+  overflow: hidden;
+  color: white;
+}
+
+.highlight-text::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, var(--color3), var(--color3));
+  animation: slideInBgr 3s forwards;
+  animation-delay: 4s !important;
+  z-index: -1;
+}
+
+body.theme-3 .highlight-text::before {
+  background: linear-gradient(to right, var(--color9), var(--color9));
+}
+
+body.theme-1 .highlight-text::before {
+  background: linear-gradient(to right, var(--color8), var(--color8));
+}
+
+.containers {
+  width: 80%;
+  margin: auto;
+}
+
+.link-icons {
+  font-size: 18px;
+}
+
+.card-icon-yt {
+  color: red !important;
+}
+
+.card-icon-fem {
+  color: var(--color71) !important;
+}
+
+.card-icon-gt {
+  color: var(--color3) !important;
+}
+
+.card-icon-ig {
+  color: rgba(255, 0, 0, 0.603) !important;
+}
+
+.card-icon-tw,
+.card-icon-in {
+  color: #0A66C2 !important;
+}
+
+.scroll-div {
+  width: fit-content;
+  margin: 1rem auto;
+  overflow-y: hidden;
+  padding: 6px;
+  cursor: pointer;
+}
+
+.scroll {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 5px;
+  font-family: 'Quintessential', cursive;
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--color22) !important;
+  text-decoration: none;
+  position: relative;
+  animation: pulse 0.9s forwards infinite alternate;
+  overflow-y: hidden;
+  text-shadow: 1px 1px 8px var(--color32) !important;
+}
+
+.arrow-scroll-dw {
+  color: var(--color41);
+  font-size: 25px !important;
+  font-weight: bolder !important;
+}
+
+.desktop-view-only {
+  display: none;
+}
+
+@keyframes slideInBgr {
+  0% {
+    left: -100%;
+  }
+
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes slideInDiv {
+  0% {
+    left: -100%;
+  }
+
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes pulse {
+  from {
+    opacity: 0.1;
+    top: 0px;
+  }
+
+  to {
+    opacity: 1;
+    top: 8px;
+  }
+
+}
+
+@media only screen and (min-width: 768px) {
+
+  h3 {
+    font-size: 2.5em !important;
+  }
+
+  .containers {
+    width: 75%;
+    margin: auto;
+  }
+
+  .mobile-view-only {
+    display: none;
+  }
+
+  .desktop-view-only {
+    display: flex;
+  }
+
+  .scroll-div {
+    margin-top: 6rem;
+  }
+  .scroll{
+    font-size: 20px;
+  }
+  
+}
+
+@media only screen and (min-width: 992px) {
+  .containers {
+    width: 70% !important;
+    margin: auto;
+  }
+}
+
+
+
+/* font-family: 'Abril Fatface', cursive;
+font-family: 'Caprasimo', cursive;
+font-family: 'Kanit', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Quintessential', cursive;
+font-family: 'Roboto Serif', serif; */

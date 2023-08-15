@@ -1,0 +1,100 @@
+.sticky-box {
+    position: fixed;
+    display: flex;
+    flex-direction: column !important;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background-color: transparent;
+    padding: 6px;
+    border: 1px solid transparent;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 9999 !important;
+    border-top-left-radius: 10px !important;
+    border-bottom-left-radius: 20px !important;
+    background: rgb(0, 0, 0);
+    animation: slideInBox 0.5s forwards;
+}
+
+.sticky-box button {
+    background-color: transparent !important;
+    text-align: center !important;
+    border: none !important;
+    cursor: pointer !important;
+    padding: 0 !important;
+    margin: 0.3rem auto !important;
+    transition: color 0.3s ease !important;
+    color: var(--color2);
+}
+
+.sticky-box button:focus {
+    outline: none;
+    appearance: none;
+}
+
+.vertical-text {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+    font-size: 12px !important;
+    position: relative;
+    transform: translateY(-0%);
+}
+
+.btn-theme-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    font-size: 23px;
+}
+
+@keyframes slideInBox {
+    from {
+        right: -100%;
+    }
+
+    to {
+        right: 0;
+    }
+}
+
+.theme-1 {
+    color: var(--color41);
+    font-size: 15px;
+}
+
+.theme-1:hover {
+    color: var(--color4);
+}
+
+.theme-2 {
+    color: var(--color61);
+    font-size: 15px;
+}
+
+.theme-2:hover {
+    color: var(--color6);
+}
+
+.theme-3 {
+    color: var(--color22);
+    font-size: 15px;
+}
+
+.theme-3:hover {
+    color: var(--color21);
+}
+
+.theme-1 .theme-button.active {
+    outline: 2px solid var(--color41);
+    border-radius: 100px;
+}
+.theme-2 .theme-button.active {
+    outline: 2px solid var(--color61);
+    border-radius: 100px;
+}
+.theme-3 .theme-button.active {
+    outline: 2px solid var(--color22);
+    border-radius: 100px;
+}
