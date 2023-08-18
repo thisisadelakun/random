@@ -23,7 +23,7 @@ const Home = () => {
     useEffect(() => {
         const scrollTimeout = setTimeout(() => {
             setIsScrollVisible(true);
-        }, 7000);
+        }, 9000);
 
         return () => {
             clearTimeout(scrollTimeout);

@@ -52,8 +52,8 @@ body.theme-3 .top-text {
 }
 
 .header-animated-txt>div.top-text div {
-    animation: topText 1s;
-    animation-delay: 0.5s;
+    animation: topText 1.5s;
+    animation-delay: 1s;
     animation-fill-mode: forwards;
     bottom: 0;
     transform: translate(0, 95%);
@@ -108,19 +108,19 @@ body.theme-3 .top-text-col small {
 }
 
 .header-animated-txt>.bottom-text .bottom-text-col {
-    animation: bottomText 0.5s;
-    animation-delay: 1.75s;
+    animation: bottomText 1s;
+    animation-delay: 2.25s;
     animation-fill-mode: forwards;
     top: 0;
     transform: translate(0, -100%);
 }
 
 .bottom-text-span {
-    font-size: 17px;
+    font-size: 18px;
     color: var(--color2);
     font-family: 'Caprasimo', cursive;
     line-height: 1.3;
-    text-shadow: 1px 1px 8px var(--color31) !important;
+    text-shadow: 1px 1px 5px 10px var(--color31) !important;
 }
 
 body.theme-3 .bottom-text-span {
@@ -355,14 +355,15 @@ body.theme-3 .about-img-col {
 
 .more-btn {
     margin: 2rem auto !important;
+    padding: 10px;
 }
 
 .my-work {
-    margin: 2rem auto;
+    margin: 2rem auto !important;
     display: block;
 }
 
-.my-work h1{
+.my-work h1 {
     font-size: 2.5em !important;
     padding: 5px 0;
     font-family: 'Caprasimo', cursive;
@@ -370,7 +371,8 @@ body.theme-3 .about-img-col {
     color: var(--color12);
     text-shadow: 2px 3px 0 rgba(0, 0, 0, 0.205);
 }
-body.theme-3 .my-work h1{
+
+body.theme-3 .my-work h1 {
     color: var(--color3);
 }
 
@@ -472,7 +474,7 @@ body.theme-3 .my-work h1{
     }
 
     .header-animated-txt {
-        margin-top: 3rem;
+        margin-top: 5rem;
     }
 
     .top-text-col small {
