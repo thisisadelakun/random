@@ -210,47 +210,14 @@ button:focus-visible {
   font-size: 14px;
 }
 
-.my-button-2 {
-  width: fit-content;
-  height: fit-content;
-  padding: 1px 10px 1px 1px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 12px;
-  cursor: pointer;
-  margin: 10px;
-  border: 2px solid var(--color1);
-  /* background-color: var(--color1); */
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.356);
-  text-decoration: none;
-  font-size: 14px;
-}
-
 .my-btn-text {
-  width: 100%;
-  height: 100%;
-  padding: 5px 15px 0px 0px;
-  display: flex;
-  align-items: center;
-  color: var(--color1);
-  transition: 1s ease;
-}
-
-.arrow-text{
-  background-color: var(--color1);
-  height: 30px;
-  width: 30px;
-}
-
-.my-btn-text-2 {
   width: 100%;
   height: 100%;
   padding: 5px 15px;
   display: flex;
   align-items: center;
   color: var(--color1);
-  background: transparent;
+  transition: 1s ease;
 }
 
 body.theme-1 .my-btn-text {
