@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { NavLink, Link, useLocation } from 'react-router-dom';
 import './NavBar.css';
-import '../../models/logo/Logo.css'
 
-import { CgClose, CgMenuRight } from 'react-icons/cg';
-import { FaTwitter, FaInstagram, FaLinkedin, FaGithub, FaYoutube, FaCodepen } from 'react-icons/fa'
-import { SiFrontendmentor } from 'react-icons/si'
+// import models
+import { authorInfo, icons } from '../../models/db/db';
 
+// import dependency 
+import { NavLink, Link, useLocation } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -47,17 +46,20 @@ const NavBar = () => {
           <Container fluid>
             <Navbar.Brand>
               <div className='title-logo'>
-                <NavLink to="/" style={{ textDecoration: "none" }}>
-                  <p>Adelakun Abayomi</p>
+                <NavLink to="/" style={{ textDecoration: "none" }} className="navLink">
+                  <span>{authorInfo.logo1}</span>
+                  <span>{authorInfo.logo2}</span>
+                  <span>&Aacute;</span>
                 </NavLink>
               </div>
             </Navbar.Brand>
 
-            <CgMenuRight
+            < div
               onClick={handleShow}
               aria-controls={`offcanvasNavbar-expand-${expand}`}
-              className='menu-bar'
-            />
+              className='menu-bar'>
+              {icons.cm}
+            </ div>
 
             <Navbar.Offcanvas
               show={show} onHide={handleClose}
@@ -70,13 +72,15 @@ const NavBar = () => {
               <Offcanvas.Header className="offcanvas-header">
                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
                   <div className='title-logo mobile-view-only'>
-                    <NavLink to="/" style={{ textDecoration: "none" }}>
-                      <p>Adelakun Abayomi</p>
+                    <NavLink to="/" style={{ textDecoration: "none" }} className="navLink">
+                      <span>{authorInfo.logo1}</span>
+                      <span>{authorInfo.logo2}</span>
+                      <span>&Aacute;</span>
                     </NavLink>
                   </div>
                 </Offcanvas.Title>
                 <button className="custom-close-button" onClick={handleClose}>
-                  <CgClose className='custom-close-button' />
+                  {icons.cx}
                 </button>
               </Offcanvas.Header>
 
@@ -156,25 +160,25 @@ const NavBar = () => {
 
                   <li className='nav-link-socios'>
                     <a href="https://twitter.com/thisisadelakun" target="_blank" rel="noopener noreferrer">
-                      <FaTwitter className='card-icon-tw' title="Twitter" />
+                      {icons.tw}
                     </a>
                     <a href="https://www.linkedin.com/in/abayomi-adelakun-897227178/" target="_blank" rel="noopener noreferrer">
-                      <FaGithub className='card-icon-gt' title="Github" />
+                      {icons.gt}
                     </a>
 
                     <a href="https://www.instagram.com/thisisadelakun" target="_blank" rel="noopener noreferrer">
-                      <FaInstagram className='card-icon-ig' title="Instagram" />
+                      {icons.ig}
                     </a>
 
                     <a href="https://frontendmentor.io/thisisadelakun" target="_blank" rel="noopener noreferrer">
-                      <SiFrontendmentor className='card-icon-fem' title="Frontend Mentor" />
+                      {icons.fm}
                     </a>
                     <a href="https://www.youtube.com/thisisadelakun" target="_blank" rel="noopener noreferrer">
-                      <FaYoutube className='card-icon-yt' title="YouTube" />
+                      {icons.yt}
                     </a>
 
                     <a href="https://www.linkedin.com/in/abayomi-adelakun-897227178/" target="_blank" rel="noopener noreferrer">
-                      <FaLinkedin className='card-icon-in' title="LinkedIn" />
+                      {icons.in}
                     </a>
                   </li>
                 </Nav>
@@ -182,8 +186,9 @@ const NavBar = () => {
             </Navbar.Offcanvas>
           </Container>
         </Navbar>
-      ))}
-    </div>
+      ))
+      }
+    </div >
   );
 };
 

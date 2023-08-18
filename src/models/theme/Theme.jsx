@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { TbSquareRoundedNumber1Filled, TbSquareRoundedNumber2Filled, TbSquareRoundedNumber3Filled } from 'react-icons/tb';
 import './Theme.css';
+
+// import models
+import { icons } from '../db/db';
 
 const Theme = () => {
     const [currentTheme, setCurrentTheme] = useState('theme-1');
@@ -38,17 +40,17 @@ const Theme = () => {
             <div className="sticky-box">
                 <button className={`theme-button ${currentTheme === 'theme-1' ? 'active' : ''}`} onClick={() => changeTheme('theme-1')}>
                     <div className="btn-theme-col">
-                        <TbSquareRoundedNumber1Filled className="theme-1" />
+                        {icons.theme1}
                     </div>
                 </button>
                 <button className={`theme-button ${currentTheme === 'theme-2' ? 'active' : ''}`} onClick={() => changeTheme('theme-2')}>
                     <div className="btn-theme-col">
-                        <TbSquareRoundedNumber2Filled className="theme-2" />
+                        {icons.theme2}
                     </div>
                 </button>
                 <button className={`theme-button ${currentTheme === 'theme-3' ? 'active' : ''}`} onClick={() => changeTheme('theme-3')}>
                     <div className="btn-theme-col">
-                        <TbSquareRoundedNumber3Filled className="theme-3" />
+                        {icons.theme3}
                     </div>
                 </button>
             </div>

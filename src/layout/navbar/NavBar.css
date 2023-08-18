@@ -6,21 +6,19 @@
     z-index: 100;
     left: 0;
     overflow: hidden;
+    transition: 1s ease;
 }
 
 body.theme-1 .show-background {
     background: var(--color41);
-    transition: 1s ease;
 }
 
 body.theme-2 .show-background {
     background: var(--color61);
-    transition: 1s ease-in;
 }
 
 body.theme-3 .show-background {
     background: var(--color22);
-    transition: 1s ease;
 }
 
 .offcanvasbgr {
@@ -48,10 +46,6 @@ body.theme-3 .show-background {
     position: relative;
 }
 
-button .custom-close-button {
-    border: none;
-}
-
 .offcanvas-header>button:hover {
     background-color: transparent !important;
     color: var(--color3);
@@ -76,35 +70,43 @@ button .custom-close-button {
 }
 
 .title-logo {
-    cursor: pointer;
-}
-
-.title-logo p {
-    font-size: 14px;
-    color: var(--color12);
-    border-top: 3px solid var(--color1);
-    border-left: 3px solid var(--color1);
-    border-right: 3px solid var(--color1);
-    text-align: center;
-    padding: 8px;
     position: relative;
-    font-family: 'Roboto Serif', serif;
+    display: block;
+    cursor: pointer;
+    padding: 1px 0;
+    transform: skewY(-5deg);
 }
 
-.title-logo p::after {
-    content: '';
-    position: absolute;
-    bottom: 1px;
-    left: 25%;
-    width: 50%;
-    border-bottom: 2px solid var(--color12);
+.navLink {
+    display: flex;
+    flex-direction: row !important;
+}
+
+.title-logo span {
+    display: flex;
+    text-align: center;
+    font-size: 30px;
+    color: var(--color12);
+    font-family: 'Caprasimo', cursive;
+    text-shadow: 2px 3px 10px rgba(0, 0, 0, 0.205);
+}
+
+.title-logo span:nth-child(2) {
+    transform: scaleX(-1) !important;
+    margin-left: -5px;
+    font-size: 33px;
+}
+
+.title-logo span:last-child {
+    transform: scaleX(-1) !important;
+    margin-left: -5px;
 }
 
 .canvas-body li {
-    font-size: 23px;
-    line-height: 1.5;
-    font-weight: 500 !important;
-    font-family: 'Caprasimo', cursive;
+    font-size: 20px;
+    line-height: 1.4;
+    font-weight: 300 !important;
+    font-family: 'Roboto Serif', serif;
     color: var(--color1);
     position: relative;
     cursor: pointer;
@@ -180,17 +182,17 @@ button .custom-close-button {
     width: 100%;
     margin: 1.5rem auto;
     gap: 0.8rem;
-    padding: 5px 0;
+    padding: 5px 5px;
     color: var(--color1) !important;
 }
 
-.nav-link-socios a{
+.nav-link-socios a {
     font-size: 26px;
 }
 
 .nav-link-socios a:hover {
     color: var(--color1) !important;
-    transform: scale(1.2);
+    transform: scale(1.1);
     position: relative;
 }
 
@@ -248,9 +250,26 @@ button .custom-close-button {
     }
 
     .flex-grow-1 {
-        margin-top: -1rem !important;
+        margin-top: 0rem !important;
         text-align: left;
-        margin-left: 1rem;
+        margin-left: 0.5rem;
+    }
+
+    .let-contact-me {
+        margin: 2rem 0;
+    }
+
+    .let-contact-me p {
+        font-size: 13px !important;
+    }
+
+    .canvas-body li {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    .nav-link-socios a {
+        font-size: 23px;
     }
 
     @keyframes slideInMenu {
