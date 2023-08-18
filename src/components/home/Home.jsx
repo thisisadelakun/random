@@ -183,7 +183,7 @@ const Home = () => {
                     </div>
                 </div>
 
-                <div className="more-btn">
+                <div className="more-btn containers">
                     <NavLink to="/work-archive" className="my-button-2">
                         <span className='my-btn-text-2'> SEE MORE</span> {icons.argt}
                     </NavLink>

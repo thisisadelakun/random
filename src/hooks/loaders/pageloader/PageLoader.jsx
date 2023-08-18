@@ -3,8 +3,9 @@ import './PageLoader.css'
 
 const PageLoader = () => {
     return (
-
-        <div className="loader"></div>
+        <div className="loader-page">
+            <div className="loader"></div>
+        </div>
     )
 }
 

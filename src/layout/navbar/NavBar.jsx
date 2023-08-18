@@ -17,30 +17,40 @@ const NavBar = () => {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   const closeMenu = () => setShow(false);
-  const [hasShadow, setHasShadow] = useState(false);
   const [hasScrolled, setHasScrolled] = useState(false);
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [hasShadow, setHasShadow] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 0) {
+      const currentScrollPos = window.scrollY;
+
+      if (currentScrollPos > prevScrollPos) {
+        // Scrolling down, hide the Navbar
+        setHasShadow(false);
+      } else {
+        // Scrolling up, show the Navbar
         setHasShadow(true);
+      }
+
+      if (currentScrollPos > 0) {
         setHasScrolled(true);
       } else {
-        setHasShadow(false);
         setHasScrolled(false);
       }
+
+      setPrevScrollPos(currentScrollPos);
     };
 
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []);
+  }, [prevScrollPos]);
 
   return (
     <div className={`nav-container ${hasShadow && hasScrolled ? 'shadow show-background' : ''}`} fixed='top'>
-
       {[false].map((expand) => (
         <Navbar key={expand} expand={expand} className="mb-2" >
           <Container fluid>

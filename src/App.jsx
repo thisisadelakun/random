@@ -31,11 +31,9 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 7000);
+    }, 5000);
 
-    return () => {
-      clearTimeout(timer);
-    };
+    return () => clearTimeout(timer);
   }, []);
 
   useEffect(() => {
@@ -69,16 +67,15 @@ function App() {
             {isLoading ? (
               <PageLoader />
             ) : (
-              <Layout>
-                <Theme />
-                <ScrollToTop />
-
-                <Suspense fallback={<PageLoader />}>
-                  <div ref={contentRef} className="content-fade-in">
+              <div ref={contentRef} className="content-fade-in">
+                <Layout>
+                  <Theme />
+                  <ScrollToTop />
+                  <Suspense fallback={<PageLoader />}>
                     {handleRoutes()}
-                  </div>
-                </Suspense>
-              </Layout>
+                  </Suspense>
+                </Layout>
+              </div>
             )}
           </BrowserRouter>
         </QueryClientProvider>

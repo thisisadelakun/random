@@ -88,7 +88,7 @@ body.theme-3 .show-background {
     font-size: 30px;
     color: var(--color12);
     font-family: 'Caprasimo', cursive;
-    text-shadow: 2px 3px 10px rgba(0, 0, 0, 0.205);
+    text-shadow: 2px 3px 10px rgba(0, 0, 0, 0.171);
 }
 
 .title-logo span:nth-child(2) {
@@ -234,6 +234,8 @@ body.theme-3 .show-background {
         height: 500px;
         right: 20px !important;
         margin: 1.5rem;
+        
+        border: 1px solid var(--color22) !important;
     }
 
     .canvas-body {
