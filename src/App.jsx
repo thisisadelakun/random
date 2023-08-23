@@ -4,10 +4,15 @@ import { QueryClient, QueryClientProvider } from 'react-query';
 import { HelmetProvider } from 'react-helmet-async';
 import './App.css';
 
+// import hooks
 import PageLoader from './hooks/loaders/pageloader/PageLoader';
-import Layout from './layout/Layout';
+import SlowLoader from './hooks/loaders/slowloader/SlowLoader';
+
+// import models
 import Theme from './models/theme/Theme';
 
+// import pages
+import Layout from './layout/Layout';
 const Home = lazy(() => import('./components/home/Home'))
 
 function App() {
@@ -51,7 +56,7 @@ function App() {
         <Route
           index
           element={(
-            <React.Suspense fallback={<PageLoader />}>
+            <React.Suspense fallback={<SlowLoader />}>
               <Home />
             </React.Suspense>
           )} />

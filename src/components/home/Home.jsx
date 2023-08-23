@@ -46,7 +46,7 @@ const Home = () => {
                             <div className="top-text">
                                 <div className='top-text-col'>
                                     <small className='top-text-sm'>»»</small>
-                                    <h1 className='top-text-h highlight-text'>Web & Mobile</h1>
+                                    <h1 className='top-text-h highlight-text'>Web</h1>
                                     <h1 className='top-text-h highlight-text'>Developer<span className='extras-1'>.</span></h1>
                                 </div>
                             </div>
@@ -176,9 +176,16 @@ const Home = () => {
             </div>
 
             <div className="page-main">
-                <div className="my-work containers">
-                    <h1>Featured Works</h1>
-                    <div className="card_row">
+                <div className="my-work">
+                    <h1 className='container desktop-view-only'>Featured Works</h1>
+                    <h1 className='containers mobile-view-only'>Featured Works</h1>
+                    <p className='container desktop-view-only'>
+                        Some open source projects, experimentals, web & Mobile apps.
+                    </p>
+                    <p className='containers mobile-view-only'>
+                        Some open source projects, experimentals, web & Mobile apps that I have in the past.
+                    </p>
+                    <div className="card_row container">
                         <CardComponent numCards={3} />
                     </div>
                 </div>
@@ -189,8 +196,43 @@ const Home = () => {
                     </NavLink>
                 </div>
             </div>
-            <div className="page-library"></div>
-            <div className="reviews"></div>
+            <div className="page-main-2">
+                <div className="my-library">
+                    <h1 className='container'>Library</h1>
+                    <div className="library_row container">
+                        <CardComponent numCards={3} />
+                    </div>
+                </div>
+
+                <div className="more-btn containers">
+                    <NavLink to="/work-archive" className="my-button-2">
+                        <span className='my-btn-text-2'> SEE MORE</span> {icons.argt}
+                    </NavLink>
+                </div>
+            </div>
+            <div className="page-main">
+                <div className="rev-mes">
+                    <div className="reviews rev-mes-column">
+                        <h1>Reviews</h1>
+                        <span>
+                            <button>
+
+                            </button>
+                        </span>
+                    </div>
+
+                    <div className="page-mes rev-mes-column">
+                        <h1>Send me <br />a message!</h1>
+                        <p>Got a question or proposal, <br />or a review? Go Ahead.</p>
+
+                        <div className="more-btn">
+                            <NavLink to="/work-archive" className="my-button-2">
+                                <span className='my-btn-text-2'> CONTACT ME</span> {icons.argt}
+                            </NavLink>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 };

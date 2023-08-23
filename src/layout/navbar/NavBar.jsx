@@ -50,9 +50,9 @@ const NavBar = () => {
   }, [prevScrollPos]);
 
   return (
-    <div className={`nav-container ${hasShadow && hasScrolled ? 'shadow show-background' : ''}`} fixed='top'>
+    <div className={`nav-container ${hasShadow && hasScrolled ? 'shadow show-background' : ''}`}>
       {[false].map((expand) => (
-        <Navbar key={expand} expand={expand} className="mb-2" >
+        <Navbar key={expand} expand={expand} className={`mb-2 ${hasShadow ? '' : 'hide-content'}`} >
           <Container fluid>
             <Navbar.Brand>
               <div className='title-logo'>

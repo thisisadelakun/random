@@ -1,5 +1,5 @@
 .content-fade-in {
-    opacity: -10 !important;
+    opacity: 0 !important;
     transition: opacity 2s ease !important;
 }
 

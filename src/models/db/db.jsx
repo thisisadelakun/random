@@ -94,6 +94,21 @@ export const icons = {
     theme3: <TbSquareRoundedFilled className="theme-3" />,
 }
 
+export const icons2 = {
+    in: <FaLinkedin className='card-icon-in2' />,
+    tw: <FaTwitter className='card-icon-tw2' />,
+    ig: <FaInstagram className='card-icon-ig2' />,
+    gt: <FaGithub className='card-icon-gt2' />,
+    fm: <SiFrontendmentor className='card-icon-fem2' title="Frontend Mentor" />,
+    yt: <FaYoutube className='card-icon-yt2' />,
+    like: <AiFillHeart className="svg2" title='love' />,
+    adwn: <TiArrowDownOutline className="arrow-scroll-dw2" />,
+    cdpen: <FaCodepen />,
+    theme1: <TbSquareRoundedFilled className="theme-12" />,
+    theme2: <TbSquareRoundedFilled className="theme-22" />,
+    theme3: <TbSquareRoundedFilled className="theme-33" />,
+}
+
 export const projects = [
 
     {
