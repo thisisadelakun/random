@@ -10,7 +10,7 @@ import { projects, icons } from '../db/db';
 const CardComponent = ({ numCards }) => {
     const sortedProjects = projects.sort((a, b) => a.id === 1 ? -1 : b.id === 1 ? 1 : 0);
     const displayedProjects = sortedProjects.slice(0, numCards);
-    
+
     return (
         <div className="card_col">
             {displayedProjects.map(project => (

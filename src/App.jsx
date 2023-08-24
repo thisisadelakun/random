@@ -1,8 +1,7 @@
-import React, { useEffect, useState, useRef, lazy, Suspense, startTransition } from 'react';
+import React, { useEffect, useState, lazy, Suspense } from 'react';
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { QueryClient, QueryClientProvider } from 'react-query';
 import { HelmetProvider } from 'react-helmet-async';
-import './App.css';
 
 // import hooks
 import PageLoader from './hooks/loaders/pageloader/PageLoader';
@@ -18,7 +17,6 @@ const Home = lazy(() => import('./components/home/Home'))
 function App() {
   const queryClient = new QueryClient();
   const [isLoading, setIsLoading] = useState(true);
-  const contentRef = useRef(null);
 
   const ScrollToTop = () => {
     const { pathname } = useLocation();
@@ -41,15 +39,7 @@ function App() {
     return () => clearTimeout(timer);
   }, []);
 
-  useEffect(() => {
-    if (!isLoading) {
-      contentRef.current.classList.add('fade-in');
-    }
-  }, [isLoading]);
-
   const handleRoutes = () => {
-    startTransition(() => {
-    });
 
     return (
       <Routes>
@@ -72,15 +62,13 @@ function App() {
             {isLoading ? (
               <PageLoader />
             ) : (
-              <div ref={contentRef} className="content-fade-in">
-                <Layout>
-                  <Theme />
-                  <ScrollToTop />
-                  <Suspense fallback={<PageLoader />}>
-                    {handleRoutes()}
-                  </Suspense>
-                </Layout>
-              </div>
+              <Layout>
+                <Theme />
+                <ScrollToTop />
+                <Suspense fallback={<PageLoader />}>
+                  {handleRoutes()}
+                </Suspense>
+              </Layout>
             )}
           </BrowserRouter>
         </QueryClientProvider>

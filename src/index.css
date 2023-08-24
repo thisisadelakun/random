@@ -132,7 +132,7 @@ button:focus-visible {
 }
 
 .containers {
-  width: 85%;
+  width: 80%;
   margin: auto;
 }
 
@@ -333,7 +333,7 @@ body.theme-3 .my-btn-text-2 {
   }
 
   .containers {
-    width: 80%;
+    width: 75%;
     margin: auto;
   }
 
@@ -357,7 +357,7 @@ body.theme-3 .my-btn-text-2 {
 
 @media only screen and (min-width: 992px) {
   .containers {
-    width: 75% !important;
+    width: 70% !important;
     margin: auto;
   }
 }

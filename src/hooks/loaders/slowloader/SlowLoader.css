@@ -1,12 +1,23 @@
 .slow-loader-col {
     position: relative;
-    min-height: 100px;
+    min-height: 100vh !important;
     width: 100% !important;
     margin: auto !important;
     display: block;
     place-content: center;
     align-items: center;
-    background: transparent !important;
+}
+
+body.theme-1 .slow-loader-col {
+    background: var(--color41);
+}
+
+body.theme-2 .slow-loader-col {
+    background: var(--color61);
+}
+
+body.theme-3 .slow-loader-col {
+    background: var(--color22);
 }
 
 .slow-loader {

@@ -183,7 +183,7 @@ const Home = () => {
                         Some open source projects, experimentals, web & Mobile apps.
                     </p>
                     <p className='containers mobile-view-only'>
-                        Some open source projects, experimentals, web & Mobile apps that I have in the past.
+                        Some open source projects, experimentals, web & Mobile apps.
                     </p>
                     <div className="card_row container">
                         <CardComponent numCards={3} />
@@ -196,6 +196,7 @@ const Home = () => {
                     </NavLink>
                 </div>
             </div>
+
             <div className="page-main-2">
                 <div className="my-library">
                     <h1 className='container'>Library</h1>
@@ -210,6 +211,7 @@ const Home = () => {
                     </NavLink>
                 </div>
             </div>
+            
             <div className="page-main">
                 <div className="rev-mes">
                     <div className="reviews rev-mes-column">

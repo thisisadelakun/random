@@ -1,8 +1,0 @@
-.content-fade-in {
-    opacity: 0 !important;
-    transition: opacity 2s ease !important;
-}
-
-.content-fade-in.fade-in {
-    opacity: 1 !important;
-}
