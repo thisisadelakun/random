@@ -24,8 +24,8 @@ const CardComponent = ({ numCards }) => {
                         </div>
                     </div>
                     <div className="bottom-section">
-                        <span className="title" id='projectTitle'>{project.projectTitle}</span>
-                        <div className="sub-title">
+                        <span className="card_title" id='projectTitle'>{project.projectTitle}</span>
+                        <div className="card_sub_title">
                             <span className='ht pro-svg'>{project.ht}</span>
                             <span className='css pro-svg'>{project.css}</span>
                             <span className='jv pro-svg'>{project.jv}</span>

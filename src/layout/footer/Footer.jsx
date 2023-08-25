@@ -119,7 +119,7 @@ const Footer = () => {
                 <div className="footer-bottom">
                     <div className="footer-copy-right">
                         <span className="copyRight">
-                            &copy; {authorInfo.firstName} {authorInfo.lastName} 2022 - {new Date().getFullYear()}
+                            &copy; {authorInfo.firstName} {authorInfo.lastName} {new Date().getFullYear()}
                         </span>
                     </div>
                     <div className="footer-social-right desktop-view-only">

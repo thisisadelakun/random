@@ -3,7 +3,7 @@ import './Home.css'
 
 // import 
 import SEO from '../../models/seo/SEO';
-import { authorInfo, authorAbout, icons } from '../../models/db/db';
+import { authorInfo, authorAbout, icons, workContent, libraryContent } from '../../models/db/db';
 import CardComponent from '../../models/card/Card';
 
 // import hooks
@@ -143,8 +143,7 @@ const Home = () => {
             </div>
 
             <div className="page-main" id='page-main'>
-
-                <div className="details-col containers" id='details-col'>
+                <div className="details-col container" id='details-col'>
                     <Details />
                 </div>
             </div>
@@ -176,42 +175,39 @@ const Home = () => {
             </div>
 
             <div className="page-main">
-                <div className="my-work">
-                    <h1 className='container desktop-view-only'>Featured Works</h1>
-                    <h1 className='containers mobile-view-only'>Featured Works</h1>
-                    <p className='container desktop-view-only'>
-                        Some open source projects, experimentals, web & Mobile apps.
-                    </p>
-                    <p className='containers mobile-view-only'>
-                        Some open source projects, experimentals, web & Mobile apps.
-                    </p>
+                <div className="my-work container">
+                    <h1 className='container desktop-view-only'>{workContent.homeTitle}</h1>
+                    <p className='container desktop-view-only'>{workContent.homeSubtitle}</p>
+                    <h1 className='containers mobile-view-only'>{workContent.homeTitle}</h1>
+                    <p className='containers mobile-view-only'> {workContent.homeSubtitle}</p>
                     <div className="card_row container">
                         <CardComponent numCards={3} />
                     </div>
-                </div>
 
-                <div className="more-btn containers">
-                    <NavLink to="/work-archive" className="my-button-2">
-                        <span className='my-btn-text-2'> SEE MORE</span> {icons.argt}
-                    </NavLink>
+                    <div className="more-btn container">
+                        <NavLink to="/work-archive" className="my-button-2">
+                            <span className='my-btn-text-2'> SEE MORE</span> {icons.argt}
+                        </NavLink>
+                    </div>
                 </div>
             </div>
 
             <div className="page-main-2">
-                <div className="my-library">
-                    <h1 className='container'>Library</h1>
+                <div className="my-library containers">
+                    <h1 className=''>{libraryContent.homeTitle}</h1>
+                    <p className=''>{libraryContent.homeSubtitle}</p>
                     <div className="library_row container">
                         <CardComponent numCards={3} />
                     </div>
-                </div>
 
-                <div className="more-btn containers">
-                    <NavLink to="/work-archive" className="my-button-2">
-                        <span className='my-btn-text-2'> SEE MORE</span> {icons.argt}
-                    </NavLink>
+                    <div className="more-btn">
+                        <NavLink to="/work-archive" className="my-button-2">
+                            <span className='my-btn-text-2'> SEE MORE</span> {icons.argt}
+                        </NavLink>
+                    </div>
                 </div>
             </div>
-            
+
             <div className="page-main">
                 <div className="rev-mes">
                     <div className="reviews rev-mes-column">

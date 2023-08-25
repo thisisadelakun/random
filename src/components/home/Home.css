@@ -302,22 +302,31 @@ body.theme-3 .page-main-2 {
     width: 100%;
 }
 
+.my-library p,
 .page-about-text p {
-    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    font-family: 'Roboto Serif', serif;
     width: 90%;
+    margin-left: 5px;
 }
 
+body.theme-1 .my-library h1,
+body.theme-3 .my-library h1,
 body.theme-1 .page-about-text h4,
 body.theme-3 .page-about-text h4 {
     color: var(--color12) !important;
 }
 
+body.theme-1 .my-library p,
+body.theme-3 .my-library p,
 body.theme-1 .page-about-text p,
 body.theme-3 .page-about-text p {
     color: var(--color12) !important;
     font-weight: 600;
 }
 
+body.theme-2 .my-library p,
+body.theme-2 .my-library h1,
 body.theme-2 .page-about-text p,
 body.theme-2 .page-about-text h4 {
     color: var(--color32) !important;
@@ -377,10 +386,6 @@ body.theme-3 .about-img-col {
     text-shadow: 2px 3px 0 rgba(0, 0, 0, 0.205);
 }
 
-body.theme-3 .my-work h1 {
-    color: var(--color3);
-}
-
 .rev-mes {
     display: flex;
     flex-direction: column;
@@ -395,28 +400,31 @@ body.theme-3 .my-work h1 {
     position: relative;
 }
 
-.rev-mes-column:nth-child(2)::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    height: 1px;
-    background-color: #ccc;
+.rev-mes-column:nth-child(2) {
+    border-top: 1px solid #ccc !important;
 }
 
-.page-mes p{
+.my-work p,
+.page-mes p {
     text-align: left;
-    font-family: 'Roboto Serif', serif; 
+    font-family: 'Roboto Serif', serif;
     font-size: 18px;
     font-weight: 400;
     color: var(--color61);
 }
 
 .rev-mes h1,
-.page-mes h1{
+.page-mes h1 {
     text-align: left;
+}
+
+.my-library h1 {
+    font-family: 'Caprasimo', cursive;
+    text-align: left;
+}
+
+.my-library p {
+    margin-left: 5px;
 }
 
 @keyframes topText {
@@ -491,9 +499,9 @@ body.theme-3 .my-work h1 {
 
     .border-image {
         height: 220px;
-        width: 180px;
+        width: 190px;
         bottom: 30px;
-        left: 40px;
+        left: 30px;
     }
 
     .header-card-col {
@@ -534,7 +542,7 @@ body.theme-3 .my-work h1 {
     }
 
     .border-image {
-        height: 240px;
+        height: 235px;
         width: 224px;
         bottom: 130px;
         left: 10px;
@@ -549,7 +557,7 @@ body.theme-3 .my-work h1 {
     }
 
     .page-about-text p {
-        width: 75%;
+        width: 70%;
         margin-left: 10px;
     }
 
@@ -579,7 +587,9 @@ body.theme-3 .my-work h1 {
         background-color: #ccc;
     }
 
-
+    .rev-mes-column:nth-child(2) {
+        border-top: none !important;
+    }
 }
 
 @media only screen and (min-width:1024px) {
@@ -589,10 +599,10 @@ body.theme-3 .my-work h1 {
     }
 
     .border-image {
-        height: 240px;
+        height: 235px;
         width: 224px;
         bottom: 130px;
-        left: 25px;
+        left: 33px;
         position: absolute;
         overflow-y: hidden !important;
     }

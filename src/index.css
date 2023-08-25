@@ -198,8 +198,12 @@ button:focus-visible {
   animation: pulse 1s forwards infinite;
 }
 
+.mobile-view-only {
+  display: flex !important;
+}
+
 .desktop-view-only {
-  display: none;
+  display: none !important;
 }
 
 .my-button-2,
@@ -338,11 +342,11 @@ body.theme-3 .my-btn-text-2 {
   }
 
   .mobile-view-only {
-    display: none;
+    display: none !important;
   }
 
   .desktop-view-only {
-    display: flex;
+    display: flex !important;
   }
 
   .scroll-div {
