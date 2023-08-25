@@ -12,6 +12,7 @@ import Details from '../../hooks/details/Details';
 // import dependency 
 import { Link } from 'react-scroll';
 import { NavLink } from 'react-router-dom';
+import LibraryTiles from '../../models/libararyfolder/LibraryTiles';
 // import gsap from 'gsap';
 // import ScrollTrigger from 'gsap/ScrollTrigger';
 // gsap.registerPlugin(ScrollTrigger);
@@ -197,11 +198,11 @@ const Home = () => {
                     <h1 className=''>{libraryContent.homeTitle}</h1>
                     <p className=''>{libraryContent.homeSubtitle}</p>
                     <div className="library_row container">
-                        <CardComponent numCards={3} />
+                        <LibraryTiles numCards={2} />
                     </div>
 
                     <div className="more-btn">
-                        <NavLink to="/work-archive" className="my-button-2">
+                        <NavLink to="/library" className="my-button-2">
                             <span className='my-btn-text-2'> SEE MORE</span> {icons.argt}
                         </NavLink>
                     </div>

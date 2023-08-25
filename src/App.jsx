@@ -12,6 +12,8 @@ import Theme from './models/theme/Theme';
 
 // import pages
 import Layout from './layout/Layout';
+import Library from './components/library/Library';
+const LibraryDetail = lazy(() => import('./components/library/LibraryDetails'))
 const Home = lazy(() => import('./components/home/Home'))
 
 function App() {
@@ -44,12 +46,30 @@ function App() {
     return (
       <Routes>
         <Route
-          index
-          element={(
+          path='/' exact index element={(
             <React.Suspense fallback={<SlowLoader />}>
               <Home />
             </React.Suspense>
-          )} />
+          )}
+        />
+        <Route
+          path="/library/:slug"
+          element={(
+            <React.Suspense fallback={<SlowLoader />}>
+              <LibraryDetail />
+            </React.Suspense>
+          )}
+        />
+
+        <Route
+          path="/library"
+          element={(
+            <React.Suspense fallback={<SlowLoader />}>
+              <Library />
+            </React.Suspense>
+          )}
+        />
+
       </Routes>
     );
   };

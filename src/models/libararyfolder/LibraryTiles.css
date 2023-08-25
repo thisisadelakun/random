@@ -1,0 +1,33 @@
+.library-tiles {
+    margin: 3rem auto;
+    padding: 1rem 0;
+    border-bottom: 1px solid #ccc !important;
+}
+
+
+.library-tiles h3 {
+    font-size: 1.5em !important;
+    padding-bottom: 1rem;
+    font-family: 'Roboto Serif', serif;
+    font-weight: 700 !important;
+}
+
+body.theme-1 .library-tiles h3,
+body.theme-3 .library-tiles h3 {
+    color: var(--color12) !important;
+}
+
+body.theme-2 .library-tiles h3 {
+    color: var(--color3) !important;
+}
+
+body.theme-3 .library-tiles p,
+body.theme-1 .library-tiles p {
+    color: var(--color12);
+    font-size: 17px !important;
+}
+
+body.theme-2 .library-tiles p {
+    font-size: 17px !important;
+    color: var(--color3) !important;
+}

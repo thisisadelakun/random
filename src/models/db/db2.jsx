@@ -1,9 +1,15 @@
+import { BsFillGridFill, BsArrowRight, BsArrowLeft } from 'react-icons/bs'
+
+
 export const libraryPage = {
-    "title": "",
-    "sub-title": "",
-    "next": "",
-    "prev": "",
-    "home": "",
+    "title": "Library Shelf",
+    "subTitle": `"The only thing that you absolutely have to know is the location of the library." - Albert Einstein"`,
+}
+
+export const newIcons = {
+    "menu": <BsFillGridFill className="newicons" title='menu' />,
+    "arght": <BsArrowRight className='newicons' title='Next' />,
+    "arlft": <BsArrowLeft className='newicons' title='prev' />,
 }
 
 export const myLibrary = [
@@ -12,7 +18,7 @@ export const myLibrary = [
         "id": 1,
         "date": "30 March 2023",
         "read": "8 mins read",
-        "tiles": "Power of Web Development",
+        "titles": "Power of Web Development",
 
         "content1Title": "Crafting Digital Experiences",
         "content1": `In today's digital age, web development stands as the cornerstone of our online interactions. It's not just about 
@@ -77,11 +83,12 @@ export const myLibrary = [
         "tag2": "business",
     },
 
+
     {
         "id": 2,
         "date": "12 January 2023",
-        "read": "7 mins read",
-        "tiles": "HTML Essentials",
+        "read": "5 min read",
+        "titles": "HTML Essentials",
 
         "content1Title": "Building the Foundation of the Web",
         "content1": `In the vast realm of web development, HTML stands as the cornerstone - the language that underpins every website you 
@@ -110,17 +117,19 @@ export const myLibrary = [
 
         "content5Title": "HTML in Action: A Glimpse of Syntax",
         "codeSnippetTitle5": "HTML in Action: A Glimpse of Syntax",
-        "codeSnippet5": `<!DOCTYPE html>
-                         <html>
-                         <head>
-                         <title>My First Webpage</title>
-                         </head>
-                         <body>
-                           <h1>Welcome to My Website</h1>
-                           <p>This is a paragraph of text.</p>
-                           <img src="image.jpg" alt="An example image">
-                         </body>
-                         </html>`,
+        "codeSnippetLanguage": "html",
+        "codeSnippet5":
+            `<!DOCTYPE html> 
+ <html>
+ <head>
+  <title>My First Webpage</title>
+ </head>
+ <body>
+  <h1>Welcome to My Website</h1>
+  <p>This is a paragraph of text.</p>
+  <img src="image.jpg" alt="An example image">
+ </body>
+ </html>`,
         "content5": `In this snippet, you can see the basic structure of an HTML document. The <!DOCTYPE html> declaration defines the 
                      document type, while the <html> element encapsulates the entire content. Within the <head> section, you can specify 
                      metadata like the title of the page. The <body> section contains the visible content, such as headings, paragraphs, 
@@ -133,7 +142,7 @@ export const myLibrary = [
                      your gateway to the dynamic world of web development.`,
 
         "futherTitle": "Further Reading and Resources",
-        "furthercontent6": `If you're excited to delve deeper into HTML, there are abundant resources available to help you on your journey. 
+        "furthercontent": `If you're excited to delve deeper into HTML, there are abundant resources available to help you on your journey. 
                             Check out these articles and tutorials from experts in the field`,
 
         "furtherlink1": "https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics",
@@ -150,13 +159,14 @@ export const myLibrary = [
 
         "tag1": "web",
         "tag2": "html",
+
     },
 
     {
         "id": 3,
         "date": "13 February 2023",
         "read": "10 mins read",
-        "tiles": "The Dynamic World of JavaScript",
+        "titles": "The Dynamic World of JavaScript",
 
         "content1Title": "Basic Techniques",
         "content1": `JavaScript, often abbreviated as JS, is a versatile and dynamic programming language that has revolutionized web 
@@ -188,11 +198,12 @@ export const myLibrary = [
                      technique is widely used in creating pop-up modals, interactive forms, and responsive navigation menus.`,
 
         "codeSnippetTitle5": "Example of Vanilla JavaScript Syntax:",
+        "codeSnippetLanguage": "javascript",
         "codeSnippet5": `// Selecting an element and adding a click event listener
-                         const button = document.querySelector('.button');
-                         button.addEventListener('click', function() {
-                             // Code to execute when the button is clicked
-                         });`,
+const button = document.querySelector('.button');
+button.addEventListener('click', function() {
+    // Code to execute when the button is clicked
+});`,
 
         "content6Title": "The Power of jQuery",
         "content6": `jQuery emerged as a solution to some of the challenges developers faced while working with Vanilla JavaScript. It 
@@ -201,17 +212,18 @@ export const myLibrary = [
                      frameworks like React and Vue gained popularity, jQuery's usage has somewhat declined`,
 
         "codeSnippetTitle6": "Example of jQuery Syntax:",
+        "codeSnippetLanguage": "javascript",
         "codeSnippet6": `// Selecting an element and adding a click event listener
-                         $('.button').on('click', function() {
-                             // Code to execute when the button is clicked
-                         });`,
+$('.button').on('click', function() {
+    // Code to execute when the button is clicked
+});`,
 
         "content7": `As you embark on your exploration of JavaScript, remember that consistent practice and hands-on projects are key to 
                      truly mastering its dynamic features. Whether you're using Vanilla JavaScript or exploring libraries like jQuery, 
                      JavaScript's ability to bring interactivity to the web is what makes it a cornerstone of modern web development.`,
 
         "futherTitle": "Further Reading and Resources",
-        "furthercontent6": `If you're eager to delve deeper into JavaScript's dynamic capabilities, there's a wealth of resources 
+        "furthercontent": `If you're eager to delve deeper into JavaScript's dynamic capabilities, there's a wealth of resources 
                             available to assist you in your learning journey. Here are a few recommended articles and tutorials:`,
 
         "furtherlink1": "https://eloquentjavascript.net/",
@@ -234,7 +246,7 @@ export const myLibrary = [
         "id": 4,
         "date": "24 February 2023",
         "read": "12 mins read",
-        "tiles": "Mastering the Art of CSS",
+        "titles": "Mastering the Art of CSS",
 
         "content1Title": "Creating Stunning Web Designs",
         "content1": `In the dynamic world, where aesthetics play a pivotal role of web development in user engagement, CSS emerges as a 
@@ -291,7 +303,7 @@ export const myLibrary = [
                      captivate, engage, and leave a lasting impression.`,
 
         "futherTitle": "Further Reading and Resources",
-        "furthercontent6": `As you embark on your journey to master the art of CSS, there's a wealth of resources at your fingertips to 
+        "furthercontent": `As you embark on your journey to master the art of CSS, there's a wealth of resources at your fingertips to 
                             deepen your understanding and refine your skills. Here are some comprehensive articles, tutorials, and 
                             platforms curated to help you navigate the world of CSS:`,
 
@@ -315,7 +327,7 @@ export const myLibrary = [
         "id": 5,
         "date": "",
         "read": "5 mins read",
-        "tiles": "Revolutionizing Logistics",
+        "titles": "Revolutionizing Logistics",
 
         "content1Title": "The Journey of WexEx",
         "content1": `In the bustling city of Arcadia, where dreams took flight and ambitions soared high, a small logistics company 

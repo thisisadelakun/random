@@ -1,17 +1,22 @@
 import React from 'react'
 import './Library.css'
 
-// import dependencies
-import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-import { dark } from 'react-syntax-highlighter/dist/esm/styles/prism';
+// import models
+import { myLibrary, newIcons, libraryPage } from '../../models/db/db2';
+import LibraryTiles from '../../models/libararyfolder/LibraryTiles';
+
+// import dependencies;
+
 
 const Library = () => {
     return (
         <div className='library-col'>
-            <div className="library">
-                
-                <SyntaxHighlighter language="html" style={dark}>
-                </SyntaxHighlighter>
+            <div className="library-page containers">
+                <div className="lib-page-header">
+                    <h1>{libraryPage.title}</h1>
+                    <p>{libraryPage.subTitle}</p>
+                </div>
+                <LibraryTiles />
             </div>
         </div>
     )

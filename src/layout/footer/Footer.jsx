@@ -76,9 +76,9 @@ const Footer = () => {
                             )}
                         </li>
                         <li className="nav-item nav-item-border">
-                            {location.pathname !== '/my-blog' && (
+                            {location.pathname !== '/library/' && (
                                 <Link
-                                    to="/my-blog"
+                                    to="/library/"
                                     className="nav-link"
                                     onClick={() => closeMenu()}
                                     exact="true"

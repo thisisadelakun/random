@@ -274,8 +274,9 @@ body.theme-3 .border-image {
 }
 
 .details-col {
-    display: block;
+    display: flex;
     margin: 1rem auto;
+    width: 90% !important;
 }
 
 .page-main-2 {
@@ -295,6 +296,12 @@ body.theme-2 .page-main-2 {
 
 body.theme-3 .page-main-2 {
     background-color: var(--color22);
+}
+
+.page-about {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
 }
 
 .page-about-text {
@@ -339,6 +346,7 @@ body.theme-2 .page-about-text h4 {
     flex-direction: column !important;
     align-items: center;
     justify-content: center;
+
 }
 
 .about-img-col {
