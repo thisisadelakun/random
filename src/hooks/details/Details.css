@@ -5,11 +5,9 @@
 }
 
 .details-text p {
-    font-size: 15px;
-    color: var(--color1);
-    width: 90%;
+    color: var(--color12) !important;
+    width: 95%;
     text-align: left;
-    font-family: 'Roboto Serif', serif;
 }
 
 .detail-space1 {
@@ -43,9 +41,5 @@
         grid-template-columns: 1fr 1fr;
         margin: 1rem 0;
         gap: 3rem;
-    }
-
-    .details-text p {
-        width: 100%;
     }
 }

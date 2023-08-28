@@ -30,7 +30,7 @@ const LibraryTiles = ({ numCards }) => {
                     <NavLink className="library-navlink" to={`/library/${generateSlug('library-' + item.titles)}`} style={{ textDecoration: "none" }}>
                         <small className='post-date'>{item.date}</small>
                         <h3 className='post-title'>{item.titles}</h3>
-                        <p id='tiles-p' className='content1'>{truncateText(item.content1, 450)}...</p>
+                        <p id='tiles-p' className='content1'>{truncateText(item.content1, 300)}...</p>
                     </NavLink>
                 </div>
             ))}

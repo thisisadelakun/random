@@ -22,7 +22,7 @@ body.theme-3 .show-background {
 }
 
 .offcanvasbgr {
-    background: linear-gradient(to right, var(--color22), var(--color2)) !important;
+    background-color: var(--color2)!important;
 }
 
 .canvas-body {

@@ -89,6 +89,13 @@ h4 {
   font-family: 'Caprasimo', cursive;
 }
 
+p {
+  font-size: 16px !important;
+  line-height: 1.5 !important;
+  font-family: 'Roboto Serif', serif !important;
+  font-weight: 400px;
+}
+
 button {
   border-radius: 8px;
   border: none;
@@ -159,10 +166,6 @@ button:focus-visible {
 .card-icon-tw,
 .card-icon-in {
   color: #0A66C2 !important;
-}
-
-.nav-link-socios2 a {
-  color: var(--color1) !important;
 }
 
 .scroll-div {
@@ -278,7 +281,8 @@ body.theme-3 .my-btn-text-2 {
 }
 
 .device-time p {
-  font-size: 14px;
+  font-size: 13px !important;
+  color: #00000081;
 }
 
 @keyframes slideInArrow {

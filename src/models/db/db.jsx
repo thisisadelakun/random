@@ -104,9 +104,6 @@ export const icons2 = {
     like: <AiFillHeart className="svg2" title='love' />,
     adwn: <TiArrowDownOutline className="arrow-scroll-dw2" />,
     cdpen: <FaCodepen />,
-    theme1: <TbSquareRoundedFilled className="theme-12" />,
-    theme2: <TbSquareRoundedFilled className="theme-22" />,
-    theme3: <TbSquareRoundedFilled className="theme-33" />,
 }
 
 export const projects = [

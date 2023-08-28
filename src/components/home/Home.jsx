@@ -202,8 +202,8 @@ const Home = () => {
                     </div>
 
                     <div className="more-btn">
-                        <NavLink to="/library" className="my-button-2">
-                            <span className='my-btn-text-2'> SEE MORE</span> {icons.argt}
+                        <NavLink to="/library" className="my-button">
+                            <span className='my-btn-text'> SEE MORE</span> {icons.argt}
                         </NavLink>
                     </div>
                 </div>
