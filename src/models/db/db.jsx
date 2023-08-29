@@ -51,6 +51,10 @@ export const authorDetails = {
                      prose, I weave content that leaves an indelible mark.`,
 }
 
+export const authorAboutContent = {
+    "title": "About Me",
+    "subTitle": `"Life is not about finding yourself, it's about creating yourself." - George Bernard Shaw`,
+}
 export const authorAbout = {
     About1Content: `As a versatile developer, driven by creativity, analytical thinking, and an insatiable curiosity. Focused on 
                     creating interactive digital experiences on the web. My work resides at the crossroads of design and technology, 

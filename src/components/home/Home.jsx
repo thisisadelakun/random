@@ -4,6 +4,7 @@ import './Home.css'
 // import 
 import SEO from '../../models/seo/SEO';
 import { authorInfo, authorAbout, icons, workContent, libraryContent } from '../../models/db/db';
+import { myLibrary } from '../../models/db/db2';
 import CardComponent from '../../models/card/Card';
 
 // import hooks
@@ -20,6 +21,8 @@ import LibraryTiles from '../../models/libararyfolder/LibraryTiles';
 
 const Home = () => {
     const [isScrollVisible, setIsScrollVisible] = useState(false);
+
+    const displayedLibrary = myLibrary.slice(0, 2);
 
     useEffect(() => {
         const scrollTimeout = setTimeout(() => {
@@ -158,7 +161,7 @@ const Home = () => {
                         </p>
 
                         <div className="desktop-view-only more-btn">
-                            <NavLink to="/meet-me" className="my-button">
+                            <NavLink to="/about-me" className="my-button">
                                 <span className='my-btn-text'> READ MORE</span> {icons.argt}
                             </NavLink>
                         </div>
@@ -198,7 +201,7 @@ const Home = () => {
                     <h1 className=''>{libraryContent.homeTitle}</h1>
                     <p className=''>{libraryContent.homeSubtitle}</p>
                     <div className="library_row container">
-                        <LibraryTiles numCards={2} />
+                        <LibraryTiles displayedLibrary={displayedLibrary} />
                     </div>
 
                     <div className="more-btn">

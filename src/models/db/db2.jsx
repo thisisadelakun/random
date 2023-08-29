@@ -15,7 +15,7 @@ export const newIcons = {
 export const myLibrary = [
 
     {
-        "id": 1,
+        "id": 0,
         "date": "30 March 2023",
         "read": "8 mins read",
         "titles": "Power of Web Development",
@@ -85,7 +85,7 @@ export const myLibrary = [
 
 
     {
-        "id": 2,
+        "id": 1,
         "date": "12 January 2023",
         "read": "5 min read",
         "titles": "HTML Essentials",
@@ -163,7 +163,7 @@ export const myLibrary = [
     },
 
     {
-        "id": 3,
+        "id": 2,
         "date": "13 February 2023",
         "read": "10 mins read",
         "titles": "The Dynamic World of JavaScript",
@@ -243,7 +243,7 @@ $('.button').on('click', function() {
     },
 
     {
-        "id": 4,
+        "id": 3,
         "date": "24 February 2023",
         "read": "12 mins read",
         "titles": "Mastering the Art of CSS",
@@ -324,6 +324,41 @@ $('.button').on('click', function() {
     },
 
     {
+        "id": 4,
+        "date": "",
+        "read": "5 mins read",
+        "titles": "Revolutionizing Logistics",
+
+        "content1Title": "The Journey of WexEx",
+        "content1": `In the bustling city of Arcadia, where dreams took flight and ambitions soared high, a small logistics company 
+                     emerged from the depths of determination and innovation. Founded in 2006, WexEx, a name that would soon echo through 
+                     the corridors of success, embarked on a journey that would redefine the world of logistics.`,
+
+        "content2": `In the early days, WexEx faced challenges that seemed insurmountable. With a limited budget and a handful of 
+                     passionate minds, they navigated the intricate web of deliveries and shipments. Arcadia's vibrant streets witnessed 
+                     their tireless efforts as they hopped from one client to another, building trust brick by brick. The city's cobbled 
+                     pathways became the foundation of WexEx's unwavering commitment to reliability.`,
+
+        "content3": `Amidst the chaotic urban rhythm, WexEx realized the power of technology. With each passing year, they harnessed the 
+                     potential of innovation, meticulously plotting their route towards growth. Yet, it wasn't until 2012 that a turning 
+                     point arrived - the birth of their website. Like a phoenix rising from the ashes, the WexEx website emerged, a 
+                     digital beacon of their dedication to simplifying logistics for businesses and individuals alike.`,
+
+        "content4": `As word spread about the seamless experience WexEx offered, the city's dynamic entrepreneurs, from tech startups to 
+                     fashion houses, found an ally in WexEx. The company's commitment to punctuality and safety became synonymous with 
+                     Arcadia's thriving business culture. With a few clicks, a designer in Arcadia could ship their creations to a 
+                     boutique in Paris, all thanks to WexEx's website.`,
+
+        "content5": `In the present day, WexEx stands tall as a logistics powerhouse, with Arcadia's vibrancy echoing in its digital 
+                     corridors. The story of their struggle and triumph remains etched in their journey, a testament to the power of 
+                     resilience, innovation, and the transformational impact of the digital age. As Arcadia's sun sets on the horizon, 
+                     the city rests in the knowledge that WexEx's legacy of excellence will continue to shape the future of logistics, 
+                     one package at a time.`,
+
+        "tag1": "business",
+        "tag2": "story",
+    },
+    {
         "id": 5,
         "date": "",
         "read": "5 mins read",
@@ -358,5 +393,217 @@ $('.button').on('click', function() {
         "tag1": "business",
         "tag2": "story",
     },
+    {
+        "id": 6,
+        "date": "",
+        "read": "5 mins read",
+        "titles": "Revolutionizing Logistics",
+
+        "content1Title": "The Journey of WexEx",
+        "content1": `In the bustling city of Arcadia, where dreams took flight and ambitions soared high, a small logistics company 
+                     emerged from the depths of determination and innovation. Founded in 2006, WexEx, a name that would soon echo through 
+                     the corridors of success, embarked on a journey that would redefine the world of logistics.`,
+
+        "content2": `In the early days, WexEx faced challenges that seemed insurmountable. With a limited budget and a handful of 
+                     passionate minds, they navigated the intricate web of deliveries and shipments. Arcadia's vibrant streets witnessed 
+                     their tireless efforts as they hopped from one client to another, building trust brick by brick. The city's cobbled 
+                     pathways became the foundation of WexEx's unwavering commitment to reliability.`,
+
+        "content3": `Amidst the chaotic urban rhythm, WexEx realized the power of technology. With each passing year, they harnessed the 
+                     potential of innovation, meticulously plotting their route towards growth. Yet, it wasn't until 2012 that a turning 
+                     point arrived - the birth of their website. Like a phoenix rising from the ashes, the WexEx website emerged, a 
+                     digital beacon of their dedication to simplifying logistics for businesses and individuals alike.`,
+
+        "content4": `As word spread about the seamless experience WexEx offered, the city's dynamic entrepreneurs, from tech startups to 
+                     fashion houses, found an ally in WexEx. The company's commitment to punctuality and safety became synonymous with 
+                     Arcadia's thriving business culture. With a few clicks, a designer in Arcadia could ship their creations to a 
+                     boutique in Paris, all thanks to WexEx's website.`,
+
+        "content5": `In the present day, WexEx stands tall as a logistics powerhouse, with Arcadia's vibrancy echoing in its digital 
+                     corridors. The story of their struggle and triumph remains etched in their journey, a testament to the power of 
+                     resilience, innovation, and the transformational impact of the digital age. As Arcadia's sun sets on the horizon, 
+                     the city rests in the knowledge that WexEx's legacy of excellence will continue to shape the future of logistics, 
+                     one package at a time.`,
+
+        "tag1": "business",
+        "tag2": "story",
+    },
+    {
+        "id": 7,
+        "date": "",
+        "read": "5 mins read",
+        "titles": "Revolutionizing Logistics",
+
+        "content1Title": "The Journey of WexEx",
+        "content1": `In the bustling city of Arcadia, where dreams took flight and ambitions soared high, a small logistics company 
+                     emerged from the depths of determination and innovation. Founded in 2006, WexEx, a name that would soon echo through 
+                     the corridors of success, embarked on a journey that would redefine the world of logistics.`,
+
+        "content2": `In the early days, WexEx faced challenges that seemed insurmountable. With a limited budget and a handful of 
+                     passionate minds, they navigated the intricate web of deliveries and shipments. Arcadia's vibrant streets witnessed 
+                     their tireless efforts as they hopped from one client to another, building trust brick by brick. The city's cobbled 
+                     pathways became the foundation of WexEx's unwavering commitment to reliability.`,
+
+        "content3": `Amidst the chaotic urban rhythm, WexEx realized the power of technology. With each passing year, they harnessed the 
+                     potential of innovation, meticulously plotting their route towards growth. Yet, it wasn't until 2012 that a turning 
+                     point arrived - the birth of their website. Like a phoenix rising from the ashes, the WexEx website emerged, a 
+                     digital beacon of their dedication to simplifying logistics for businesses and individuals alike.`,
+
+        "content4": `As word spread about the seamless experience WexEx offered, the city's dynamic entrepreneurs, from tech startups to 
+                     fashion houses, found an ally in WexEx. The company's commitment to punctuality and safety became synonymous with 
+                     Arcadia's thriving business culture. With a few clicks, a designer in Arcadia could ship their creations to a 
+                     boutique in Paris, all thanks to WexEx's website.`,
+
+        "content5": `In the present day, WexEx stands tall as a logistics powerhouse, with Arcadia's vibrancy echoing in its digital 
+                     corridors. The story of their struggle and triumph remains etched in their journey, a testament to the power of 
+                     resilience, innovation, and the transformational impact of the digital age. As Arcadia's sun sets on the horizon, 
+                     the city rests in the knowledge that WexEx's legacy of excellence will continue to shape the future of logistics, 
+                     one package at a time.`,
+
+        "tag1": "business",
+        "tag2": "story",
+    },
+
+    {
+        "id": 8,
+        "date": "",
+        "read": "5 mins read",
+        "titles": "Revolutionizing Logistics",
+
+        "content1Title": "The Journey of WexEx",
+        "content1": `In the bustling city of Arcadia, where dreams took flight and ambitions soared high, a small logistics company 
+                     emerged from the depths of determination and innovation. Founded in 2006, WexEx, a name that would soon echo through 
+                     the corridors of success, embarked on a journey that would redefine the world of logistics.`,
+
+        "content2": `In the early days, WexEx faced challenges that seemed insurmountable. With a limited budget and a handful of 
+                     passionate minds, they navigated the intricate web of deliveries and shipments. Arcadia's vibrant streets witnessed 
+                     their tireless efforts as they hopped from one client to another, building trust brick by brick. The city's cobbled 
+                     pathways became the foundation of WexEx's unwavering commitment to reliability.`,
+
+        "content3": `Amidst the chaotic urban rhythm, WexEx realized the power of technology. With each passing year, they harnessed the 
+                     potential of innovation, meticulously plotting their route towards growth. Yet, it wasn't until 2012 that a turning 
+                     point arrived - the birth of their website. Like a phoenix rising from the ashes, the WexEx website emerged, a 
+                     digital beacon of their dedication to simplifying logistics for businesses and individuals alike.`,
+
+        "content4": `As word spread about the seamless experience WexEx offered, the city's dynamic entrepreneurs, from tech startups to 
+                     fashion houses, found an ally in WexEx. The company's commitment to punctuality and safety became synonymous with 
+                     Arcadia's thriving business culture. With a few clicks, a designer in Arcadia could ship their creations to a 
+                     boutique in Paris, all thanks to WexEx's website.`,
+
+        "content5": `In the present day, WexEx stands tall as a logistics powerhouse, with Arcadia's vibrancy echoing in its digital 
+                     corridors. The story of their struggle and triumph remains etched in their journey, a testament to the power of 
+                     resilience, innovation, and the transformational impact of the digital age. As Arcadia's sun sets on the horizon, 
+                     the city rests in the knowledge that WexEx's legacy of excellence will continue to shape the future of logistics, 
+                     one package at a time.`,
+
+        "tag1": "business",
+        "tag2": "story",
+    },
+    {
+        "id": 9,
+        "date": "",
+        "read": "5 mins read",
+        "titles": "Logistics",
+
+        "content1Title": "The Journey of WexEx",
+        "content1": `In the bustling city of Arcadia, where dreams took flight and ambitions soared high, a small logistics company 
+                     emerged from the depths of determination and innovation. Founded in 2006, WexEx, a name that would soon echo through 
+                     the corridors of success, embarked on a journey that would redefine the world of logistics.`,
+
+        "content2": `In the early days, WexEx faced challenges that seemed insurmountable. With a limited budget and a handful of 
+                     passionate minds, they navigated the intricate web of deliveries and shipments. Arcadia's vibrant streets witnessed 
+                     their tireless efforts as they hopped from one client to another, building trust brick by brick. The city's cobbled 
+                     pathways became the foundation of WexEx's unwavering commitment to reliability.`,
+
+        "content3": `Amidst the chaotic urban rhythm, WexEx realized the power of technology. With each passing year, they harnessed the 
+                     potential of innovation, meticulously plotting their route towards growth. Yet, it wasn't until 2012 that a turning 
+                     point arrived - the birth of their website. Like a phoenix rising from the ashes, the WexEx website emerged, a 
+                     digital beacon of their dedication to simplifying logistics for businesses and individuals alike.`,
+
+        "content4": `As word spread about the seamless experience WexEx offered, the city's dynamic entrepreneurs, from tech startups to 
+                     fashion houses, found an ally in WexEx. The company's commitment to punctuality and safety became synonymous with 
+                     Arcadia's thriving business culture. With a few clicks, a designer in Arcadia could ship their creations to a 
+                     boutique in Paris, all thanks to WexEx's website.`,
+
+        "content5": `In the present day, WexEx stands tall as a logistics powerhouse, with Arcadia's vibrancy echoing in its digital 
+                     corridors. The story of their struggle and triumph remains etched in their journey, a testament to the power of 
+                     resilience, innovation, and the transformational impact of the digital age. As Arcadia's sun sets on the horizon, 
+                     the city rests in the knowledge that WexEx's legacy of excellence will continue to shape the future of logistics, 
+                     one package at a time.`,
+
+        "tag1": "business",
+        "tag2": "story",
+    },
+    {
+        "id": 10,
+        "date": "",
+        "read": "5 mins read",
+        "titles": "Revolutionizing",
+
+        "content1Title": "The Journey of WexEx",
+        "content1": `In the bustling city of Arcadia, where dreams took flight and ambitions soared high, a small logistics company 
+                     emerged from the depths of determination and innovation. Founded in 2006, WexEx, a name that would soon echo through 
+                     the corridors of success, embarked on a journey that would redefine the world of logistics.`,
+
+        "content2": `In the early days, WexEx faced challenges that seemed insurmountable. With a limited budget and a handful of 
+                     passionate minds, they navigated the intricate web of deliveries and shipments. Arcadia's vibrant streets witnessed 
+                     their tireless efforts as they hopped from one client to another, building trust brick by brick. The city's cobbled 
+                     pathways became the foundation of WexEx's unwavering commitment to reliability.`,
+
+        "content3": `Amidst the chaotic urban rhythm, WexEx realized the power of technology. With each passing year, they harnessed the 
+                     potential of innovation, meticulously plotting their route towards growth. Yet, it wasn't until 2012 that a turning 
+                     point arrived - the birth of their website. Like a phoenix rising from the ashes, the WexEx website emerged, a 
+                     digital beacon of their dedication to simplifying logistics for businesses and individuals alike.`,
+
+        "content4": `As word spread about the seamless experience WexEx offered, the city's dynamic entrepreneurs, from tech startups to 
+                     fashion houses, found an ally in WexEx. The company's commitment to punctuality and safety became synonymous with 
+                     Arcadia's thriving business culture. With a few clicks, a designer in Arcadia could ship their creations to a 
+                     boutique in Paris, all thanks to WexEx's website.`,
+
+        "content5": `In the present day, WexEx stands tall as a logistics powerhouse, with Arcadia's vibrancy echoing in its digital 
+                     corridors. The story of their struggle and triumph remains etched in their journey, a testament to the power of 
+                     resilience, innovation, and the transformational impact of the digital age. As Arcadia's sun sets on the horizon, 
+                     the city rests in the knowledge that WexEx's legacy of excellence will continue to shape the future of logistics, 
+                     one package at a time.`,
+
+        "tag1": "business",
+        "tag2": "story",
+    },
+
+    {
+        "id": 11,
+        "date": "",
+        "read": "5 mins read",
+        "titles": "DERT Logistics",
+
+        "content1Title": "The Journey of WexEx",
+        "content1": `In the bustling city of Arcadia, where dreams took flight and ambitions soared high, a small logistics company 
+                     emerged from the depths of determination and innovation. Founded in 2006, WexEx, a name that would soon echo through 
+                     the corridors of success, embarked on a journey that would redefine the world of logistics.`,
+
+        "content2": `In the early days, WexEx faced challenges that seemed insurmountable. With a limited budget and a handful of 
+                     passionate minds, they navigated the intricate web of deliveries and shipments. Arcadia's vibrant streets witnessed 
+                     their tireless efforts as they hopped from one client to another, building trust brick by brick. The city's cobbled 
+                     pathways became the foundation of WexEx's unwavering commitment to reliability.`,
+
+        "content3": `Amidst the chaotic urban rhythm, WexEx realized the power of technology. With each passing year, they harnessed the 
+                     potential of innovation, meticulously plotting their route towards growth. Yet, it wasn't until 2012 that a turning 
+                     point arrived - the birth of their website. Like a phoenix rising from the ashes, the WexEx website emerged, a 
+                     digital beacon of their dedication to simplifying logistics for businesses and individuals alike.`,
+
+        "content4": `As word spread about the seamless experience WexEx offered, the city's dynamic entrepreneurs, from tech startups to 
+                     fashion houses, found an ally in WexEx. The company's commitment to punctuality and safety became synonymous with 
+                     Arcadia's thriving business culture. With a few clicks, a designer in Arcadia could ship their creations to a 
+                     boutique in Paris, all thanks to WexEx's website.`,
+
+        "content5": `In the present day, WexEx stands tall as a logistics powerhouse, with Arcadia's vibrancy echoing in its digital 
+                     corridors. The story of their struggle and triumph remains etched in their journey, a testament to the power of 
+                     resilience, innovation, and the transformational impact of the digital age. As Arcadia's sun sets on the horizon, 
+                     the city rests in the knowledge that WexEx's legacy of excellence will continue to shape the future of logistics, 
+                     one package at a time.`,
+
+        "tag1": "business",
+        "tag2": "story",
+    }
 
 ]

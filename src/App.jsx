@@ -13,25 +13,29 @@ import Theme from './models/theme/Theme';
 // import pages
 import Layout from './layout/Layout';
 import Library from './components/library/Library';
+import About from './components/about/About';
+
 const LibraryDetail = lazy(() => import('./components/library/LibraryDetails'))
 const Home = lazy(() => import('./components/home/Home'))
+
+
+function ScrollToTopOnPageChange() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'auto',
+    });
+  }, [pathname]);
+
+  return null;
+}
+
 
 function App() {
   const queryClient = new QueryClient();
   const [isLoading, setIsLoading] = useState(true);
-
-  const ScrollToTop = () => {
-    const { pathname } = useLocation();
-
-    useEffect(() => {
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth',
-      });
-    }, [pathname]);
-
-    return null;
-  };
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -70,6 +74,15 @@ function App() {
           )}
         />
 
+        <Route
+          path="/about-me"
+          element={(
+            <React.Suspense fallback={<SlowLoader />}>
+              <About />
+            </React.Suspense>
+          )}
+        />
+
       </Routes>
     );
   };
@@ -84,7 +97,7 @@ function App() {
             ) : (
               <Layout>
                 <Theme />
-                <ScrollToTop />
+                <ScrollToTopOnPageChange />
                 <Suspense fallback={<PageLoader />}>
                   {handleRoutes()}
                 </Suspense>

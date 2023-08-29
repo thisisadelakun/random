@@ -1,7 +1,7 @@
 .library-col,
 .library-detail {
     width: 100%;
-    height: 100%;
+    min-height: 200vh !important;
     padding: 6rem 0;
     background: linear-gradient(to right, var(--color22), var(--color2));
     font-family: 'Roboto Serif', serif;
@@ -93,6 +93,7 @@ div.further-col ol li {
     margin: 1.5rem 0;
     list-style-type: disc !important;
     list-style-position: outside;
+    overflow-x: visible !important;
 }
 
 .further-col li a {
@@ -105,6 +106,10 @@ div.further-col ol li {
     color: var(--color31);
 }
 
+.details-prgh {
+    margin-top: 1.5rem;
+}
+
 /* newicons */
 .newicons {
     color: var(--color1);
@@ -112,12 +117,14 @@ div.further-col ol li {
 }
 
 .library-buttons {
+    width: 100%;
     margin: 3rem auto;
     display: flex;
     flex-direction: row !important;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
+
 
 .library-buttons button {
     display: flex;
@@ -143,6 +150,33 @@ div.further-col ol li {
     animation: slideInArrow 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     color: var(--color1);
     background-color: transparent;
+}
+
+.pagination {
+    width: 100%;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+}
+
+.subscribe{
+    width: 100%;
+    margin: auto;
+    margin-top: 5rem !important;
+    padding: 1.5rem !important;
+}
+
+body.theme-1 .subscribe{
+    background-color: var(--color4);
+    color: var(--color1);
+}
+body.theme-2 .subscribe{
+    background-color: var(--color6);
+    color: var(--color31);
+}
+body.theme-3 .subscribe{
+    background-color: var(--color2);
+    color: var(--color1);
 }
 
 @keyframes slideInArrow {
@@ -194,5 +228,12 @@ div.further-col ol li {
 
     .codeSnippetContainer {
         margin: 2rem auto;
+    }
+
+    .subscribe{
+        width: 70%;
+        margin: auto !important;
+        margin-top: 8rem !important;
+        padding: 3rem !important;
     }
 }
