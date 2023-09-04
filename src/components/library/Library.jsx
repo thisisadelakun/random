@@ -4,13 +4,12 @@ import './Library.css'
 // import models
 import { libraryPage, myLibrary } from '../../models/db/db2';
 import LibraryTiles from '../../models/libararyfolder/LibraryTiles';
+import SEO from '../../models/seo/SEO';
 
 const ITEMS_PER_PAGE = 10;
 
-
 const Library = () => {
     const [currentPage, setCurrentPage] = useState(1);
-
     const totalPages = Math.ceil(myLibrary.length / ITEMS_PER_PAGE);
 
 
@@ -46,6 +45,12 @@ const Library = () => {
 
     return (
         <div className='library-col'>
+            <SEO
+                title="Blog | Adelakun's Portfolio"
+                description="Portfolio's Blog Page"
+                name="Web Developer Portfolio"
+                type='Portfolio'
+            />
             <div className="library-page containers">
                 <div className="lib-page-header">
                     <h1>{libraryPage.title}</h1>
@@ -59,5 +64,4 @@ const Library = () => {
         </div>
     );
 }
-
 export default Library;

@@ -19,6 +19,7 @@ export const myLibrary = [
         "date": "30 March 2023",
         "read": "8 mins read",
         "titles": "Power of Web Development",
+        "tags": ["web development", "business"],
 
         "content1Title": "Crafting Digital Experiences",
         "content1": `In today's digital age, web development stands as the cornerstone of our online interactions. It's not just about 
@@ -78,9 +79,6 @@ export const myLibrary = [
                      pushing the boundaries of what's possible. So, whether you're a business owner, a tech enthusiast, or a curious 
                      explorer of the online realm, understanding the power of web development is key to embracing the future of digital 
                      experiences.`,
-
-        "tag1": "web",
-        "tag2": "business",
     },
 
 
@@ -89,6 +87,7 @@ export const myLibrary = [
         "date": "12 January 2023",
         "read": "5 min read",
         "titles": "HTML Essentials",
+        "tags": ["web development", "HTML"],
 
         "content1Title": "Building the Foundation of the Web",
         "content1": `In the vast realm of web development, HTML stands as the cornerstone - the language that underpins every website you 
@@ -167,6 +166,7 @@ export const myLibrary = [
         "date": "13 February 2023",
         "read": "10 mins read",
         "titles": "The Dynamic World of JavaScript",
+        "tags": ["web development", "javascript"],
 
         "content1Title": "Basic Techniques",
         "content1": `JavaScript, often abbreviated as JS, is a versatile and dynamic programming language that has revolutionized web 
@@ -247,6 +247,7 @@ $('.button').on('click', function() {
         "date": "24 February 2023",
         "read": "12 mins read",
         "titles": "Mastering the Art of CSS",
+        "tags": ["web development", "css"],
 
         "content1Title": "Creating Stunning Web Designs",
         "content1": `In the dynamic world, where aesthetics play a pivotal role of web development in user engagement, CSS emerges as a 
@@ -328,6 +329,7 @@ $('.button').on('click', function() {
         "date": "",
         "read": "5 mins read",
         "titles": "Revolutionizing Logistics",
+        tags: ["story", "business"],
 
         "content1Title": "The Journey of WexEx",
         "content1": `In the bustling city of Arcadia, where dreams took flight and ambitions soared high, a small logistics company 
@@ -354,10 +356,8 @@ $('.button').on('click', function() {
                      resilience, innovation, and the transformational impact of the digital age. As Arcadia's sun sets on the horizon, 
                      the city rests in the knowledge that WexEx's legacy of excellence will continue to shape the future of logistics, 
                      one package at a time.`,
-
-        "tag1": "business",
-        "tag2": "story",
     },
+
     {
         "id": 5,
         "date": "",
@@ -389,10 +389,8 @@ $('.button').on('click', function() {
                      resilience, innovation, and the transformational impact of the digital age. As Arcadia's sun sets on the horizon, 
                      the city rests in the knowledge that WexEx's legacy of excellence will continue to shape the future of logistics, 
                      one package at a time.`,
-
-        "tag1": "business",
-        "tag2": "story",
     },
+
     {
         "id": 6,
         "date": "",
@@ -424,10 +422,8 @@ $('.button').on('click', function() {
                      resilience, innovation, and the transformational impact of the digital age. As Arcadia's sun sets on the horizon, 
                      the city rests in the knowledge that WexEx's legacy of excellence will continue to shape the future of logistics, 
                      one package at a time.`,
-
-        "tag1": "business",
-        "tag2": "story",
     },
+
     {
         "id": 7,
         "date": "",
@@ -459,9 +455,6 @@ $('.button').on('click', function() {
                      resilience, innovation, and the transformational impact of the digital age. As Arcadia's sun sets on the horizon, 
                      the city rests in the knowledge that WexEx's legacy of excellence will continue to shape the future of logistics, 
                      one package at a time.`,
-
-        "tag1": "business",
-        "tag2": "story",
     },
 
     {
@@ -495,10 +488,8 @@ $('.button').on('click', function() {
                      resilience, innovation, and the transformational impact of the digital age. As Arcadia's sun sets on the horizon, 
                      the city rests in the knowledge that WexEx's legacy of excellence will continue to shape the future of logistics, 
                      one package at a time.`,
-
-        "tag1": "business",
-        "tag2": "story",
     },
+
     {
         "id": 9,
         "date": "",
@@ -530,10 +521,8 @@ $('.button').on('click', function() {
                      resilience, innovation, and the transformational impact of the digital age. As Arcadia's sun sets on the horizon, 
                      the city rests in the knowledge that WexEx's legacy of excellence will continue to shape the future of logistics, 
                      one package at a time.`,
-
-        "tag1": "business",
-        "tag2": "story",
     },
+
     {
         "id": 10,
         "date": "",
@@ -565,9 +554,6 @@ $('.button').on('click', function() {
                      resilience, innovation, and the transformational impact of the digital age. As Arcadia's sun sets on the horizon, 
                      the city rests in the knowledge that WexEx's legacy of excellence will continue to shape the future of logistics, 
                      one package at a time.`,
-
-        "tag1": "business",
-        "tag2": "story",
     },
 
     {
@@ -601,9 +587,6 @@ $('.button').on('click', function() {
                      resilience, innovation, and the transformational impact of the digital age. As Arcadia's sun sets on the horizon, 
                      the city rests in the knowledge that WexEx's legacy of excellence will continue to shape the future of logistics, 
                      one package at a time.`,
-
-        "tag1": "business",
-        "tag2": "story",
-    }
+    },
 
 ]

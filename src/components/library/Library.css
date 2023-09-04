@@ -1,4 +1,5 @@
 .library-col,
+.filtered-library-col,
 .library-detail {
     width: 100%;
     min-height: 200vh !important;
@@ -7,6 +8,7 @@
     font-family: 'Roboto Serif', serif;
 }
 
+.filtered-library h1,
 .lib-page-header h1 {
     font-size: 2.3em;
     padding-bottom: 1.5rem;
@@ -25,6 +27,7 @@
     margin: 1rem auto;
 }
 
+.filtered-library,
 .library-page,
 .library {
     margin: 4rem auto;
@@ -66,8 +69,6 @@
 }
 
 .post-body p {
-    font-size: 17px;
-    line-height: 1.6;
     color: var(--color32) !important;
 }
 
@@ -92,8 +93,8 @@ div.further-col ol li {
     font-size: 17px;
     margin: 1.5rem 0;
     list-style-type: disc !important;
-    list-style-position: outside;
     overflow-x: visible !important;
+    color: var(--color1);
 }
 
 .further-col li a {
@@ -159,22 +160,24 @@ div.further-col ol li {
     justify-content: center;
 }
 
-.subscribe{
+.subscribe {
     width: 100%;
     margin: auto;
     margin-top: 5rem !important;
     padding: 1.5rem !important;
 }
 
-body.theme-1 .subscribe{
+body.theme-1 .subscribe {
     background-color: var(--color4);
     color: var(--color1);
 }
-body.theme-2 .subscribe{
+
+body.theme-2 .subscribe {
     background-color: var(--color6);
     color: var(--color31);
 }
-body.theme-3 .subscribe{
+
+body.theme-3 .subscribe {
     background-color: var(--color2);
     color: var(--color1);
 }
@@ -230,7 +233,7 @@ body.theme-3 .subscribe{
         margin: 2rem auto;
     }
 
-    .subscribe{
+    .subscribe {
         width: 70%;
         margin: auto !important;
         margin-top: 8rem !important;

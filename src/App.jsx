@@ -12,12 +12,12 @@ import Theme from './models/theme/Theme';
 
 // import pages
 import Layout from './layout/Layout';
-import Library from './components/library/Library';
-import About from './components/about/About';
 
+const About = lazy(() => import('./components/about/About'))
+const Library = lazy(() => import('./components/library/Library'))
+const FilteredLibrary = lazy(() => import('./components/library/FilteredLibrary'))
 const LibraryDetail = lazy(() => import('./components/library/LibraryDetails'))
 const Home = lazy(() => import('./components/home/Home'))
-
 
 function ScrollToTopOnPageChange() {
   const { pathname } = useLocation();
@@ -32,7 +32,6 @@ function ScrollToTopOnPageChange() {
   return null;
 }
 
-
 function App() {
   const queryClient = new QueryClient();
   const [isLoading, setIsLoading] = useState(true);
@@ -46,16 +45,17 @@ function App() {
   }, []);
 
   const handleRoutes = () => {
-
     return (
       <Routes>
         <Route
-          path='/' exact index element={(
+          path='/' exact
+          element={(
             <React.Suspense fallback={<SlowLoader />}>
               <Home />
             </React.Suspense>
           )}
         />
+
         <Route
           path="/library/:slug"
           element={(
@@ -75,6 +75,15 @@ function App() {
         />
 
         <Route
+          path="/filtered-library"
+          element={(
+            <React.Suspense fallback={<SlowLoader />}>
+              <FilteredLibrary />
+            </React.Suspense>
+          )}
+        />
+
+        <Route
           path="/about-me"
           element={(
             <React.Suspense fallback={<SlowLoader />}>
@@ -82,32 +91,29 @@ function App() {
             </React.Suspense>
           )}
         />
-
       </Routes>
     );
   };
 
   return (
-    <>
-      <HelmetProvider>
-        <QueryClientProvider client={queryClient}>
-          <BrowserRouter>
-            {isLoading ? (
-              <PageLoader />
-            ) : (
-              <Layout>
-                <Theme />
-                <ScrollToTopOnPageChange />
-                <Suspense fallback={<PageLoader />}>
-                  {handleRoutes()}
-                </Suspense>
-              </Layout>
-            )}
-          </BrowserRouter>
-        </QueryClientProvider>
-      </HelmetProvider>
-    </>
-  )
+    <HelmetProvider>
+      <QueryClientProvider client={queryClient}>
+        <BrowserRouter>
+          <ScrollToTopOnPageChange />
+          {isLoading ? (
+            <PageLoader />
+          ) : (
+            <Layout>
+              <Theme />
+              <Suspense fallback={<PageLoader />}>
+                {handleRoutes()}
+              </Suspense>
+            </Layout>
+          )}
+        </BrowserRouter>
+      </QueryClientProvider>
+    </HelmetProvider>
+  );
 }
 
-export default App
+export default App;

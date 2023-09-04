@@ -119,7 +119,7 @@ body.theme-3 .top-text-col small {
 .bottom-text-span {
     font-size: 18px;
     color: var(--color2);
-    font-family: 'Caprasimo', cursive;
+    font-family: 'Roboto Serif', serif;
     line-height: 1.3;
     text-shadow: 1px 1px 5px 10px var(--color31) !important;
 }

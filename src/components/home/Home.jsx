@@ -38,9 +38,9 @@ const Home = () => {
         <div>
             <SEO
                 title="Home Page | Adelakun's Portfolio"
-                description='Portfolio Home page.'
-                name='Web Developer Portfolio'
-                type='Portfolio'
+                description="Portfolio's Home page."
+                name="Web Developer Portfolio"
+                type="Portfolio"
             />
 
             <div className="page-1">
@@ -80,7 +80,7 @@ const Home = () => {
 
                         <div className="page-1-right-col">
                             <div className="header-image">
-                                <div className="border-image"></div>
+                                {/* <div className="border-image"></div> */}
                                 <div className="header-img-col">
                                     <div className="header-card-col">
                                         <img src={authorInfo.profilepic} alt={authorInfo.lastName} width={224} height={240} />

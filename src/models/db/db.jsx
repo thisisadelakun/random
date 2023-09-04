@@ -345,3 +345,118 @@ export const libraryContent = {
     "homeSubtitle": "Contents about web development, design, trends and stories.",
 }
 
+export const mySkills = [
+    {
+        "id": 0,
+        "skillsTitle": "Frontend",
+        "skills1": "HTML",
+        "skills2": "CSS",
+        "skills3": "Bootstrap",
+        "skills4": "Javascript",
+        "skills5": "Typescript",
+        "skills5": "Angular",
+        "skills5": "Reactjs",
+    },
+
+    {
+        "id": 1,
+        "skillsTitle": "Backend",
+        "skills1": "Firebase",
+        "skills2": "Python",
+        "skills3": "Django",
+    },
+
+    {
+        "id": 2,
+        "skillsTitle": "Tools",
+        "skills1": "VSC",
+        "skills2": "Git",
+        "skills3": "Apache Cordova",
+        "skills4": "Vite",
+    },
+
+    {
+        "id": 3,
+        "skillsTitle": "Others",
+        "skills1": "Good team - working skills",
+        "skills2": "Analytical skills",
+        "skills3": "Content Writing",
+    }
+]
+
+export const myFaqContent = {
+    "title": "Frequently Asked Questions"
+}
+
+export const myFaq = [
+    {
+        "id": 0,
+        "faqTitle": "What is the difference between front-end and back-end development?",
+        "faq1": `Front-end development deals with the user interface and user experience of a website or application, focusing on what 
+                 users see and interact with in their browsers. `,
+        "faq2": `Back-end development manages server-side processes, databases, and server infrastructure, handling data storage, 
+                 retrieval, and business logic.`,
+        "faq3": `Front-end makes things look good and functional, while back-end makes them work and store data.`,
+    },
+
+    {
+        "id": 1,
+        "faqTitle": "What is web development?",
+        "faq1": `Web development is the process of creating and maintaining websites or web applications. It involves designing, coding, 
+                 and managing the technical aspects of websites to ensure they function correctly and provide a seamless user experience.`,
+    },
+
+    {
+        "id": 2,
+        "faqTitle": "What is the difference between a website and a web application?",
+        "faq1": `A website typically consists of static content and provides information or displays content to visitors `,
+        "faq2": `A web application, on the other hand, is interactive and allows users to perform specific tasks, often involving data 
+                 input, processing, and manipulation.`,
+        "faq3": `Web apps are more dynamic and user-driven compared to static websites.`
+    },
+
+    {
+        "id": 3,
+        "faqTitle": "What is the difference between front-end and back-end development?",
+        "faq1": `SEO (Search Engine Optimization) is the practice of optimizing your website's content and structure to rank higher in 
+                 search engine results, making it more visible to users `,
+        "faq2": `It's crucial for driving organic (unpaid) traffic to your site, improving its visibility, and attracting potential 
+                 customers or visitors.`,
+    },
+]
+
+export const myFaq2 = [
+    {
+        "id": 0,
+        "faqTitle": "Can you help me with a specific web development issue or project?",
+        "faq1": `I'd be delighted to assist you with your web development issue or project!`,
+        "faq2": `Please provide me with the details of your project or describe the specific issue you're facing, through my email, or 
+                 through contact page and I'll do my best to offer guidance, solutions, or code samples to help you achieve your goals. 
+                 Let's get started!`,
+    },
+
+    {
+        "id": 1,
+        "faqTitle": "What is responsive web design?",
+        "faq1": `Responsive web design is an approach to web development that ensures a website's layout and content adapt and look good 
+                 on various screen sizes and devices, from mobile phones to desktop computers.`,
+    },
+
+    {
+        "id": 2,
+        "faqTitle": "A domain name is the web address people use to find your website. ",
+        "faq1": `A website typically consists of static content and provides information or displays content to visitors.`,
+        "faq2": `Choose a domain that's easy to remember, relevant to your content or brand, and has a common domain extension like .com. 
+                 Check its availability and consider your target audience when selecting one.`,
+    },
+
+    {
+        "id": 3,
+        "faqTitle": "What is the cost of building a website?",
+        "faq1": `The cost of building a website can vary significantly depending on factors like complexity, features, design, and 
+                 the developer's rates.`,
+        "faq2": `Simple websites may cost a few hundred dollars, while complex ones with custom features can range from several thousand 
+                 to tens of thousands of dollars.`,
+    },
+]
+

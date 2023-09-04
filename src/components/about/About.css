@@ -1,0 +1,84 @@
+.about-me-col {
+    width: 100%;
+    min-height: 200vh !important;
+    padding: 6rem 0;
+    background: linear-gradient(to right, var(--color22), var(--color2));
+    font-family: 'Roboto Serif', serif;
+}
+
+.about-me-headers h1 {
+    font-size: 2.3em;
+    padding-bottom: 1.5rem;
+    font-family: 'Caprasimo', cursive;
+    color: var(--color1);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.about-me-headers p {
+    font-size: 16px;
+    font-family: 'Quintessential', cursive;
+    color: var(--color61);
+    text-align: center;
+    width: 90%;
+    margin: 1rem auto;
+}
+
+.about-me-main1 p {
+    color: var(--color32) !important;
+    width: 90%;
+    margin: 1.5rem auto;
+}
+
+.skills-main-col {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 2rem;
+    margin: auto;
+    width: 95%;
+}
+
+.about-me-footer h3,
+.skills h3 {
+    margin: 1.5rem auto;
+    font-size: 2em !important;
+}
+
+.skills-col p {
+    font-weight: 500;
+    color: var(--color3);
+    font-size: inherit;
+}
+
+div.skills-col ul li {
+    font-size: 15px;
+    color: var(--color31);
+    list-style-type: disc !important;
+    overflow-x: visible !important;
+}
+
+.about-me-footer {
+    margin: 3rem auto;
+}
+
+.accordion-header p{
+    font-weight: 500;
+    color: var(--color3);
+}
+
+.accordion-body p{
+    font-size: 14px !important;
+    font-weight: 300;
+    color: var(--color31);
+}
+
+@media screen and (min-width: 768px) {
+    .about-me-headers h1 {
+        font-size: 3.2em;
+        ;
+    }
+
+    .about-me-main1 p {
+        width: 75%;
+    }
+}

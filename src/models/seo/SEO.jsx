@@ -7,7 +7,7 @@ export default function SEO({ title, description, name, type }) {
             <title>{title}</title>
             <meta name='description' content={description} />
             { /* End standard metadata tags */}
-            
+
             { /* Facebook tags */}
             <meta property="og:type" content={type} />
             <meta property="og:title" content={title} />

@@ -5,7 +5,7 @@ import './Library.css';
 import { myLibrary, newIcons } from '../../models/db/db2';
 
 // import dependencies
-import { useNavigate, useParams } from 'react-router-dom';
+import { useNavigate, useParams, useLocation } from 'react-router-dom';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { dark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import Newsletter from '../../models/forms/newsletter/Newsletter';
@@ -20,9 +20,17 @@ const LibraryDetail = () => {
     const selectedItemIndex = myLibrary.findIndex(item => generateSlug('library-' + item.titles) === slug);
     const navigate = useNavigate();
 
+    const location = useLocation();
+    const queryParams = new URLSearchParams(location.search);
+    const posttitle = queryParams.get('tag');
+
     if (!selectedItem) {
         return <div>Item not found.</div>;
     }
+
+    const handleTagClick = (tag) => {
+        navigate(`/filtered-library?tag=${tag}`);
+    };
 
     const navigateToItem = (index) => {
         const newIndex = (selectedItemIndex + index + myLibrary.length) % myLibrary.length;
@@ -35,6 +43,7 @@ const LibraryDetail = () => {
 
     return (
         <div className='library-detail'>
+
             <div className="library containers" key={selectedItem.id}>
                 <div className='post-heading'>
                     <span className='post-date'>{selectedItem.date}</span>
@@ -152,7 +161,18 @@ const LibraryDetail = () => {
 
                         <div className='library-tags'>
                             <span className='tag1'>Tags:</span>
-                            <span className='tag2'> {selectedItem.tag1}, {selectedItem.tag2}</span>
+                            <span className='tag2'>
+                                {selectedItem.tags && selectedItem.tags.map(tag => (
+                                    <button
+                                        key={tag}
+                                        className='tag-button'
+                                        onClick={() => handleTagClick(tag)}
+                                        style={{padding:"0 5px"}}
+                                    >
+                                        {tag}
+                                    </button>
+                                ))}
+                            </span>
                         </div>
                     </div>
                 </div>
