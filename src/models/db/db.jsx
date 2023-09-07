@@ -8,7 +8,9 @@ import calc from '../../assets/calc-app.svg'
 import msf from '../../assets/msf.webp'
 import portfolio from '../../assets/portfolio.webp'
 import poslist from '../../assets/PostList.webp'
+import profilepic2 from '../../assets/ade-pic-2.webp'
 
+// import react-icons
 import { CgClose, CgMenuRight } from 'react-icons/cg';
 import { FaTwitter, FaInstagram, FaLinkedin, FaGithub, FaYoutube, FaCodepen, FaArrowRight, FaJava } from 'react-icons/fa';
 import { TbSquareRoundedFilled } from 'react-icons/tb';
@@ -22,18 +24,19 @@ import {
 import { TfiAndroid, TfiWorld } from 'react-icons/tfi'
 
 export const authorInfo = {
-    name: "Abayomi Adelakun",
-    firstName: "Abayomi",
-    lastName: "Adelakun",
-    email: "info@adelakunabayomi.com",
-    number: "+234-810-3358-829",
-    location: "Lagos, Nigeria",
-    jobTitle: "Web & Mobile Developer",
-    jobDescription: "Through constant practice & learning, I make things pretty and easy to use.",
-    profilepic: profilepic,
-    bmc: bmc,
-    logo1: "A",
-    logo2: "|",
+    "name": "Abayomi Adelakun",
+    "firstName": "Abayomi",
+    "lastName": "Adelakun",
+    "email": "info@adelakunabayomi.com",
+    "number": "+234-810-3358-829",
+    "location": "Lagos, Nigeria",
+    "jobTitle": "Web & Mobile Developer",
+    "jobDescription": "Through constant practice & learning, I make things pretty and easy to use.",
+    "profilepic": profilepic,
+    "profilepic2": profilepic2,
+    "bmc": "bmc",
+    "logo1": "A",
+    "logo2": "|",
 }
 
 export const authorDetails = {
@@ -402,8 +405,9 @@ export const myFaq = [
     {
         "id": 1,
         "faqTitle": "What is web development?",
-        "faq1": `Web development is the process of creating and maintaining websites or web applications. It involves designing, coding, 
-                 and managing the technical aspects of websites to ensure they function correctly and provide a seamless user experience.`,
+        "faq1": `Web development is the process of creating and maintaining websites or web applications.`,
+        "faq2": `It involves designing, coding, and managing the technical aspects of websites to ensure they function correctly 
+                 and provide a seamless user experience.`,
     },
 
     {

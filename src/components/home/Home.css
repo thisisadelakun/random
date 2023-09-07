@@ -250,21 +250,6 @@ body.theme-3 .bottom-text-span {
     opacity: 1;
 }
 
-
-.border-image {
-    border: 2px solid var(--color21);
-    height: 240px;
-    width: 224px;
-    bottom: 110px;
-    left: 70px;
-    position: absolute;
-    overflow-y: hidden !important;
-}
-
-body.theme-3 .border-image {
-    border: 2px solid var(--color12);
-}
-
 .page-main {
     margin: auto;
     padding: 2rem 0;

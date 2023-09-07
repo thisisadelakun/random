@@ -14,6 +14,7 @@ import Details from '../../hooks/details/Details';
 import { Link } from 'react-scroll';
 import { NavLink } from 'react-router-dom';
 import LibraryTiles from '../../models/libararyfolder/LibraryTiles';
+import Sendme from '../../models/recurring/Sendme';
 // import gsap from 'gsap';
 // import ScrollTrigger from 'gsap/ScrollTrigger';
 // gsap.registerPlugin(ScrollTrigger);
@@ -80,7 +81,6 @@ const Home = () => {
 
                         <div className="page-1-right-col">
                             <div className="header-image">
-                                {/* <div className="border-image"></div> */}
                                 <div className="header-img-col">
                                     <div className="header-card-col">
                                         <img src={authorInfo.profilepic} alt={authorInfo.lastName} width={224} height={240} />
@@ -222,17 +222,7 @@ const Home = () => {
                             </button>
                         </span>
                     </div>
-
-                    <div className="page-mes rev-mes-column">
-                        <h1>Send me <br />a message!</h1>
-                        <p>Got a question or proposal, <br />or a review? Go Ahead.</p>
-
-                        <div className="more-btn">
-                            <NavLink to="/work-archive" className="my-button-2">
-                                <span className='my-btn-text-2'> CONTACT ME</span> {icons.argt}
-                            </NavLink>
-                        </div>
-                    </div>
+                    <Sendme />
                 </div>
             </div>
         </div>

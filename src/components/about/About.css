@@ -13,6 +13,32 @@
     color: var(--color1);
     text-align: center;
     text-transform: uppercase;
+    margin: 16px auto;
+}
+
+.about-me-main1 {
+    margin: 3rem auto;
+}
+
+.prgh-1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column !important;
+    margin: auto !important;
+}
+
+.carouse{
+    width: 224px !important;
+    height: 240px !important;
+    margin: 0rem auto !important;
+}
+
+.carouse-col img{
+    filter: grayscale(85%) !important;
+}
+
+.prgh-1 p {
+    text-align: center;
 }
 
 .about-me-headers p {
@@ -30,6 +56,12 @@
     margin: 1.5rem auto;
 }
 
+.about-me-main2 {
+    width: 90%;
+    height: 100%;
+    margin: 2rem auto;
+}
+
 .skills-main-col {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -42,6 +74,7 @@
 .skills h3 {
     margin: 1.5rem auto;
     font-size: 2em !important;
+    overflow: hidden;
 }
 
 .skills-col p {
@@ -58,27 +91,61 @@ div.skills-col ul li {
 }
 
 .about-me-footer {
-    margin: 3rem auto;
+    margin: 2rem auto;
+    height: 100%;
+    width: 100%;
 }
 
-.accordion-header p{
-    font-weight: 500;
-    color: var(--color3);
+.about-me-footer-header {
+    text-align: center !important;
 }
 
-.accordion-body p{
+.accrd-col {
+    margin: 5px;
+}
+
+.accordion-header {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.accordion-body p {
     font-size: 14px !important;
-    font-weight: 300;
+    font-weight: 400;
     color: var(--color31);
 }
+
+.sendme-about {
+    margin: -1rem 0;
+}
+
 
 @media screen and (min-width: 768px) {
     .about-me-headers h1 {
         font-size: 3.2em;
-        ;
+    }
+
+    .about-me-main1 {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
     }
 
     .about-me-main1 p {
         width: 75%;
+    }
+
+    .about-me-main2 {
+        width: 80%;
+    }
+
+    .about-me-right {
+        display: flex;
+        flex-direction: column !important;
+        margin: 1rem auto !important;
+    }
+
+    .about-me-right p {
+        text-align: center;
     }
 }
