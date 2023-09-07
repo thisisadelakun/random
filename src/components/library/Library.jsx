@@ -14,14 +14,15 @@ const Library = () => {
 
 
     const handlePageClick = (pageNumber) => {
-        // Scroll to the top when navigating to a new page
+        const targetY = 0; // Scroll to the top
         window.scrollTo({
-            top: 0,
-            behavior: 'auto', // or 'smooth' for smooth scroll
+            top: targetY,
+            behavior: 'smooth',
         });
-
+    
         setCurrentPage(pageNumber);
     };
+    
 
     const getPageNumbers = () => {
         const pageNumbers = [];

@@ -27,13 +27,13 @@
     margin: auto !important;
 }
 
-.carouse{
+.carouse {
     width: 224px !important;
     height: 240px !important;
     margin: 0rem auto !important;
 }
 
-.carouse-col img{
+.carouse-col img {
     filter: grayscale(85%) !important;
 }
 
