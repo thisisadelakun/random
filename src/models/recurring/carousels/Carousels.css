@@ -1,0 +1,13 @@
+.carousels {
+    margin: 2.5rem auto;
+}
+
+.carousels-col img {
+    height: 150px !important;
+}
+
+@media only screen and (min-width: 993px) {
+    .carousels-col img {
+        height: 250px !important;
+    }
+}

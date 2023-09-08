@@ -4,10 +4,19 @@ import './ContactMe.css'
 // import models
 import { contactContent, icons, authorInfo } from '../../models/db/db'
 import ContactForm from '../../models/forms/contactform/ContactForm'
+import Faq from '../../models/recurring/faq/Faq'
+import SEO from '../../models/seo/SEO'
 
 const ContactMe = () => {
     return (
         <div className='contact_me'>
+            <SEO
+                title="Contact Page | Adelakun's Portfolio"
+                description="Contact Page"
+                name="Web Developer Portfolio"
+                type='Portfolio'
+            />
+
             <div className="contact_me_col containers">
                 <div className="contact_me_col_headers">
                     <h1>{contactContent.title}</h1>
@@ -57,6 +66,10 @@ const ContactMe = () => {
                         </div>
                     </div>
 
+                </div>
+
+                <div>
+                    <Faq />
                 </div>
             </div>
         </div>

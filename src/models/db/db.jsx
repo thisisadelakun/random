@@ -40,6 +40,37 @@ export const authorInfo = {
     "logo2": "|",
 }
 
+export const images = [
+    {
+        "id": 0,
+        "url": "https://github.com/thisisadelakun/Interactive_rating/raw/main/src/assets/Rating_DSS_1.JPG",
+    },
+    {
+        "id": 1,
+        "url": flipcoin,
+    },
+    {
+        "id": 2,
+        "url": calc,
+    },
+    {
+        "id": 3,
+        "url": msf,
+    },
+    {
+        "id": 4,
+        "url": portfolio,
+    },
+    {
+        "id": 5,
+        "url": poslist,
+    },
+    {
+        "id": 6,
+        "url": "https://github.com/thisisadelakun/advice-generator-app/raw/main/Assets/Advice%20Desktop%20SS.PNG",
+    },
+]
+
 export const authorDetails = {
     Detail1Title: "Development",
     Detail1Content: `When constructing applications, I come armed with precisely the tools needed. I have the ability to work 

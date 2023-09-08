@@ -15,6 +15,7 @@ import { Link } from 'react-scroll';
 import { NavLink } from 'react-router-dom';
 import LibraryTiles from '../../models/libararyfolder/LibraryTiles';
 import Sendme from '../../models/recurring/Sendme';
+import Carousels from '../../models/recurring/carousels/Carousels';
 // import gsap from 'gsap';
 // import ScrollTrigger from 'gsap/ScrollTrigger';
 // gsap.registerPlugin(ScrollTrigger);
@@ -55,6 +56,7 @@ const Home = () => {
                                     <h1 className='top-text-h highlight-text'>Developer<span className='extras-1'>.</span></h1>
                                 </div>
                             </div>
+
                             <div className="bottom-text">
                                 <div className='bottom-text-col'>
                                     <span className='bottom-text-span'>
@@ -166,6 +168,7 @@ const Home = () => {
                             </NavLink>
                         </div>
                     </div>
+
                     <div className="page-about-img">
                         <div className="about-img-col"></div>
 
@@ -175,6 +178,7 @@ const Home = () => {
                             </NavLink>
                         </div>
                     </div>
+
                 </div>
             </div>
 
@@ -214,13 +218,10 @@ const Home = () => {
 
             <div className="page-main">
                 <div className="rev-mes">
-                    <div className="reviews rev-mes-column">
-                        <h1>Reviews</h1>
-                        <span>
-                            <button>
-
-                            </button>
-                        </span>
+                <div className="rev-mes-column">
+                        <h1>Gallery</h1>
+                        <p>Selected screenshots of past works.</p>
+                        <Carousels />
                     </div>
                     <Sendme />
                 </div>
