@@ -12,7 +12,7 @@ const Sendme = () => {
             <p>Got a question or proposal, <br />or a review? Go Ahead.</p>
 
             <div className="more-btn">
-                <NavLink to="/work-archive" className="my-button-2">
+                <NavLink to="/contact-me" className="my-button-2">
                     <span className='my-btn-text-2'> CONTACT ME</span> {icons.argt}
                 </NavLink>
             </div>

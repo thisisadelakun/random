@@ -12,7 +12,8 @@ import Theme from './models/theme/Theme';
 
 // import pages
 import Layout from './layout/Layout';
-
+const ContactMe = lazy(() => import('./components/contactme/ContactMe'))
+const MyPortfolio = lazy(() => import('./components/myportfolio/MyPortfolio.jsx'))
 const About = lazy(() => import('./components/about/About'))
 const Library = lazy(() => import('./components/library/Library'))
 const FilteredLibrary = lazy(() => import('./components/library/FilteredLibrary'))
@@ -57,6 +58,15 @@ function App() {
         />
 
         <Route
+          path="/portfolio"
+          element={(
+            <React.Suspense fallback={<SlowLoader />}>
+              <MyPortfolio />
+            </React.Suspense>
+          )}
+        />
+
+        <Route
           path="/library/:slug"
           element={(
             <React.Suspense fallback={<SlowLoader />}>
@@ -88,6 +98,15 @@ function App() {
           element={(
             <React.Suspense fallback={<SlowLoader />}>
               <About />
+            </React.Suspense>
+          )}
+        />
+
+        <Route
+          path="/contact-me"
+          element={(
+            <React.Suspense fallback={<SlowLoader />}>
+              <ContactMe />
             </React.Suspense>
           )}
         />

@@ -3,7 +3,7 @@ import { BsFillGridFill, BsArrowRight, BsArrowLeft } from 'react-icons/bs'
 
 export const libraryPage = {
     "title": "Library Shelf",
-    "subTitle": `"The only thing that you absolutely have to know is the location of the library." - Albert Einstein"`,
+    "subTitle": `"The only thing that you absolutely have to know is the location of the library." - Albert Einstein`,
 }
 
 export const newIcons = {
@@ -329,7 +329,7 @@ $('.button').on('click', function() {
         "date": "",
         "read": "5 mins read",
         "titles": "Revolutionizing Logistics",
-        tags: ["story", "business"],
+        "tags": ["story", "business"],
 
         "content1Title": "The Journey of WexEx",
         "content1": `In the bustling city of Arcadia, where dreams took flight and ambitions soared high, a small logistics company 

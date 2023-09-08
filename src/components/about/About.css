@@ -6,6 +6,10 @@
     font-family: 'Roboto Serif', serif;
 }
 
+.about-me-headers {
+    margin: 2.5rem auto;
+}
+
 .about-me-headers h1 {
     font-size: 2.3em;
     padding-bottom: 1.5rem;
@@ -17,7 +21,7 @@
 }
 
 .about-me-main1 {
-    margin: 3rem auto;
+    margin: 1rem auto;
 }
 
 .prgh-1 {
@@ -122,6 +126,11 @@ div.skills-col ul li {
 
 
 @media screen and (min-width: 768px) {
+
+    .about-me-col {
+        padding: 10rem 0;
+    }
+
     .about-me-headers h1 {
         font-size: 3.2em;
     }

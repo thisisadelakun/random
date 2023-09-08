@@ -1,0 +1,44 @@
+.myportfolio {
+    width: 100%;
+    min-height: 100vh !important;
+    padding: 6rem 0;
+    background: linear-gradient(to right, var(--color22), var(--color2));
+    font-family: 'Roboto Serif', serif;
+}
+
+.myportfolio-col{
+    margin: 2.5rem auto;
+}
+
+.myportfolio-header h1 {
+    font-size: 2.3em;
+    padding-bottom: 1.5rem;
+    font-family: 'Caprasimo', cursive;
+    color: var(--color1);
+    text-align: center;
+    text-transform: uppercase;
+    margin: 16px auto;
+}
+
+.myportfolio-header p {
+    font-size: 16px;
+    font-family: 'Quintessential', cursive;
+    color: var(--color61);
+    text-align: center;
+    width: 90%;
+    margin: 1rem auto;
+}
+
+.myportfolio-main{
+    margin: 1rem auto;
+}
+
+@media screen and (min-width: 768px) {
+    .myportfolio {
+        padding: 10rem 0 !important;
+    }
+    
+    .myportfolio-header h1 {
+        font-size: 3.2em;
+    }
+}

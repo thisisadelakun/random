@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Newsletter.css'
 
-// import models
+// import hooks
 import { firestore } from '../../../hooks/firebase/firebase';
 
 const Newsletter = () => {

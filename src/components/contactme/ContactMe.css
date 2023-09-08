@@ -1,0 +1,76 @@
+.contact_me {
+    width: 100%;
+    min-height: 100vh !important;
+    padding: 6rem 0;
+    background: linear-gradient(to right, var(--color22), var(--color2));
+    font-family: 'Roboto Serif', serif;
+}
+
+.contact_me_col {
+    margin: 2.5rem auto;
+}
+
+.contact_me_col_headers h1 {
+    font-size: 2.3em;
+    padding-bottom: 1.5rem;
+    font-family: 'Caprasimo', cursive;
+    color: var(--color1);
+    text-align: center;
+    text-transform: uppercase;
+    margin: 16px auto;
+}
+
+.contact_me_col_headers p {
+    font-size: 16px;
+    font-family: 'Quintessential', cursive;
+    color: var(--color61);
+    text-align: center;
+    width: 90%;
+    margin: 1rem auto;
+}
+
+.contact_me_col_main {
+    margin: 3rem auto !important;
+}
+
+.contact_me_col_main h3 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: var(--color3) !important;
+    margin: 1.5rem auto;
+}
+
+.contact_me_col_main p {
+    font-family: 'Poppins', sans-serif !important;
+    text-align: center;
+    color: var(--color3);
+    margin: 1rem auto;
+}
+
+.contact_grid {
+    display: flex;
+    flex-direction: column !important;
+}
+
+.contact-left p,
+.contact-left p {
+    font-family: 'Poppins', sans-serif !important;
+    color: var(--color31);
+    text-align: left;
+}
+
+@media only screen and (min-width:768px) {
+    .contact_me {
+        padding: 10rem 0 !important;
+    }
+
+    .contact_me_col_headers h1 {
+        font-size: 3.2em;
+    }
+
+    .contact_grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+}

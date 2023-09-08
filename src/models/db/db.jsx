@@ -1,7 +1,7 @@
 import '../../components/home/Home.css'
 
 // import images
-import profilepic from '../../assets/ade-pic.jpg'
+import profilepic from '../../assets/ade-pic.webp'
 import bmc from '../../assets/bmc-icon.svg'
 import flipcoin from '../../assets/flipcoin.webp'
 import calc from '../../assets/calc-app.svg'
@@ -22,6 +22,7 @@ import {
     SiCss3, SiHtml5, SiReact, SiBootstrap, SiApachecordova, SiPython, SiWordpress
 } from 'react-icons/si'
 import { TfiAndroid, TfiWorld } from 'react-icons/tfi'
+import { IoIosSend } from 'react-icons/io'
 
 export const authorInfo = {
     "name": "Abayomi Adelakun",
@@ -34,7 +35,7 @@ export const authorInfo = {
     "jobDescription": "Through constant practice & learning, I make things pretty and easy to use.",
     "profilepic": profilepic,
     "profilepic2": profilepic2,
-    "bmc": "bmc",
+    "bmc": bmc,
     "logo1": "A",
     "logo2": "|",
 }
@@ -58,6 +59,7 @@ export const authorAboutContent = {
     "title": "About Me",
     "subTitle": `"Life is not about finding yourself, it's about creating yourself." - George Bernard Shaw`,
 }
+
 export const authorAbout = {
     About1Content: `As a versatile developer, driven by creativity, analytical thinking, and an insatiable curiosity. Focused on 
                     creating interactive digital experiences on the web. My work resides at the crossroads of design and technology, 
@@ -102,15 +104,23 @@ export const icons = {
 }
 
 export const icons2 = {
-    in: <FaLinkedin className='card-icon-in2' />,
-    tw: <FaTwitter className='card-icon-tw2' />,
-    ig: <FaInstagram className='card-icon-ig2' />,
-    gt: <FaGithub className='card-icon-gt2' />,
-    fm: <SiFrontendmentor className='card-icon-fem2' title="Frontend Mentor" />,
-    yt: <FaYoutube className='card-icon-yt2' />,
-    like: <AiFillHeart className="svg2" title='love' />,
-    adwn: <TiArrowDownOutline className="arrow-scroll-dw2" />,
-    cdpen: <FaCodepen />,
+    "in": <FaLinkedin className='card-icon-in2' />,
+    "tw": <FaTwitter className='card-icon-tw2' />,
+    "ig": <FaInstagram className='card-icon-ig2' />,
+    "gt": <FaGithub className='card-icon-gt2' />,
+    "fm": <SiFrontendmentor className='card-icon-fem2' title="Frontend Mentor" />,
+    "yt": <FaYoutube className='card-icon-yt2' />,
+    "like": <AiFillHeart className="svg2" title='love' />,
+    "adwn": <TiArrowDownOutline className="arrow-scroll-dw2" />,
+    "cdpen": <FaCodepen />,
+    "send": <IoIosSend />,
+}
+
+export const projectsContents = {
+    "title": "PORTFOLIO",
+    "subTitle": `"Your portfolio is a mirror reflecting your best work, a showcase of your skills, and a testament to your dedication." 
+               - Abayomi Adelakun`
+
 }
 
 export const projects = [
@@ -463,4 +473,13 @@ export const myFaq2 = [
                  to tens of thousands of dollars.`,
     },
 ]
+
+export const contactContent = {
+    "title": "Contact Me",
+    "subTitle": `"Good communication is the bridge between confusion and clarity." - Abayomi Adelakun`,
+    "mainTitle": "Hi there,",
+    "mainSubTitle1": "Let's discuss your project.",
+    "leftTitle": "Want to get in touch or talk about a project? Feel free to contact me via the form below",
+    "rightTitle": "Feel free to contact me via email",
+}
 

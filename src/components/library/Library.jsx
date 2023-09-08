@@ -17,12 +17,12 @@ const Library = () => {
         const targetY = 0; // Scroll to the top
         window.scrollTo({
             top: targetY,
-            behavior: 'smooth',
+            behavior: 'auto',
         });
-    
+
         setCurrentPage(pageNumber);
     };
-    
+
 
     const getPageNumbers = () => {
         const pageNumbers = [];
