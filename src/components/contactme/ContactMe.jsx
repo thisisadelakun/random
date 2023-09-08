@@ -2,7 +2,7 @@ import React from 'react'
 import './ContactMe.css'
 
 // import models
-import { contactContent, icons2 } from '../../models/db/db'
+import { contactContent, icons, authorInfo } from '../../models/db/db'
 import ContactForm from '../../models/forms/contactform/ContactForm'
 
 const ContactMe = () => {
@@ -21,11 +21,39 @@ const ContactMe = () => {
                     <div className="contact_grid">
                         <div className="contact-left">
                             <p>{contactContent.leftTitle}</p>
-                            <ContactForm />
+                            <div className="contact-left-content">
+                                <ContactForm />
+                            </div>
                         </div>
 
                         <div className="contact-right">
                             <p>{contactContent.rightTitle}</p>
+
+                            <div className="contact-right-content">
+                                <div className="contact-email">
+                                    <a href={`mailto:${authorInfo.email}`}>
+                                        {authorInfo.email}
+                                    </a>
+                                </div>
+
+                                <div className="find-me">
+                                    <span>{contactContent.find}:</span>
+                                </div>
+
+                                <div className="contact-socios">
+                                    <a href="https://twitter.com/thisisadelakun" target="_blank" rel="noopener noreferrer">
+                                        {icons.tw} Twitter
+                                    </a>
+
+                                    <a href="https://www.instagram.com/thisisadelakun" target="_blank" rel="noopener noreferrer">
+                                        {icons.ig} Instagram
+                                    </a>
+
+                                    <a href="https://www.linkedin.com/in/abayomi-adelakun-897227178/" target="_blank" rel="noopener noreferrer">
+                                        {icons.in} LinkedIn
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
 

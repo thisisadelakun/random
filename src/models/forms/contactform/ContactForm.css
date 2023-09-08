@@ -1,0 +1,95 @@
+.contact-form-col {
+    display: flex;
+    flex-direction: column !important;
+    gap: 1.5rem;
+}
+
+.contact_form_row {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.contact_form_row label {
+    color: var(--color3);
+    font-weight: 500;
+}
+
+.contact_form_row textarea,
+.contact_form_row input {
+    padding: 5px 1px;
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+}
+
+.contact_form_row textarea {
+    padding: 0px 20px 0px 0px !important;
+    overflow-y: scroll;
+}
+
+.contact_form_row textarea::placeholder,
+.contact_form_row input::placeholder {
+    font-size: 13px;
+    font-weight: 100 !important;
+}
+
+body.theme-1 .contact_form_row textarea::placeholder,
+body.theme-1 .contact_form_row input::placeholder {
+    color: var(--color4);
+}
+
+body.theme-2 .contact_form_row textarea::placeholder,
+body.theme-2 .contact_form_row input::placeholder {
+    color: var(--color6);
+}
+
+body.theme-3 .contact_form_row textarea::placeholder,
+body.theme-3 .contact_form_row input::placeholder {
+    color: var(--color31);
+}
+
+.contact_form_row textarea:focus,
+.contact_form_row input:focus {
+    outline: none;
+}
+
+.contact-form-col button {
+    width: 100%;
+    border: 1px solid;
+    margin: 1rem auto;
+}
+
+.contact-form-col button {
+    color: var(--color3);
+}
+
+body.theme-1 .contact-form-col button {
+    border: 1px solid var(--color41);
+}
+
+body.theme-2 .contact-form-col button {
+    border: 1px solid var(--color1);
+}
+
+body.theme-3 .contact-form-col button {
+    border: 1px solid var(--color31);
+}
+
+.contact-form-col button:hover {
+    color: var(--color2);
+}
+
+body.theme-1 .contact-form-col button:hover {
+    background-color: var(--color41);
+}
+
+body.theme-2 .contact-form-col button:hover {
+    background-color: var(--color1);
+}
+
+body.theme-3 .contact-form-col button:hover {
+    background-color: var(--color31);
+}

@@ -481,5 +481,7 @@ export const contactContent = {
     "mainSubTitle1": "Let's discuss your project.",
     "leftTitle": "Want to get in touch or talk about a project? Feel free to contact me via the form below",
     "rightTitle": "Feel free to contact me via email",
+    "messagePH": "e.g., Hi, I need a web application for my Company 'X'. How soon can you get this done?",
+    "find": "Or find me on"
 }
 

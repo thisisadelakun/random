@@ -1,17 +1,69 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './ContactForm.css'
 
 // import hooks
-import { firestore } from '../../../hooks/firebase';
+import { firestore } from '../../../hooks/firebase/firebase';
 
 // import models
-import { icons2 } from '../../db/db';
+import { icons2, contactContent } from '../../db/db';
 
 const ContactForm = () => {
     const [email, setEmail] = useState('');
     const [name, setName] = useState('');
     const [subject, setSubject] = useState('');
     const [message, setMessage] = useState('');
+    const [isEmailPlaceholderVisible, setEmailPlaceholderVisible] = useState(true);
+    const [isNamePlaceholderVisible, setNamePlaceholderVisible] = useState(true);
+    const [isSubjectPlaceholderVisible, setSubjectPlaceholderVisible] = useState(true);
+    const [isMessagePlaceholderVisible, setMessagePlaceholderVisible] = useState(true);
+
+    const handleEmailFocus = () => {
+        if (email === '') {
+            setEmailPlaceholderVisible(false);
+        }
+    };
+
+    const handleEmailBlur = () => {
+        if (email === '') {
+            setEmailPlaceholderVisible(true);
+        }
+    };
+
+    const handleNameFocus = () => {
+        if (name === '') {
+            setNamePlaceholderVisible(false);
+        }
+    };
+
+    const handleNameBlur = () => {
+        if (name === '') {
+            setNamePlaceholderVisible(true);
+        }
+    };
+
+    const handleSubjectFocus = () => {
+        if (subject === '') {
+            setSubjectPlaceholderVisible(false);
+        }
+    };
+
+    const handleSubjectBlur = () => {
+        if (subject === '') {
+            setSubjectPlaceholderVisible(true);
+        }
+    };
+
+    const handleMessageFocus = () => {
+        if (message === '') {
+            setMessagePlaceholderVisible(false);
+        }
+    };
+
+    const handleMessageBlur = () => {
+        if (message === '') {
+            setMessagePlaceholderVisible(true);
+        }
+    };
 
     const handleFormSubmit = async (e) => {
         e.preventDefault();
@@ -38,51 +90,64 @@ const ContactForm = () => {
 
     return (
         <div className='contact_form'>
-            <form action="" method="post" onSubmit={handleFormSubmit}>
-                <div className="your-name">
-                    <label htmlFor="name"></label>
+            <form className='contact-form-col' action="" method="post" onSubmit={handleFormSubmit}>
+                <div className="your-name contact_form_row">
+                    <label htmlFor="name">Name</label>
                     <input
                         type="text"
                         name="name"
                         id="name"
+                        placeholder={isNamePlaceholderVisible ? 'Enter your name' : ''}
+                        onFocus={handleNameFocus}
+                        onBlur={handleNameBlur}
                         value={name}
                         onChange={(e) => setName(e.target.value)}
                         required
                     />
                 </div>
 
-                <div className="your-email">
-                    <label htmlFor="email"></label>
+                <div className="your-email contact_form_row">
+                    <label htmlFor="email">Email</label>
                     <input
                         type="email"
                         name="email"
                         id="email"
+                        placeholder={isEmailPlaceholderVisible ? 'Enter your email address' : ''}
+                        onFocus={handleEmailFocus}
+                        onBlur={handleEmailBlur}
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                         required
                     />
                 </div>
 
-                <div className="your-subject">
-                    <label htmlFor="subject"></label>
+                <div className="your-subject contact_form_row">
+                    <label htmlFor="subject">Subject</label>
                     <input
                         type="text"
                         name="subject"
                         id="subject"
+                        placeholder={isSubjectPlaceholderVisible ? 'e.g., Web development' : ''}
+                        onFocus={handleSubjectFocus}
+                        onBlur={handleSubjectBlur}
                         value={subject}
                         onChange={(e) => setSubject(e.target.value)}
                     />
                 </div>
 
-                <div className="your-message">
-                    <label htmlFor="message"></label>
-                    <input
+                <div className="your-message contact_form_row">
+                    <label htmlFor="message">Message</label>
+                    <textarea
                         type="text"
                         name="message"
                         id='message'
-                        value={message}
-                        onChange={(e) => setMessage(e.target.value)}
-                        required
+                        placeholder={isMessagePlaceholderVisible ? contactContent.messagePH : ''}
+                    onFocus={handleMessageFocus}
+                    onBlur={handleMessageBlur}
+                    rows={3}
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
+                    required
                     />
                 </div>
 
