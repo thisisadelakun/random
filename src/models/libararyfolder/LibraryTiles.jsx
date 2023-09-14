@@ -10,11 +10,12 @@ function generateSlug(title) {
 }
 
 const truncateText = (text, maxLength) => {
-    if (text.length > maxLength) {
+    if (text && text.length > maxLength) {
         return text.slice(0, maxLength);
     }
     return text;
 };
+
 
 const LibraryTiles = ({ displayedLibrary }) => {
     const itemsToDisplay = displayedLibrary;

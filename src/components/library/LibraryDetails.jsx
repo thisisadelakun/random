@@ -1,14 +1,15 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Library.css';
 
 // import models
 import { myLibrary, newIcons } from '../../models/db/db2';
+import Newsletter from '../../models/forms/newsletter/Newsletter';
+import SEO from '../../models/seo/SEO';
 
 // import dependencies
 import { useNavigate, useParams, useLocation } from 'react-router-dom';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { dark } from 'react-syntax-highlighter/dist/esm/styles/prism';
-import Newsletter from '../../models/forms/newsletter/Newsletter';
 
 function generateSlug(title) {
     return title.toLowerCase().replace(/\s+/g, '-');
@@ -38,11 +39,63 @@ const LibraryDetail = () => {
         navigate(`/library/${newSlug}`);
     };
 
+    const renderContentSections = () => {
+        const contentSections = [];
+
+        if (selectedItem) {
+            console.log('selectedItem:', selectedItem);
+            if (selectedItem.contents && Array.isArray(selectedItem.contents)) {
+                console.log('Contents:', selectedItem.contents);
+                selectedItem.contents.forEach((content, index) => {
+                    console.log('Rendering content:', content);
+                    // Your existing code for rendering content sections here...
+                    contentSections.push(
+                        <div className={`details-prgh content${index + 1}Container`} key={content.title}>
+                            {content.title && (
+                                <h3 className={`content${index + 1}Title`}>{content.title}</h3>
+                            )}
+                            {content.subTitle && (
+                                <span>{content.subTitle}</span>
+                            )}
+                            {content.content && (
+                                <p className={`content${index + 1}`}>{content.content}</p>
+                            )}
+                            {content.codeSnippets.map((codeSnippet, snippetIndex) => (
+                                <div className={`codeSnippetContainer codeSnippet${index + 1}-${snippetIndex}`} key={snippetIndex}>
+                                    {codeSnippet.title && (
+                                        <p className={`codeSnippetTitle${index + 1}-${snippetIndex}`}>
+                                            {codeSnippet.title}
+                                        </p>
+                                    )}
+                                    {codeSnippet.snippet && (
+                                        <SyntaxHighlighter language={codeSnippet.language} style={dark}>
+                                            {codeSnippet.snippet}
+                                        </SyntaxHighlighter>
+                                    )}
+                                </div>
+                            ))}
+                        </div>
+                    );
+                });
+            }
+        }
+
+        return contentSections;
+    };
+
+
+
     const isPrevButtonVisible = selectedItemIndex > 0;
     const isNextButtonVisible = selectedItemIndex < myLibrary.length - 1;
 
     return (
         <div className='library-detail'>
+            <SEO
+                title={`${selectedItem.titles} | Adelakun's Portfolio`}
+                description={selectedItem.content1Title}
+                name="Web Developer Portfolio"
+                type='Portfolio'
+            />
 
             <div className="library containers" key={selectedItem.id}>
                 <div className='post-heading'>
@@ -56,64 +109,7 @@ const LibraryDetail = () => {
                     </div>
 
                     <div className='post-body-main'>
-                        <div className="details-prgh">
-                            {selectedItem.content1 && (<p className='content1'>{selectedItem.content1}</p>)}
-                        </div>
-
-                        <div className="details-prgh">
-                            {selectedItem.content2Title && (<h3 className='content2Title'>{selectedItem.content2Title}</h3>)}
-                            {selectedItem.content2 && (<p className='content2'>{selectedItem.content2}</p>)}
-                        </div>
-
-                        <div className="details-prgh">
-                            {selectedItem.content3Title && (<h3 className='content3Title'>{selectedItem.content3Title}</h3>)}
-                            {selectedItem.content3 && (<p className='content3'>{selectedItem.content3}</p>)}
-                        </div>
-
-                        <div className="details-prgh">
-                            {selectedItem.content4Title && (<h3 className='content4Title'>{selectedItem.content4Title}</h3>)}
-                            {selectedItem.content4 && (<p className='content4'>{selectedItem.content4}</p>)}
-                        </div>
-
-                        <div className="details-prgh">
-                            {selectedItem.content5Title && (<h3 className='content5Title'>{selectedItem.content5Title}</h3>)}
-                            {selectedItem.codeSnippetTitle5 && (<p className='codeSnippetTitle5'>{selectedItem.codeSnippetTitle5}</p>)}
-                            {selectedItem.codeSnippet5 && (
-                                <div className='codeSnippetContainer codeSnippet5'>
-                                    <SyntaxHighlighter language={selectedItem.codeSnippetLanguage} style={dark}>
-                                        {selectedItem.codeSnippet5}
-                                    </SyntaxHighlighter>
-                                </div>
-                            )}
-                            {selectedItem.content5 && (<p className='content5'>{selectedItem.content5}</p>)}
-                        </div>
-
-                        {selectedItem.content6Title && (<h3 className='content6Title'>{selectedItem.content6Title}</h3>)}
-                        {selectedItem.content6 && (<p className='content6'>{selectedItem.content6}</p>)}
-                        {selectedItem.codeSnippetTitle6 && (<p className='codeSnippetTitle6'>{selectedItem.codeSnippetTitle6}</p>)}
-                        {selectedItem.codeSnippet6 && (
-                            <div className='codeSnippetContainer codeSnippet6'>
-                                <SyntaxHighlighter language={selectedItem.codeSnippetLanguage} style={dark}>
-                                    {selectedItem.codeSnippet6}
-                                </SyntaxHighlighter>
-                            </div>
-                        )}
-
-                        <div className="details-prgh">
-                            {selectedItem.content7Title && (<h3 className='content7Title'>{selectedItem.content7Title}</h3>)}
-                            {selectedItem.content7 && (<p className='content7'>{selectedItem.content7}</p>)}
-                        </div>
-
-                        <div className="details-prgh">
-                            {selectedItem.content8Title && (<h3 className='content8Title'>{selectedItem.content8Title}</h3>)}
-                            {selectedItem.content8 && (<p className='content8'>{selectedItem.content8}</p>)}
-                        </div>
-
-                        <div className="details-prgh">
-                            {selectedItem.content9Title && (<h3 className='content9Title'>{selectedItem.content9Title}</h3>)}
-                            {selectedItem.content9 && (<p className='content9'>{selectedItem.content9}</p>)}
-                        </div>
-
+                        {renderContentSections()}
                     </div>
 
                     <div className='post-footer'>
@@ -167,7 +163,7 @@ const LibraryDetail = () => {
                                         key={tag}
                                         className='tag-button'
                                         onClick={() => handleTagClick(tag)}
-                                        style={{padding:"0 5px"}}
+                                        style={{ padding: "0 5px" }}
                                     >
                                         {tag}
                                     </button>

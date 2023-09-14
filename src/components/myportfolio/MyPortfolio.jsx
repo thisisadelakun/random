@@ -16,6 +16,7 @@ const MyPortfolio = () => {
                 name="Web Developer Portfolio"
                 type='Portfolio'
             />
+            
             <div className="myportfolio-col container">
                 <div className="myportfolio-header">
                     <h1>{projectsContents.title}</h1>
