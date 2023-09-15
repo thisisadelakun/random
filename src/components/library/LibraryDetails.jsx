@@ -70,9 +70,11 @@ const LibraryDetail = () => {
                                         </p>
                                     )}
                                     {codeSnippet.snippet && (
-                                        <SyntaxHighlighter language={codeSnippet.language} style={dark}>
+                                        <div className="syntax_col">
+                                            <SyntaxHighlighter className="syntax_col" language={codeSnippet.language} style={dark}>
                                             {codeSnippet.snippet}
                                         </SyntaxHighlighter>
+                                        </div>
                                     )}
                                 </div>
                             ))}

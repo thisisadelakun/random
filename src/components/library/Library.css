@@ -78,6 +78,10 @@
     margin: 1rem auto;
 }
 
+.syntax_col{
+    overflow-x: scroll !important;
+}
+
 .library-tags {
     display: flex;
     flex-direction: row !important;
@@ -128,21 +132,21 @@ div.further-col ol li {
     font-family: inherit;
 }
 
-.tag-n-share{
+.tag-n-share {
     display: flex;
-    flex-direction:  row;
+    flex-direction: row;
     justify-content: space-between !important;
     align-items: center;
 }
 
-.share-buttons{
+.share-buttons {
     display: flex;
     flex-direction: row !important;
     gap: 10px !important;
     padding: 5px;
 }
 
-.share-hover:hover{
+.share-hover:hover {
     transition: 0.5s ease;
     transform: scale(1.1);
 }
