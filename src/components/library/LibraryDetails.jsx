@@ -3,6 +3,7 @@ import './Library.css';
 
 // import models
 import { myLibrary, newIcons } from '../../models/db/db2';
+import { icons } from '../../models/db/db';
 import Newsletter from '../../models/forms/newsletter/Newsletter';
 import SEO from '../../models/seo/SEO';
 
@@ -10,6 +11,7 @@ import SEO from '../../models/seo/SEO';
 import { useNavigate, useParams, useLocation } from 'react-router-dom';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { dark } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import { FacebookShareButton, TwitterShareButton } from 'react-share';
 
 function generateSlug(title) {
     return title.toLowerCase().replace(/\s+/g, '-');
@@ -105,7 +107,7 @@ const LibraryDetail = () => {
 
                 <div className='post-body'>
                     <div className='post-body-header'>
-                        <h1 className='post-title'>{selectedItem.titles}: <br /> {selectedItem.content1Title}</h1>
+                        <h1 className='post-title'>{selectedItem.titles}: <br /> {selectedItem.subTitles}</h1>
                     </div>
 
                     <div className='post-body-main'>
@@ -155,23 +157,35 @@ const LibraryDetail = () => {
                             </ol>
                         </div>
 
-                        <div className='library-tags'>
-                            <span className='tag1'>Tags:</span>
-                            <span className='tag2'>
-                                {selectedItem.tags && selectedItem.tags.map(tag => (
-                                    <button
-                                        key={tag}
-                                        className='tag-button'
-                                        onClick={() => handleTagClick(tag)}
-                                        style={{ padding: "0 5px" }}
-                                    >
-                                        {tag}
-                                    </button>
-                                ))}
-                            </span>
+                        <div className="tag-n-share">
+                            <div className='library-tags'>
+                                <span className='tag1'>Tags:</span>
+                                <span className='tag2'>
+                                    {selectedItem.tags && selectedItem.tags.map(tag => (
+                                        <button
+                                            key={tag}
+                                            className='tag-button'
+                                            onClick={() => handleTagClick(tag)}
+                                            style={{ padding: "0 5px" }}
+                                        >
+                                            {tag}
+                                        </button>
+                                    ))}
+                                </span>
+                            </div>
+
+                            <div className="share-buttons">
+                                <TwitterShareButton className='share-hover' url={window.location.href} title={selectedItem.titles}>
+                                    {icons.tw}
+                                </TwitterShareButton>
+                                <FacebookShareButton className='share-hover' url={window.location.href} quote={selectedItem.titles}>
+                                    {icons.fb}
+                                </FacebookShareButton>
+                            </div>
                         </div>
                     </div>
                 </div>
+
 
                 <div className="library-buttons">
                     {isPrevButtonVisible && (

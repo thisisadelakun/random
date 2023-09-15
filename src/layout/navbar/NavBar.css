@@ -180,7 +180,7 @@ body.theme-3 .show-background {
     flex-direction: row;
     align-items: center;
     width: 100%;
-    margin: 1.5rem auto;
+    margin: 1rem auto;
     gap: 0.8rem;
     padding: 5px 5px;
     color: var(--color1) !important;

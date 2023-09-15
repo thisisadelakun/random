@@ -155,6 +155,7 @@ button:focus-visible {
   color: var(--color71) !important;
 }
 
+.card-icon-tw,
 .card-icon-gt {
   color: var(--color3) !important;
 }
@@ -163,7 +164,7 @@ button:focus-visible {
   color: rgba(255, 0, 0, 0.603) !important;
 }
 
-.card-icon-tw,
+.card-icon-fb,
 .card-icon-in {
   color: #0A66C2 !important;
 }

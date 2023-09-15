@@ -12,7 +12,6 @@ const Library = () => {
     const [currentPage, setCurrentPage] = useState(1);
     const totalPages = Math.ceil(myLibrary.length / ITEMS_PER_PAGE);
 
-
     const handlePageClick = (pageNumber) => {
         const targetY = 0; // Scroll to the top
         window.scrollTo({
@@ -22,7 +21,6 @@ const Library = () => {
 
         setCurrentPage(pageNumber);
     };
-
 
     const getPageNumbers = () => {
         const pageNumbers = [];
@@ -65,4 +63,5 @@ const Library = () => {
         </div>
     );
 }
+
 export default Library;

@@ -172,24 +172,26 @@ const NavBar = () => {
                     <a href="https://twitter.com/thisisadelakun" target="_blank" rel="noopener noreferrer">
                       {icons.tw}
                     </a>
+
                     <a href="https://www.linkedin.com/in/abayomi-adelakun-897227178/" target="_blank" rel="noopener noreferrer">
-                      {icons.gt}
+                      {icons.in}
                     </a>
-
-                    <a href="https://www.instagram.com/thisisadelakun" target="_blank" rel="noopener noreferrer">
-                      {icons.ig}
-                    </a>
-
+                   
                     <a href="https://frontendmentor.io/thisisadelakun" target="_blank" rel="noopener noreferrer">
                       {icons.fm}
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/abayomi-adelakun-897227178/" target="_blank" rel="noopener noreferrer">
+                      {icons.gt}
                     </a>
                     <a href="https://www.youtube.com/thisisadelakun" target="_blank" rel="noopener noreferrer">
                       {icons.yt}
                     </a>
 
-                    <a href="https://www.linkedin.com/in/abayomi-adelakun-897227178/" target="_blank" rel="noopener noreferrer">
-                      {icons.in}
+                    <a href="https://www.instagram.com/thisisadelakun" target="_blank" rel="noopener noreferrer">
+                      {icons.ig}
                     </a>
+                    
                   </li>
                 </Nav>
               </Offcanvas.Body>

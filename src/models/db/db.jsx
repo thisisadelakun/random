@@ -12,13 +12,14 @@ import profilepic2 from '../../assets/ade-pic-2.webp'
 
 // import react-icons
 import { CgClose, CgMenuRight } from 'react-icons/cg';
-import { FaTwitter, FaInstagram, FaLinkedin, FaGithub, FaYoutube, FaCodepen, FaArrowRight, FaJava } from 'react-icons/fa';
+import { FaInstagram, FaLinkedin, FaGithub, FaYoutube, FaCodepen, FaArrowRight, FaJava} from 'react-icons/fa';
 import { TbSquareRoundedFilled } from 'react-icons/tb';
 import { TiArrowDownOutline } from 'react-icons/ti'
 import { AiFillHeart } from 'react-icons/ai'
+import { RiTwitterXLine} from 'react-icons/ri'
 import { FiExternalLink } from 'react-icons/fi'
 import {
-    SiFrontendmentor, SiFirebase, SiDjango, SiTypescript, SiAngular, SiJavascript,
+    SiFrontendmentor, SiFirebase, SiDjango, SiTypescript, SiAngular, SiJavascript, SiFacebook,
     SiCss3, SiHtml5, SiReact, SiBootstrap, SiApachecordova, SiPython, SiWordpress
 } from 'react-icons/si'
 import { TfiAndroid, TfiWorld } from 'react-icons/tfi'
@@ -116,27 +117,29 @@ export const authorAbout = {
 
 
 export const icons = {
-    in: <FaLinkedin className='card-icon-in' />,
-    tw: <FaTwitter className='card-icon-tw' />,
-    ig: <FaInstagram className='card-icon-ig' />,
-    gt: <FaGithub className='card-icon-gt' />,
-    fm: <SiFrontendmentor className='card-icon-fem' title="Frontend Mentor" />,
-    yt: <FaYoutube className='card-icon-yt' />,
-    cx: <CgClose className='custom-close-button' />,
-    cm: <CgMenuRight />,
-    link: <FiExternalLink />,
-    like: <AiFillHeart className="svg" title='love' />,
-    adwn: <TiArrowDownOutline className="arrow-scroll-dw" />,
-    argt: < FaArrowRight className='arrow-right' />,
-    cdpen: <FaCodepen />,
-    theme1: <TbSquareRoundedFilled className="theme-1" />,
-    theme2: <TbSquareRoundedFilled className="theme-2" />,
-    theme3: <TbSquareRoundedFilled className="theme-3" />,
+    "in": <FaLinkedin className='card-icon-in' />,
+    "fb": <SiFacebook className='card-icon-fb' />,
+    "tw": <RiTwitterXLine className='card-icon-tw' />,
+    "ig": <FaInstagram className='card-icon-ig' />,
+    "gt": <FaGithub className='card-icon-gt' />,
+    "fm": <SiFrontendmentor className='card-icon-fem' title="Frontend Mentor" />,
+    "yt": <FaYoutube className='card-icon-yt' />,
+    "cx": <CgClose className='custom-close-button' />,
+    "cm": <CgMenuRight />,
+    "link": <FiExternalLink />,
+    "like": <AiFillHeart className="svg" title='love' />,
+    "adwn": <TiArrowDownOutline className="arrow-scroll-dw" />,
+    "argt": < FaArrowRight className='arrow-right' />,
+    "cdpen": <FaCodepen />,
+    "theme1": <TbSquareRoundedFilled className="theme-1" />,
+    "theme2": <TbSquareRoundedFilled className="theme-2" />,
+    "theme3": <TbSquareRoundedFilled className="theme-3" />,
 }
 
 export const icons2 = {
     "in": <FaLinkedin className='card-icon-in2' />,
-    "tw": <FaTwitter className='card-icon-tw2' />,
+    "fb": <SiFacebook className='card-icon-fb' />,
+    "tw": <RiTwitterXLine className='card-icon-tw2' />,
     "ig": <FaInstagram className='card-icon-ig2' />,
     "gt": <FaGithub className='card-icon-gt2' />,
     "fm": <SiFrontendmentor className='card-icon-fem2' title="Frontend Mentor" />,
