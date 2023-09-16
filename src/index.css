@@ -90,7 +90,7 @@ h4 {
 }
 
 p {
-  font-size: 16px !important;
+  font-size: 14px !important;
   line-height: 1.5 !important;
   font-family: 'Roboto Serif', serif !important;
   font-weight: 400px;
@@ -339,6 +339,10 @@ body.theme-3 .my-btn-text-2 {
 
   h4 {
     font-size: 2.3em !important;
+  }
+
+  p {
+    font-size: 16px;
   }
 
   .containers {

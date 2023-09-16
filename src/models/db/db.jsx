@@ -118,8 +118,8 @@ export const authorAbout = {
 
 export const icons = {
     "in": <FaLinkedin className='card-icon-in' />,
-    "fb": <SiFacebook className='card-icon-fb' />,
-    "tw": <RiTwitterXLine className='card-icon-tw' />,
+    "fb": <SiFacebook className='card-icon-fb' title='Facebook' />,
+    "tw": <RiTwitterXLine className='card-icon-tw' title='X (FKA Twitter)'/>,
     "ig": <FaInstagram className='card-icon-ig' />,
     "gt": <FaGithub className='card-icon-gt' />,
     "fm": <SiFrontendmentor className='card-icon-fem' title="Frontend Mentor" />,
@@ -138,8 +138,8 @@ export const icons = {
 
 export const icons2 = {
     "in": <FaLinkedin className='card-icon-in2' />,
-    "fb": <SiFacebook className='card-icon-fb' />,
-    "tw": <RiTwitterXLine className='card-icon-tw2' />,
+    "fb": <SiFacebook className='card-icon-fb' title='Facebook' />,
+    "tw": <RiTwitterXLine className='card-icon-tw2' title='X(FKA Twitter)' />,
     "ig": <FaInstagram className='card-icon-ig2' />,
     "gt": <FaGithub className='card-icon-gt2' />,
     "fm": <SiFrontendmentor className='card-icon-fem2' title="Frontend Mentor" />,

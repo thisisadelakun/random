@@ -51,7 +51,7 @@ const ContactMe = () => {
 
                                 <div className="contact-socios">
                                     <a href="https://twitter.com/thisisadelakun" target="_blank" rel="noopener noreferrer">
-                                        {icons.tw} Twitter
+                                        {icons.tw} X (FKA Twitter)
                                     </a>
 
                                     <a href="https://www.instagram.com/thisisadelakun" target="_blank" rel="noopener noreferrer">
