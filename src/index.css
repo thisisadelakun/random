@@ -75,7 +75,7 @@ h1 {
 }
 
 h3 {
-  font-size: 2.2em !important;
+  font-size: 2.0em !important;
   line-height: 1.4;
   padding: 10px 0;
   font-family: 'Caprasimo', cursive;
@@ -342,7 +342,7 @@ body.theme-3 .my-btn-text-2 {
   }
 
   p {
-    font-size: 16px;
+    font-size: 15px !important;
   }
 
   .containers {
@@ -377,11 +377,9 @@ body.theme-3 .my-btn-text-2 {
 
 
 
-/* font-family: 'Abril Fatface', cursive;
-font-family: 'Caprasimo', cursive;
-font-family: 'Kanit', sans-serif;
+/* font-family: 'Caprasimo', cursive;
+font-family: 'Quintessential', cursive;
 font-family: 'Montserrat', sans-serif;
 font-family: 'Open Sans', sans-serif;
 font-family: 'Poppins', sans-serif;
-font-family: 'Quintessential', cursive;
 font-family: 'Roboto Serif', serif; */

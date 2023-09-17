@@ -70,6 +70,7 @@
 
 .post-body p {
     color: var(--color32) !important;
+    font-family: 'Poppins', sans-serif !important;
 }
 
 .codeSnippetContainer {
@@ -78,7 +79,7 @@
     margin: 1rem auto;
 }
 
-.syntax_col{
+.syntax_col {
     overflow-x: scroll !important;
 }
 

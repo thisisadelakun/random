@@ -58,6 +58,8 @@
     color: var(--color32) !important;
     width: 90%;
     margin: 1.5rem auto;
+    line-height: 1.7 !important;
+    font-family: 'Poppins', sans-serif !important;
 }
 
 .about-me-main2 {
@@ -118,6 +120,7 @@ div.skills-col ul li {
     font-size: 14px !important;
     font-weight: 400;
     color: var(--color31);
+    font-family: 'Poppins', sans-serif !important;
 }
 
 .sendme-about {

@@ -397,7 +397,7 @@ body.theme-3 .about-img-col {
 .page-mes p {
     text-align: left;
     font-family: 'Roboto Serif', serif;
-    font-size: 18px;
+    font-size: 16px !important;
     font-weight: 400;
     color: var(--color61);
 }

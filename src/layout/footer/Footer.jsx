@@ -113,7 +113,7 @@ const Footer = () => {
                             </a>
                             <a href="https://www.youtube.com/thisisadelakun" target="_blank" rel="noopener noreferrer">
                                 {icons2.yt}
-                            </a>   
+                            </a>
                         </li>
                     </div>
                 </div>
@@ -132,7 +132,7 @@ const Footer = () => {
                             <a href="https://www.linkedin.com/in/abayomi-adelakun-897227178/" target="_blank" rel="noopener noreferrer">
                                 {icons2.in}
                             </a>
-                            
+
                             <a href="https://www.linkedin.com/in/abayomi-adelakun-897227178/" target="_blank" rel="noopener noreferrer">
                                 {icons2.gt}
                             </a>

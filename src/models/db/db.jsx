@@ -12,11 +12,11 @@ import profilepic2 from '../../assets/ade-pic-2.webp'
 
 // import react-icons
 import { CgClose, CgMenuRight } from 'react-icons/cg';
-import { FaInstagram, FaLinkedin, FaGithub, FaYoutube, FaCodepen, FaArrowRight, FaJava} from 'react-icons/fa';
+import { FaInstagram, FaLinkedin, FaGithub, FaYoutube, FaCodepen, FaArrowRight, FaJava } from 'react-icons/fa';
 import { TbSquareRoundedFilled } from 'react-icons/tb';
 import { TiArrowDownOutline } from 'react-icons/ti'
 import { AiFillHeart } from 'react-icons/ai'
-import { RiTwitterXLine} from 'react-icons/ri'
+import { RiTwitterXLine } from 'react-icons/ri'
 import { FiExternalLink } from 'react-icons/fi'
 import {
     SiFrontendmentor, SiFirebase, SiDjango, SiTypescript, SiAngular, SiJavascript, SiFacebook,
@@ -119,7 +119,7 @@ export const authorAbout = {
 export const icons = {
     "in": <FaLinkedin className='card-icon-in' />,
     "fb": <SiFacebook className='card-icon-fb' title='Facebook' />,
-    "tw": <RiTwitterXLine className='card-icon-tw' title='X (FKA Twitter)'/>,
+    "tw": <RiTwitterXLine className='card-icon-tw' title='X (FKA Twitter)' />,
     "ig": <FaInstagram className='card-icon-ig' />,
     "gt": <FaGithub className='card-icon-gt' />,
     "fm": <SiFrontendmentor className='card-icon-fem' title="Frontend Mentor" />,
@@ -478,33 +478,27 @@ export const myFaq2 = [
         "id": 0,
         "faqTitle": "Can you help me with a specific web development issue or project?",
         "faq1": `I'd be delighted to assist you with your web development issue or project!`,
-        "faq2": `Please provide me with the details of your project or describe the specific issue you're facing, through my email, or 
-                 through contact page and I'll do my best to offer guidance, solutions, or code samples to help you achieve your goals. 
-                 Let's get started!`,
+        "faq2": "You can go ahead to provide me with the details of your project or describe the specific issue you're facing, through my email, or through the contact page and I'll do my best to offer guidance, solutions, or code samples to help you achieve your goals.",
     },
 
     {
         "id": 1,
-        "faqTitle": "What is responsive web design?",
-        "faq1": `Responsive web design is an approach to web development that ensures a website's layout and content adapt and look good 
-                 on various screen sizes and devices, from mobile phones to desktop computers.`,
+        "faqTitle": "Do you have experience with responsive web design?",
+        "faq1": "Yes, I prioritize responsive web design to ensure that websites look and function well on different devices, including smartphones, tablets, and desktops.",
     },
 
     {
         "id": 2,
-        "faqTitle": "A domain name is the web address people use to find your website. ",
-        "faq1": `A website typically consists of static content and provides information or displays content to visitors.`,
-        "faq2": `Choose a domain that's easy to remember, relevant to your content or brand, and has a common domain extension like .com. 
-                 Check its availability and consider your target audience when selecting one.`,
+        "faqTitle": "Can you work with existing websites and provide maintenance and updates",
+        "faq1": "Yes, I offer website maintenance and updates. Whether it's fixing issues, adding new features, or keeping software up to date, I ensure websites remain in excellent condition.",
+        "faq2": "",
     },
 
     {
         "id": 3,
         "faqTitle": "What is the cost of building a website?",
-        "faq1": `The cost of building a website can vary significantly depending on factors like complexity, features, design, and 
-                 the developer's rates.`,
-        "faq2": `Simple websites may cost a few hundred dollars, while complex ones with custom features can range from several thousand 
-                 to tens of thousands of dollars.`,
+        "faq1": "The cost of building a website can vary significantly depending on factors like complexity, features and design.",
+        "faq2": "Simple websites may cost a few hundred dollars, while complex ones with custom features can range from several thousand to tens of thousands of dollars.",
     },
 ]
 

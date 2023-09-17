@@ -5,6 +5,7 @@
 }
 
 .details-text p {
+    font-family: 'Poppins', sans-serif !important;
     color: var(--color12) !important;
     width: 95%;
     text-align: left;
