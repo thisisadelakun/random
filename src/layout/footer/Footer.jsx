@@ -71,7 +71,7 @@ const Footer = () => {
                                     onClick={() => closeMenu()}
                                     exact="true"
                                 >
-                                    My Works
+                                    Portfolio
                                 </Link>
                             )}
                         </li>

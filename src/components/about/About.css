@@ -46,8 +46,8 @@
 }
 
 .about-me-headers p {
-    font-size: 16px;
-    font-family: 'Quintessential', cursive;
+    font-size: 16px !important;
+    font-family: 'Quintessential', cursive !important;
     color: var(--color61);
     text-align: center;
     width: 90%;
@@ -59,7 +59,7 @@
     width: 90%;
     margin: 1.5rem auto;
     line-height: 1.7 !important;
-    font-family: 'Poppins', sans-serif !important;
+    font-family: 'Inter', sans-serif !important;
 }
 
 .about-me-main2 {
@@ -120,7 +120,7 @@ div.skills-col ul li {
     font-size: 14px !important;
     font-weight: 400;
     color: var(--color31);
-    font-family: 'Poppins', sans-serif !important;
+    font-family: 'Inter', sans-serif !important;
 }
 
 .sendme-about {

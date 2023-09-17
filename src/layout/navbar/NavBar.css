@@ -103,7 +103,7 @@ body.theme-3 .show-background {
 }
 
 .canvas-body li {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.4;
     font-weight: 300 !important;
     font-family: 'Roboto Serif', serif;
@@ -168,11 +168,11 @@ body.theme-3 .show-background {
 
 .let-contact-me p {
     line-height: 1.2;
-    font-size: 16px;
+    font-size: 14px;
     margin-bottom: 5px;
     color: rgba(0, 128, 128, 0.575) !important;
     overflow: hidden;
-    font-family: 'Roboto Serif', serif;
+    font-family: 'Inter', serif !important;
 }
 
 .nav-link-socios {
@@ -273,7 +273,7 @@ body.theme-3 .show-background {
     }
 
     .canvas-body li {
-        font-size: 16px;
+        font-size: 15px;
         line-height: 1.4;
     }
 

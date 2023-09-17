@@ -13,9 +13,8 @@
 }
 
 .library-tiles p {
-    font-size: 16px !important;
-    font-family: 'Roboto Serif', serif !important;
-    line-height: 1.5;
+    font-family: 'Inter', serif !important;
+    line-height: 1.7 !important;
 }
 
 body.theme-3 .library-tiles p,

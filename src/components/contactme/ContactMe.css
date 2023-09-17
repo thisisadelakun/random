@@ -21,8 +21,8 @@
 }
 
 .contact_me_col_headers p {
-    font-size: 16px;
-    font-family: 'Quintessential', cursive;
+    font-size: 16px !important;
+    font-family: 'Quintessential', cursive !important;
     color: var(--color61);
     text-align: center;
     width: 90%;
@@ -41,7 +41,7 @@
 }
 
 .contact_me_col_main p {
-    font-family: 'Poppins', sans-serif !important;
+    font-family: 'Inter', sans-serif !important;
     text-align: center;
     color: var(--color3);
     margin: 1rem auto;
@@ -54,7 +54,7 @@
 
 .contact-left p,
 .contact-right p {
-    font-family: 'Poppins', sans-serif !important;
+    font-family: 'Inter', sans-serif !important;
     color: var(--color3);
     text-align: left !important;
 }
@@ -87,7 +87,7 @@
     margin: 2rem auto;
 }
 
-.find-me span{
+.find-me span {
     text-align: left;
     color: var(--color3) !important;
     font-size: 16px;

@@ -294,6 +294,7 @@ body.theme-3 .page-main-2 {
 
 .my-library p,
 .page-about-text p {
+    font-family: 'Inter', sans-serif !important;
     width: 90%;
     margin-left: 5px;
 }
