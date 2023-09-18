@@ -12,6 +12,7 @@ const Carousels = () => {
             <div className='carousels-col'>
                 <Carousel
                     fade
+                    controls={false}
                     data-bs-theme="light"
                 >
                     {images.map((image, index) => (

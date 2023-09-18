@@ -22,7 +22,7 @@ body.theme-3 .show-background {
 }
 
 .offcanvasbgr {
-    background-color: var(--color2)!important;
+    background-color: var(--color2) !important;
 }
 
 .canvas-body {
@@ -175,6 +175,7 @@ body.theme-3 .show-background {
     font-family: 'Inter', serif !important;
 }
 
+.nav-link-socios2,
 .nav-link-socios {
     display: inline-flex;
     flex-direction: row;
@@ -187,13 +188,18 @@ body.theme-3 .show-background {
 }
 
 .nav-link-socios a {
-    font-size: 26px;
+    font-size: 23px;
 }
 
+.nav-link-socios2 a:hover,
 .nav-link-socios a:hover {
     color: var(--color1) !important;
     transform: scale(1.1);
     position: relative;
+}
+
+.nav-link-socios2 a {
+    font-size: 16px !important;
 }
 
 .offcanvasbgr.show-offcanvas .canvas-body {
@@ -278,7 +284,7 @@ body.theme-3 .show-background {
     }
 
     .nav-link-socios a {
-        font-size: 23px;
+        font-size: 20px;
     }
 
     @keyframes slideInMenu {

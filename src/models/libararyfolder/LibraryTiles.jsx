@@ -59,7 +59,7 @@ const LibraryTiles = ({ displayedLibrary }) => {
                         {/* Display the first content */}
                         {item.contents[1] && (
                             <p id='tiles-p' className='content1'>
-                                {truncateText(item.contents[1].content, 350)}
+                                {truncateText(item.contents[1].content, 300)}
                             </p>
                         )}
                     </NavLink>

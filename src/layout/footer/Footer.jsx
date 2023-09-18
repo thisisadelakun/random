@@ -91,7 +91,7 @@ const Footer = () => {
                 </div>
                 <div className="footer-middle">
                     <div className="footer-social-left mobile-view-only">
-                        <li className='nav-link-socios nav-link-socios2'>
+                        <li className='nav-link-socios2'>
                             <a href="https://twitter.com/thisisadelakun" target="_blank" rel="noopener noreferrer">
                                 {icons2.tw}
                             </a>
@@ -124,7 +124,7 @@ const Footer = () => {
                         </span>
                     </div>
                     <div className="footer-social-right desktop-view-only">
-                        <li className='nav-link-socios'>
+                        <li className='nav-link-socios2'>
                             <a href="https://twitter.com/thisisadelakun" target="_blank" rel="noopener noreferrer">
                                 {icons2.tw}
                             </a>

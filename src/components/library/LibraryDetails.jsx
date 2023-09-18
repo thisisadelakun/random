@@ -125,8 +125,8 @@ const LibraryDetail = () => {
                                     <li>
                                         <a href={selectedItem.furtherlink1} target="_blank"
                                             rel="noopener noreferrer"
-                                            className='further-links1'>{selectedItem.furtherlinkTitle1} -
-                                        </a>
+                                            className='further-links1'>{selectedItem.furtherlinkTitle1}
+                                        </a> - 
                                         {selectedItem.furtherlinkContent1 && (<><span className='furtherlinkContent1'>
                                             {selectedItem.furtherlinkContent1}
                                         </span></>)}
@@ -137,8 +137,8 @@ const LibraryDetail = () => {
                                     <li>
                                         <a href={selectedItem.furtherlink2} target="_blank"
                                             rel="noopener noreferrer"
-                                            className='further-links2'>{selectedItem.furtherlinkTitle2} -
-                                        </a>
+                                            className='further-links2'>{selectedItem.furtherlinkTitle2}
+                                        </a> - 
                                         {selectedItem.furtherlinkContent2 && (<span className='furtherlinkContent2'>
                                             {selectedItem.furtherlinkContent2}
                                         </span>)}
@@ -149,8 +149,8 @@ const LibraryDetail = () => {
                                     <li>
                                         <a href={selectedItem.furtherlink3} target="_blank"
                                             rel="noopener noreferrer"
-                                            className='further-links3'>{selectedItem.furtherlinkTitle3} -
-                                        </a>
+                                            className='further-links3'>{selectedItem.furtherlinkTitle3}
+                                        </a> - 
                                         {selectedItem.furtherlinkContent3 && (<span className='furtherlinkContent3'>
                                             {selectedItem.furtherlinkContent3}
                                         </span>)}

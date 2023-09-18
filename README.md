@@ -1,6 +1,4 @@
-# React + Vite
-
-Certainly! Here's a template for a detailed README for your personal portfolio website project based on our chat history:
+Personal Portfolio:
 
 ---
 
@@ -8,7 +6,7 @@ Certainly! Here's a template for a detailed README for your personal portfolio w
 
 ![Project Preview](path-to-your-project-preview-image.png)
 
-Welcome to my personal portfolio website! This project serves as a showcase for my skills, projects, and experiences. It's designed to provide visitors with an overview of who I am and what I've accomplished. Feel free to explore the project and learn more about me.
+Welcome to my personal portfolio website! This project serves as a showcase for my skills, projects, experiences, & articles. It's designed to provide visitors with an overview of who I am and what I've accomplished. Feel free to explore the project and learn more about me.
 
 ## Table of Contents
 
@@ -43,10 +41,12 @@ The personal portfolio website is a web application built to showcase my skills,
   - HTML5 & CSS3: Standard web technologies for structuring and styling content.
   - React Router: For handling client-side routing and navigation.
   - React Context: For managing global state, such as project data.
-  - Other dependencies as outlined in the project.
+  - 
+  - 
+  - 
 
-- **Backend (optional, if applicable):**
-  - Node.js and Express.js (or other backend technologies if used for handling contact form submissions, managing blog posts, etc.).
+- **Backend:**
+  - Firebase: Firebase: Google's mobile and web application development platform, offering various backend services and tools.
 
 ## Getting Started
 
@@ -72,11 +72,11 @@ The project is structured as follows:
 
 - `public/`: Public assets and the HTML entry point.
 - `src/`: Source code of the application.
-  - `components/`: React components for different sections of the website.
+  - `components/`: React components & Stylesheets for different sections of the website.
   - `data/`: JSON files containing data for projects, skills, and blog posts.
-  - `styles/`: Stylesheets for styling the components.
+  - `index.css/`: Stylesheet for general styling.
   - `App.js`: The root component that sets up the application layout and routes.
-  - `index.js`: The entry point of the React application.
+  - `main.js`: The entry point of the React application.
   
 - Other project-specific files and directories.
 
@@ -90,9 +90,9 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Contact
 
-- Your Name
+- Abayomi Adelakun
 - Email: your@email.com
-- LinkedIn: [Your LinkedIn Profile](https://www.linkedin.com/in/your-profile/)
-- GitHub: [Your GitHub Profile](https://github.com/your-username)
+- LinkedIn: [LinkedIn Profile](https://www.linkedin.com/in/your-profile/)
+- GitHub: [GitHub Profile](https://github.com/your-username)
 
 ---

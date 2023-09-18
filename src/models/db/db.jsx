@@ -6,9 +6,13 @@ import bmc from '../../assets/bmc-icon.svg'
 import flipcoin from '../../assets/flipcoin.webp'
 import calc from '../../assets/calc-app.svg'
 import msf from '../../assets/msf.webp'
-import portfolio from '../../assets/portfolio.webp'
+import portfolio from '../../assets/folio.webp'
 import poslist from '../../assets/PostList.webp'
 import profilepic2 from '../../assets/ade-pic-2.webp'
+import loop from '../../assets/loop.webp'
+import trad from '../../assets/trad.webp'
+import angfolio from '../../assets/angfolio.webp'
+import gtg from '../../assets/gtg.webp'
 
 // import react-icons
 import { CgClose, CgMenuRight } from 'react-icons/cg';
@@ -64,11 +68,31 @@ export const images = [
     },
     {
         "id": 5,
-        "url": poslist,
+        "url": loop,
     },
+
     {
         "id": 6,
         "url": "https://github.com/thisisadelakun/advice-generator-app/raw/main/Assets/Advice%20Desktop%20SS.PNG",
+    },
+    {
+        "id": 7,
+        "url": "https://raw.githubusercontent.com/thisisadelakun/countdown/main/src/screenshots/countdown_desktop.png",
+    },
+
+    {
+        "id": 8,
+        "url": trad,
+    },
+
+    {
+        "id": 9,
+        "url": trad,
+    },
+
+    {
+        "id": 10,
+        "url": trad,
     },
 ]
 
@@ -98,7 +122,7 @@ export const authorAbout = {
                     where I delve into the realms of problem-solving and innovation. Guided by the trifecta of curiosity, logic, and 
                     imagination, I unearth valuable insights, reframe challenges, and create purposeful solutions.`,
 
-    AboutMain1Content: `Hi there, I am Abayomi Adelakun a web & Mobile developer, driven by creativity, analytical thinking, and an 
+    AboutMain1Content: `Hi there, I am Abayomi Adelakun a web developer, driven by creativity, analytical thinking, and an 
                         insatiable curiosity. Focused on creating interactive digital experiences on the web. My work resides at the 
                         crossroads of design and technology, where I delve into the realms of problem-solving and innovation. Guided by 
                         the trifecta of curiosity, logic, and imagination, I unearth valuable insights, reframe challenges, and 
@@ -160,7 +184,21 @@ export const projectsContents = {
 export const projects = [
 
     {
-        "id": 2,
+        "id": 0,
+        "projectTitle": "Calculator App",
+        "backgroundImage": calc,
+        "category": 'web',
+        "catIcon": <TfiWorld className="svg" title='Web' />,
+        "live": "https://adelakuncalculator.netlify.app/",
+        "source": "https://github.com/thisisadelakun/calc-app",
+        "projectContent": "Built with HTML5, CSS3, & JS.",
+        "ht": <SiHtml5 />,
+        "css": <SiCss3 />,
+        "js": <SiJavascript />
+    },
+
+    {
+        "id": 1,
         "projectTitle": "MULTI STEP FORM",
         "backgroundImage": msf,
         "category": 'web',
@@ -171,198 +209,134 @@ export const projects = [
         "ht": <SiHtml5 />,
         "css": <SiCss3 />,
         "ts": <SiTypescript />,
-        "rjs": <SiReact />,
-        "tag1": "typescript",
-        "tag2": "react",
-        "tag3": "form",
+        "rjs": <SiReact />
     },
 
     {
-        id: 1,
-        projectTitle: "Calculator App",
-        backgroundImage: calc,
-        category: 'web',
-        catIcon: <TfiWorld className="svg" title='Web' />,
-        live: "https://adelakuncalculator.netlify.app/",
-        source: "https://github.com/thisisadelakun/calc-app",
-        projectContent: "Built with HTML5, CSS3, & JS.",
-        ht: <SiHtml5 />,
-        css: <SiCss3 />,
-        js: <SiJavascript />,
-        tag1: "javascript",
-        tag2: "html",
-        tag3: "game",
-    },
-
-    {
-        id: 3,
-        projectTitle: "ADVICE GENERATOR",
-        backgroundImage: "https://github.com/thisisadelakun/advice-generator-app/raw/main/Assets/Advice%20Desktop%20SS.PNG",
-        category: 'web',
-        catIcon: <TfiWorld className="svg" title='Web' />,
-        live: "https://adelakunadvice.netlify.app/",
-        source: "https://github.com/thisisadelakun/advice-generator-app",
-        projectContent: "Built with HTML5, CSS3, JS, & Bootstrap.",
-        ht: <SiHtml5 />,
-        css: <SiCss3 />,
-        js: <SiJavascript />,
-        tag1: "javascript",
-        tag2: "html",
-        tag3: "advice",
-    },
-
-    {
-        id: 4,
-        projectTitle: "Coin Flip Game",
-        category: 'web',
-        backgroundImage: flipcoin,
-        catIcon: <TfiWorld className="svg" title='Web' />,
-        live: "https://adelakuncoinflip.netlify.app/",
-        source: "https://github.com/thisisadelakun/coinFlipJS",
-        projectContent: "Built using HTML,CSS, & JS.",
-        ht: <SiHtml5 />,
-        css: <SiCss3 />,
-        js: <SiJavascript />,
-        tag1: "javascript",
-        tag2: "html",
-        tag3: "game",
-    },
-
-    {
-        id: 5,
-        projectTitle: "Blog Post",
-        category: 'web',
-        backgroundImage: poslist,
-        catIcon: <TfiWorld className="svg" title='Web' />,
-        live: "https://github.com/thisisadelakun/PostList",
-        source: "https://github.com/thisisadelakun/PostList",
-        projectContent: "Built using HTML, CSS, JS, Reactjs, Python & Django.",
-        ht: <SiHtml5 />,
-        js: <SiJavascript />,
-        rjs: <SiReact />,
-        py: <SiDjango />,
-        dj: <SiPython />,
-        tag1: "Python",
-        tag2: "ReactJs",
-        tag3: "Django",
-    },
-
-    {
-        id: 6,
-        projectTitle: "City Blog App",
-        category: 'mobile',
-        catIcon: <TfiAndroid className="svg" title='Android' />,
-        backgroundImage: "https://github.com/thisisadelakun/CityBlogApp/raw/main/www/img/CityBlog.png",
-        live: "https://drive.google.com/file/d/1Ib2SEf8ME3LGbTlSY0gWuw0CjcVDKXxx/view?usp=drive_link",
-        source: "https://github.com/thisisadelakun/CityBlogApp",
-        projectContent: "Built using Apache-Cordova with HTML5, CSS3, Bootstrap, & Wordpress.",
-        ht: <SiHtml5 />,
-        css: <SiCss3 />,
-        jv: <FaJava />,
-        cd: <SiApachecordova />,
-        js: <SiJavascript />,
-        wp: <SiWordpress />,
-        bs: <SiBootstrap />,
-        tag1: "Android",
-        tag2: "java",
-        tag3: "cordova",
-    },
-
-    {
-        id: 7,
-        projectTitle: "Personal Portfolio",
-        category: 'web',
-        backgroundImage: portfolio,
-        catIcon: <TfiWorld className="svg" title='Web' />,
-        live: "https://adelakuncoinflip.netlify.app/",
-        source: "https://github.com/thisisadelakun/coinFlipJS",
-        projectContent: "Built with HTML5, CSS3, JS, ReactJs, Bootstrap and Firebase.",
-        ht: <SiHtml5 />,
-        css: <SiCss3 />,
-        js: <SiJavascript />,
-        rjs: <SiReact />,
-        bs: <SiBootstrap />,
-        fb: <SiFirebase />,
-        tag1: "portfolio",
-        tag2: "firebase",
-        tag3: "javascript",
-    },
-
-    {
-        id: 8,
-        "projectTitle": "CV-APP",
-        category: 'mobile',
-        catIcon: <TfiAndroid className='svg' title='Android' />,
-        backgroundImage: "https://github.com/thisisadelakun/CV-APP/raw/main/www/img/screenshot.png",
-        live: "https://drive.google.com/file/d/147r6RlMJSFuavGVkL85CcI8HFIBIdW2Z/view?usp=drive_link/",
-        "source": "https://github.com/thisisadelakun/CV-APP",
-        projectContent: "Built using Apache-Cordova with HTML5, CSS3, AppJs, & Wordpress.",
-        ht: <SiHtml5 />,
-        css: <SiCss3 />,
-        jv: <FaJava />,
-        cd: <SiApachecordova />,
-        js: <SiJavascript />,
-        bs: <SiBootstrap />,
-        tag1: "cv",
-        tag2: "android",
-        tag3: "java",
-    },
-
-    {
-        "id": 9,
-        "projectTitle": "INTERACTIVE RATING",
+        "id": 2,
+        "projectTitle": "ADVICE GENERATOR",
+        "backgroundImage": "https://github.com/thisisadelakun/advice-generator-app/raw/main/Assets/Advice%20Desktop%20SS.PNG",
         "category": 'web',
-        "backgroundImage": "https://github.com/thisisadelakun/Interactive_rating/raw/main/src/assets/Rating_DSS_1.JPG",
         "catIcon": <TfiWorld className="svg" title='Web' />,
-        "live": "https://adelakun-interactive-rating.netlify.app/",
-        "source": "https://github.com/thisisadelakun/Interactive_rating",
-        "projectContent": "Built with HTML5, CSS3, JS, & ReactJs.",
+        "live": "https://adelakunadvice.netlify.app/",
+        "source": "https://github.com/thisisadelakun/advice-generator-app",
+        "projectContent": "Built with HTML5, CSS3, JS, & Bootstrap.",
+        "ht": <SiHtml5 />,
+        "css": <SiCss3 />,
+        "js": <SiJavascript />
+    },
+
+    {
+        "id": 3,
+        "projectTitle": "NURTURE REACH",
+        "backgroundImage": "https://github.com/thisisadelakun/scrod/raw/main/nurtureassets/nurture.webp",
+        "category": 'web',
+        "catIcon": <TfiWorld className="svg" title='Web' />,
+        "live": "https://nurturereach.netlify.app/",
+        "source": "https://github.com/thisisadelakun/nurtureach",
+        "projectContent": "Built with HTML5, CSS3, JS, ReactJs, Bootstrap, & Firebase.",
         "ht": <SiHtml5 />,
         "css": <SiCss3 />,
         "js": <SiJavascript />,
         "rjs": <SiReact />,
-        "tag1": "",
-        "tag2": "",
-        "tag3": "",
+        "fb": <SiFirebase />,
+        "bs": <SiBootstrap />
     },
+
     {
-        "id": 10,
-        "projectTitle": "INTERACTIVE RATING",
+        "id": 6,
+        "projectTitle": "Coin Flip Game",
         "category": 'web',
-        "backgroundImage": "https://github.com/thisisadelakun/Interactive_rating/raw/main/src/assets/Rating_DSS_1.JPG",
+        "backgroundImage": flipcoin,
         "catIcon": <TfiWorld className="svg" title='Web' />,
-        "live": "https://adelakun-interactive-rating.netlify.app/",
-        "source": "https://github.com/thisisadelakun/Interactive_rating",
-        "projectContent": "Built with HTML5, CSS3, JS, & ReactJs.",
+        "live": "https://adelakuncoinflip.netlify.app/",
+        "source": "https://github.com/thisisadelakun/coinFlipJS",
+        "projectContent": "Built using HTML,CSS, & JS.",
         "ht": <SiHtml5 />,
         "css": <SiCss3 />,
+        "js": <SiJavascript />
+    },
+
+    {
+        "id": 7,
+        "projectTitle": "Blog Post",
+        "category": 'web',
+        "backgroundImage": poslist,
+        "catIcon": <TfiWorld className="svg" title='Web' />,
+        "live": "https://github.com/thisisadelakun/PostList",
+        "source": "https://github.com/thisisadelakun/PostList",
+        "projectContent": "Built using HTML, CSS, JS, Reactjs, Python & Django.",
+        "ht": <SiHtml5 />,
         "js": <SiJavascript />,
         "rjs": <SiReact />,
-        "tag1": "",
-        "tag2": "",
-        "tag3": "",
+        "py": <SiDjango />,
+        "dj": <SiPython />
+    },
+
+    {
+        "id": 8,
+        "projectTitle": "City Blog App",
+        "category": 'mobile',
+        "catIcon": <TfiAndroid className="svg" title='Android' />,
+        "backgroundImage": "https://github.com/thisisadelakun/CityBlogApp/raw/main/www/img/CityBlog.png",
+        "live": "https://drive.google.com/file/d/1Ib2SEf8ME3LGbTlSY0gWuw0CjcVDKXxx/view?usp=drive_link",
+        "source": "https://github.com/thisisadelakun/CityBlogApp",
+        "projectContent": "Built using Apache-Cordova(ANDROID) with HTML5, CSS3, JS, & Wordpress.",
+        "ht": <SiHtml5 />,
+        "css": <SiCss3 />,
+        "jv": <FaJava />,
+        "cd": <SiApachecordova />,
+        "js": <SiJavascript />,
+        "wp": <SiWordpress />
     },
 
     {
         "id": 11,
-        "projectTitle": "INTERACTIVE RATING",
+        "projectTitle": "COUNT DOWN",
         "category": 'web',
-        "backgroundImage": "https://github.com/thisisadelakun/Interactive_rating/raw/main/src/assets/Rating_DSS_1.JPG",
+        "backgroundImage": "https://raw.githubusercontent.com/thisisadelakun/countdown/main/src/screenshots/countdown_desktop.png",
         "catIcon": <TfiWorld className="svg" title='Web' />,
-        "live": "https://adelakun-interactive-rating.netlify.app/",
-        "source": "https://github.com/thisisadelakun/Interactive_rating",
+        "live": "https://adelakuncountdown.netlify.app/",
+        "source": "https://github.com/thisisadelakun/countdown",
         "projectContent": "Built with HTML5, CSS3, JS, & ReactJs.",
         "ht": <SiHtml5 />,
         "css": <SiCss3 />,
         "js": <SiJavascript />,
-        "rjs": <SiReact />,
-        "tag1": "",
-        "tag2": "",
-        "tag3": "",
+        "rjs": <SiReact />
     },
 
     {
         "id": 12,
+        "projectTitle": "TRADEXPRESS",
+        "category": 'web',
+        "backgroundImage": trad,
+        "catIcon": <TfiWorld className="svg" title='Web' />,
+        "live": "https://adelakuntradexpress.netlify.app/",
+        "source": "https://github.com/thisisadelakun/TradExpress",
+        "projectContent": "Built with HTML5, CSS3, JS, & ReactJs.",
+        "ht": <SiHtml5 />,
+        "css": <SiCss3 />,
+        "js": <SiJavascript />,
+        "rjs": <SiReact />
+    },
+
+    {
+        "id": 13,
+        "projectTitle": "LOOP STUDIO",
+        "category": 'web',
+        "backgroundImage": loop,
+        "catIcon": <TfiWorld className="svg" title='Web' />,
+        "live": "https://adelakunloopstudio.netlify.app/",
+        "source": "https://github.com/thisisadelakun/LoopStudio",
+        "projectContent": "Built with HTML5, CSS3, JS, & Bootstrap",
+        "ht": <SiHtml5 />,
+        "css": <SiCss3 />,
+        "js": <SiJavascript />,
+        "rjs": <SiReact />
+    },
+
+    {
+        "id": 14,
         "projectTitle": "INTERACTIVE RATING",
         "category": 'web',
         "backgroundImage": "https://github.com/thisisadelakun/Interactive_rating/raw/main/src/assets/Rating_DSS_1.JPG",
@@ -373,10 +347,95 @@ export const projects = [
         "ht": <SiHtml5 />,
         "css": <SiCss3 />,
         "js": <SiJavascript />,
-        "rjs": <SiReact />,
-        "tag1": "",
-        "tag2": "",
-        "tag3": "",
+        "rjs": <SiReact />
+    },
+
+    {
+        "id": 15,
+        "projectTitle": "PORTFOLIO",
+        "category": 'web',
+        "backgroundImage": portfolio,
+        "catIcon": <TfiWorld className="svg" title='Web' />,
+        "live": "https://adelakunfolio.netlify.app/",
+        "source": "https://github.com/thisisadelakun/mynewportfolio",
+        "projectContent": "Built with HTML5, CSS3, JS, & Bootstrap.",
+        "ht": <SiHtml5 />,
+        "css": <SiCss3 />,
+        "js": <SiJavascript />,
+        "bs": <SiBootstrap />,
+    },
+
+    {
+        "id": 16,
+        "projectTitle": "PORTFOLIO (ANGULAR)",
+        "category": 'web',
+        "backgroundImage": angfolio,
+        "catIcon": <TfiWorld className="svg" title='Web' />,
+        "live": "https://thisisadelakun.github.io/Angular-cv-app/home",
+        "source": "https://github.com/thisisadelakun/Angular-cv-app",
+        "projectContent": "Built with HTML5, CSS3, TS, & Angular",
+        "ht": <SiHtml5 />,
+        "css": <SiCss3 />,
+        "ts": <SiTypescript />,
+        "ang": <SiAngular />
+    },
+
+    {
+        "id": 17,
+        "projectTitle": "PORTFOLIO (ANDROID)",
+        "category": 'mobile',
+        "catIcon": <TfiAndroid className='svg' title='Android' />,
+        "backgroundImage": "https://github.com/thisisadelakun/CV-APP/raw/main/www/img/screenshot.png",
+        "live": "https://drive.google.com/file/d/147r6RlMJSFuavGVkL85CcI8HFIBIdW2Z/view?usp=drive_link/",
+        "source": "https://github.com/thisisadelakun/CV-APP",
+        "projectContent": "Built using Apache-Cordova with HTML5, CSS3, AppJs, & Wordpress.",
+        "ht": <SiHtml5 />,
+        "css": <SiCss3 />,
+        "jv": <FaJava />,
+        "cd": <SiApachecordova />,
+        "js": <SiJavascript />,
+        "bs": <SiBootstrap />
+    },
+
+
+    {
+        "id": 18,
+        "projectTitle": "GUESS THE WORD GAME",
+        "category": 'web',
+        "backgroundImage": gtg,
+        "catIcon": <TfiWorld className="svg" title='Web' />,
+        "live": "https://adelakunguessthegame.netlify.app/",
+        "source": "https://github.com/thisisadelakun/Guess-The-Word-Game",
+        "projectContent": "Built with HTML5, CSS3, & JS.",
+        "ht": <SiHtml5 />,
+        "css": <SiCss3 />,
+        "js": <SiJavascript />
+    },
+
+    {
+        "id": 19,
+        "projectTitle": "   QR CODE CARD",
+        "category": 'web',
+        "backgroundImage": "https://github.com/thisisadelakun/Product-preview-card/raw/main/Screenshots/Perfume%20Desktop%20.jpg",
+        "catIcon": <TfiWorld className="svg" title='Web' />,
+        "live": "https://adelakunpreviewcard.netlify.app/",
+        "source": "https://github.com/thisisadelakun/Product-preview-card",
+        "projectContent": "Built with HTML5, CSS3, JS, & Bootstrap",
+        "ht": <SiHtml5 />,
+        "css": <SiCss3 />
+    },
+
+    {
+        "id": 20,
+        "projectTitle": "   QR CODE CARD",
+        "category": 'web',
+        "backgroundImage": "https://github.com/thisisadelakun/QR-Code-Design/raw/main/Screenshots/Desktop%20Screenshot.jpg",
+        "catIcon": <TfiWorld className="svg" title='Web' />,
+        "live": "https://adelakunqr.netlify.app/",
+        "source": "https://github.com/thisisadelakun/QR-Code-Design",
+        "projectContent": "Built with HTML5 & CSS3",
+        "ht": <SiHtml5 />,
+        "css": <SiCss3 />
     },
 ]
 
@@ -448,10 +507,9 @@ export const myFaq = [
 
     {
         "id": 1,
-        "faqTitle": "What is web development?",
+        "faqTitle": "What is web development, and what does a web developer do?",
         "faq1": `Web development is the process of creating and maintaining websites or web applications.`,
-        "faq2": `It involves designing, coding, and managing the technical aspects of websites to ensure they function correctly 
-                 and provide a seamless user experience.`,
+        "faq2": "Web developers design, code, and maintain websites to ensure they function properly and provide a great user experience.",
     },
 
     {
@@ -465,7 +523,7 @@ export const myFaq = [
 
     {
         "id": 3,
-        "faqTitle": "What is the difference between front-end and back-end development?",
+        "faqTitle": "What is SEO (Search Engine Optimization) and Why is it Important for Web Development?",
         "faq1": `SEO (Search Engine Optimization) is the practice of optimizing your website's content and structure to rank higher in 
                  search engine results, making it more visible to users `,
         "faq2": `It's crucial for driving organic (unpaid) traffic to your site, improving its visibility, and attracting potential 

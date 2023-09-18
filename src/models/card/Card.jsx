@@ -8,7 +8,7 @@ import Card from 'react-bootstrap/Card';
 import { projects, icons } from '../db/db';
 
 const CardComponent = ({ numCards }) => {
-    const sortedProjects = projects.sort((a, b) => a.id === 1 ? -1 : b.id === 1 ? 1 : 0);
+    const sortedProjects = projects.sort((a, b) => a.id === 0 ? -1 : b.id === 1 ? 1 : 0);
     const displayedProjects = sortedProjects.slice(0, numCards);
 
     return (
@@ -26,18 +26,44 @@ const CardComponent = ({ numCards }) => {
                     <div className="bottom-section">
                         <span className="card_title" id='projectTitle'>{project.projectTitle}</span>
                         <div className="card_sub_title">
-                            <span className='ht pro-svg'>{project.ht}</span>
-                            <span className='css pro-svg'>{project.css}</span>
-                            <span className='jv pro-svg'>{project.jv}</span>
-                            <span className='js pro-svg'>{project.js}</span>
-                            <span className='ts pro-svg'>{project.ts}</span>
-                            <span className='rjs pro-svg'>{project.rjs}</span>
-                            <span className='cd pro-svg'>{project.cd}</span>
-                            <span className='py pro-svg'>{project.py}</span>
-                            <span className='dj pro-svg'>{project.dj}</span>
-                            <span className='wp pro-svg'>{project.wp}</span>
-                            <span className='bs pro-svg'>{project.bs}</span>
+                            {project.ht && (
+                                <span className='ht pro-svg'>{project.ht}</span>
+                            )}
+                            {project.css && (
+                                <span className='css pro-svg'>{project.css}</span>
+                            )}
+                            {project.jv && (
+                                <span className='jv pro-svg'>{project.jv}</span>
+                            )}
+                            {project.js && (
+                                <span className='js pro-svg'>{project.js}</span>
+                            )}
+                            {project.ts && (
+                                <span className='ts pro-svg'>{project.ts}</span>
+                            )}
+                            {project.rjs && (
+                                <span className='rjs pro-svg'>{project.rjs}</span>
+                            )}
+                            {project.cd && (
+                                <span className='cd pro-svg'>{project.cd}</span>
+                            )}
+                            {project.py && (
+                                <span className='py pro-svg'>{project.py}</span>
+                            )}
+                            {project.dj && (
+                                <span className='dj pro-svg'>{project.dj}</span>
+                            )}
+                            {project.wp && (
+                                <span className='wp pro-svg'>{project.wp}</span>
+                            )}
+                            {project.bs && (
+                                <span className='bs pro-svg'>{project.bs}</span>
+                            )}
+                            {project.ang && (
+                                <span className='bs pro-svg'>{project.ang}</span>
+                            )}
                         </div>
+
                         <div className="card_row">
                             <div className="item-up">
                                 <span className="big-text">

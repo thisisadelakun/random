@@ -96,7 +96,7 @@
 }
 
 div.further-col ol li {
-    font-size: 17px;
+    gap: 3px;
     margin: 1.5rem 0;
     list-style-type: disc !important;
     overflow-x: visible !important;
@@ -104,13 +104,17 @@ div.further-col ol li {
 }
 
 .further-col li a {
+    font-size: 15px !important;
     color: var(--color1);
     text-decoration: underline 3px #ccc;
+    margin-right: 5px;
 }
 
 .further-col li span {
-    font-size: 16px;
+    font-family: "Inter", sans-serif !important;
+    font-size: 14px !important;
     color: var(--color31);
+    margin-left: 5px;
 }
 
 .details-prgh {
