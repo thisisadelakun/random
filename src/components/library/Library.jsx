@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import React, { useState } from 'react';
+import { scrollTo } from 'smoothscroll-polyfill';
 import './Library.css'
 
 // import models
@@ -13,20 +13,24 @@ const Library = () => {
     const [currentPage, setCurrentPage] = useState(1);
     const totalPages = Math.ceil(myLibrary.length / ITEMS_PER_PAGE);
 
-    const location = useLocation(); // Get the current location
-
-    // Use useEffect to scroll to the top whenever the location (route) changes
-    useEffect(() => {
-        window.scrollTo({
-            top: 0,
-            behavior: 'auto',
-        });
-    }, [location]);
-
     const handlePageClick = (pageNumber) => {
-        // When the page number changes, setCurrentPage will trigger a re-render
+        const targetY = 0;
+    
+        if ('scrollBehavior' in document.documentElement.style) {
+            // If the browser supports smooth scrolling, use it
+            window.scrollTo({
+                top: targetY,
+                behavior: 'smooth',
+            });
+        } else {
+            // For browsers that don't support smooth scrolling (e.g., Safari), use the polyfill
+            // Use the scrollTo method from smoothscroll-polyfill
+            scrollTo(0, targetY);
+        }
+    
         setCurrentPage(pageNumber);
     };
+
 
     const getPageNumbers = () => {
         const pageNumbers = [];
