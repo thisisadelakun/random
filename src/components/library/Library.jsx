@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import './Library.css'
 
 // import models
@@ -12,13 +13,18 @@ const Library = () => {
     const [currentPage, setCurrentPage] = useState(1);
     const totalPages = Math.ceil(myLibrary.length / ITEMS_PER_PAGE);
 
-    const handlePageClick = (pageNumber) => {
-        const targetY = 0; // Scroll to the top
+    const location = useLocation(); // Get the current location
+
+    // Use useEffect to scroll to the top whenever the location (route) changes
+    useEffect(() => {
         window.scrollTo({
-            top: targetY,
+            top: 0,
             behavior: 'auto',
         });
+    }, [location]);
 
+    const handlePageClick = (pageNumber) => {
+        // When the page number changes, setCurrentPage will trigger a re-render
         setCurrentPage(pageNumber);
     };
 
