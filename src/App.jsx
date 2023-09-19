@@ -2,6 +2,11 @@ import React, { useEffect, useState, lazy, Suspense } from 'react';
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { QueryClient, QueryClientProvider } from 'react-query';
 import { HelmetProvider } from 'react-helmet-async';
+import 'smoothscroll-polyfill';
+
+// Initialize the polyfill
+window.__forceSmoothScrollPolyfill__ = true;
+
 
 // import hooks
 import PageLoader from './hooks/loaders/pageloader/PageLoader';
