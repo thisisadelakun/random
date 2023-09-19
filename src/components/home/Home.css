@@ -295,7 +295,6 @@ body.theme-3 .page-main-2 {
 .my-library p {
     width: 90%;
     margin-left: 5px;
-    color: var(--color61) !important;
 }
 
 .page-about-text p {
@@ -304,6 +303,8 @@ body.theme-3 .page-main-2 {
     margin-left: 5px;
 }
 
+body.theme-1 .my-library p,
+body.theme-3 .my-library p,
 body.theme-1 .page-about-text p,
 body.theme-3 .page-about-text p,
 body.theme-1 .my-library h1,
@@ -314,6 +315,7 @@ body.theme-3 .page-about-text h4 {
     transition: 1s ease;
 }
 
+body.theme-2 .my-library p,
 body.theme-2 .my-library h1,
 body.theme-2 .page-about-text p,
 body.theme-2 .page-about-text h4 {
