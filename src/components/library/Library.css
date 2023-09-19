@@ -2,8 +2,7 @@
 .filtered-library-col,
 .library-detail {
     width: 100%;
-    min-height: 100vh !important;
-    padding: 6rem 0;
+    padding: 6rem 0 !important;
     background: linear-gradient(to right, var(--color22), var(--color2));
     font-family: 'Roboto Serif', serif;
 }

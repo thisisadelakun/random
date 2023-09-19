@@ -173,7 +173,7 @@ const Home = () => {
                         <div className="about-img-col"></div>
 
                         <div className="mobile-view-only more-btn">
-                            <NavLink to="/meet-me" className="my-button">
+                            <NavLink to="/about-me" className="my-button">
                                 <span className='my-btn-text'> READ MORE</span> {icons.argt}
                             </NavLink>
                         </div>
@@ -218,7 +218,7 @@ const Home = () => {
 
             <div className="page-main">
                 <div className="rev-mes">
-                <div className="rev-mes-column">
+                    <div className="rev-mes-column">
                         <h1>Gallery</h1>
                         <p>Selected screenshots of past works.</p>
                         <Carousels />
