@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { scrollTo } from 'smoothscroll-polyfill';
+import React, { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import './Library.css'
 
 // import models
@@ -14,23 +14,13 @@ const Library = () => {
     const totalPages = Math.ceil(myLibrary.length / ITEMS_PER_PAGE);
 
     const handlePageClick = (pageNumber) => {
-        const targetY = 0;
-    
-        if ('scrollBehavior' in document.documentElement.style) {
-            // If the browser supports smooth scrolling, use it
-            window.scrollTo({
-                top: targetY,
-                behavior: 'smooth',
-            });
-        } else {
-            // For browsers that don't support smooth scrolling (e.g., Safari), use the polyfill
-            // Use the scrollTo method from smoothscroll-polyfill
-            scrollTo(0, targetY);
-        }
-    
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+        });
+
         setCurrentPage(pageNumber);
     };
-
 
     const getPageNumbers = () => {
         const pageNumbers = [];
