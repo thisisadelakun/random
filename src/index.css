@@ -33,6 +33,11 @@
   display: none;
 }
 
+html {
+  --scroll-behavior: smooth;
+  scroll-behavior: smooth;
+}
+
 body {
   width: 100%;
   min-height: 100vh !important;
@@ -46,7 +51,6 @@ body {
   padding: 0 !important;
   transition: 1s ease;
   overflow-x: hidden !important;
-  scroll-behavior: smooth;
 }
 
 body.theme-1 {
