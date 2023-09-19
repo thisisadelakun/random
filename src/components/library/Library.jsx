@@ -1,15 +1,14 @@
-import React, { useState, useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import React, { useState } from 'react';
 import './Library.css';
+
+// Import the smoothscroll-anchor-polyfill
+import smoothscrollPolyfill from 'smoothscroll-polyfill';
+import smoothscrollAnchorPolyfill from 'smoothscroll-anchor-polyfill';
 
 // Import models
 import { libraryPage, myLibrary } from '../../models/db/db2';
 import LibraryTiles from '../../models/libararyfolder/LibraryTiles';
 import SEO from '../../models/seo/SEO';
-
-// Import the smoothscroll-anchor-polyfill
-import smoothscrollPolyfill from 'smoothscroll-polyfill';
-import smoothscrollAnchorPolyfill from 'smoothscroll-anchor-polyfill';
 
 // Initialize the smoothscroll polyfills
 smoothscrollPolyfill.polyfill();

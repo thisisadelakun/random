@@ -7,7 +7,6 @@ import 'smoothscroll-polyfill';
 // Initialize the polyfill
 window.__forceSmoothScrollPolyfill__ = true;
 
-
 // import hooks
 import PageLoader from './hooks/loaders/pageloader/PageLoader';
 import SlowLoader from './hooks/loaders/slowloader/SlowLoader';
