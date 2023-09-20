@@ -162,8 +162,8 @@ const NavBar = () => {
                     </li>
 
                     <li className="nav-item nav-item-border">
-                      <a className='nav-link' href="mailto:" target="_blank" rel="noopener noreferrer">
-                        hello@adelakun.dev
+                      <a className='nav-link' href="" target="_blank" rel="noopener noreferrer">
+                        Résumé
                       </a>
                     </li>
                   </div>
@@ -176,7 +176,7 @@ const NavBar = () => {
                     <a href="https://www.linkedin.com/in/abayomi-adelakun-897227178/" target="_blank" rel="noopener noreferrer">
                       {icons.in}
                     </a>
-                   
+
                     <a href="https://frontendmentor.io/thisisadelakun" target="_blank" rel="noopener noreferrer">
                       {icons.fm}
                     </a>
@@ -191,7 +191,7 @@ const NavBar = () => {
                     <a href="https://www.instagram.com/thisisadelakun" target="_blank" rel="noopener noreferrer">
                       {icons.ig}
                     </a>
-                    
+
                   </li>
                 </Nav>
               </Offcanvas.Body>

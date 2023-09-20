@@ -31,8 +31,8 @@ const Footer = () => {
                             </li>
 
                             <li className="nav-item nav-item-border">
-                                <a className='nav-link' href="mailto:" target="_blank" rel="noopener noreferrer">
-                                    hello@adelakun.dev
+                                <a className='nav-link' href="" target="_blank" rel="noopener noreferrer">
+                                Résumé
                                 </a>
                             </li>
                         </div>
