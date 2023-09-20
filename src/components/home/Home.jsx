@@ -118,13 +118,13 @@ const Home = () => {
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="https://frontendmentor.io/"
+                                                        <a href="https://www.frontendmentor.io/profile/thisisadelakun"
                                                             target="_blank" rel="noopener noreferrer">
                                                             {icons.fm}
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="https://frontendmentor.io/thisisadelakun"
+                                                        <a href="https://www.youtube.com/channel/UCU-0h77SK1LV2VzW6X0qaHg"
                                                             target="_blank" rel="noopener noreferrer" title="YouTube">
                                                             {icons.yt}
                                                         </a>

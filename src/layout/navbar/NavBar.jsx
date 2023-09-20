@@ -184,7 +184,7 @@ const NavBar = () => {
                     <a href="https://www.linkedin.com/in/abayomi-adelakun-897227178/" target="_blank" rel="noopener noreferrer">
                       {icons.gt}
                     </a>
-                    <a href="https://www.youtube.com/thisisadelakun" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.youtube.com/channel/UCU-0h77SK1LV2VzW6X0qaHg" target="_blank" rel="noopener noreferrer">
                       {icons.yt}
                     </a>
 

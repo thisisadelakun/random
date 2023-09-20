@@ -108,10 +108,10 @@ const Footer = () => {
                                 {icons2.ig}
                             </a>
 
-                            <a href="https://frontendmentor.io/thisisadelakun" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.frontendmentor.io/profile/thisisadelakun" target="_blank" rel="noopener noreferrer">
                                 {icons2.fm}
                             </a>
-                            <a href="https://www.youtube.com/thisisadelakun" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.youtube.com/channel/UCU-0h77SK1LV2VzW6X0qaHg" target="_blank" rel="noopener noreferrer">
                                 {icons2.yt}
                             </a>
                         </li>
@@ -141,10 +141,10 @@ const Footer = () => {
                                 {icons2.ig}
                             </a>
 
-                            <a href="https://frontendmentor.io/thisisadelakun" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.frontendmentor.io/profile/thisisadelakun" target="_blank" rel="noopener noreferrer">
                                 {icons2.fm}
                             </a>
-                            <a href="https://www.youtube.com/thisisadelakun" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.youtube.com/channel/UCU-0h77SK1LV2VzW6X0qaHg" target="_blank" rel="noopener noreferrer">
                                 {icons2.yt}
                             </a>
                         </li>
