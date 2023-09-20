@@ -162,7 +162,7 @@ const NavBar = () => {
                     </li>
 
                     <li className="nav-item nav-item-border">
-                      <a className='nav-link' href="" target="_blank" rel="noopener noreferrer">
+                      <a className='nav-link' href={authorInfo.resume} download="Adelakun_Résumé.pdf" target="_blank" rel="noopener noreferrer">
                         Résumé
                       </a>
                     </li>

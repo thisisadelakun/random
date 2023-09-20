@@ -8,7 +8,7 @@ import { icons } from '../db/db'
 const Sendme = () => {
     return (
         <div className="page-mes rev-mes-column">
-            <h1>Send me <br />a message!</h1>
+            <h3>Send me <br />a message!</h3>
             <p>Got a question or proposal, <br />or a review? Go Ahead.</p>
 
             <div className="more-btn">

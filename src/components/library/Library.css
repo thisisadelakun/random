@@ -65,6 +65,7 @@
     font-family: 'Roboto Serif', serif;
     color: var(--color3) !important;
     font-weight: 600;
+    text-shadow: none !important;
 }
 
 .post-body p {

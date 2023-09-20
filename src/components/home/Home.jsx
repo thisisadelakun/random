@@ -157,7 +157,7 @@ const Home = () => {
             <div className="page-main-2">
                 <div className="page-about containers">
                     <div className="page-about-text">
-                        <h4>Discover <br />the Dev,</h4>
+                        <h3>Discover <br />the Dev,</h3>
                         <p>
                             {authorAbout.About1Content}
                         </p>
@@ -184,9 +184,9 @@ const Home = () => {
 
             <div className="page-main">
                 <div className="my-work container">
-                    <h1 className='container desktop-view-only'>{workContent.homeTitle}</h1>
+                    <h3 className='container desktop-view-only'>{workContent.homeTitle}</h3>
                     <p className='container desktop-view-only'>{workContent.homeSubtitle}</p>
-                    <h1 className='containers mobile-view-only'>{workContent.homeTitle}</h1>
+                    <h3 className='containers mobile-view-only'>{workContent.homeTitle}</h3>
                     <p className='containers mobile-view-only'> {workContent.homeSubtitle}</p>
                     <div className="card_row container">
                         <CardComponent numCards={3} />
@@ -202,7 +202,7 @@ const Home = () => {
 
             <div className="page-main-2">
                 <div className="my-library containers">
-                    <h1 className=''>{libraryContent.homeTitle}</h1>
+                    <h3 className=''>{libraryContent.homeTitle}</h3>
                     <p className=''>{libraryContent.homeSubtitle}</p>
                     <div className="library_row container">
                         <LibraryTiles displayedLibrary={displayedLibrary} />
@@ -219,7 +219,7 @@ const Home = () => {
             <div className="page-main">
                 <div className="rev-mes">
                     <div className="rev-mes-column">
-                        <h1>Gallery</h1>
+                        <h3>Gallery</h3>
                         <p>Selected screenshots of past works.</p>
                         <Carousels />
                     </div>

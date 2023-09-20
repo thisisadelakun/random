@@ -10,6 +10,7 @@
     padding-bottom: 1rem;
     font-family: 'Roboto Serif', serif;
     font-weight: 700 !important;
+    text-shadow: none !important;
 }
 
 .library-tiles p {

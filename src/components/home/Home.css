@@ -307,8 +307,8 @@ body.theme-1 .my-library p,
 body.theme-3 .my-library p,
 body.theme-1 .page-about-text p,
 body.theme-3 .page-about-text p,
-body.theme-1 .my-library h1,
-body.theme-3 .my-library h1,
+body.theme-1 .my-library h3,
+body.theme-3 .my-library h3,
 body.theme-1 .page-about-text h4,
 body.theme-3 .page-about-text h4 {
     color: var(--color12) !important;
@@ -316,7 +316,7 @@ body.theme-3 .page-about-text h4 {
 }
 
 body.theme-2 .my-library p,
-body.theme-2 .my-library h1,
+body.theme-2 .my-library h3,
 body.theme-2 .page-about-text p,
 body.theme-2 .page-about-text h4 {
     color: var(--color32) !important;
@@ -367,14 +367,12 @@ body.theme-3 .about-img-col {
     display: block;
 }
 
-.page-mes h1,
-.rev-mes h1,
-.my-work h1 {
+.page-mes h3,
+.rev-mes h3,
+.my-work h3 {
     padding: 5px 0;
-    font-family: 'Caprasimo', cursive;
-    font-style: italic !important;
     color: var(--color12);
-    /* text-shadow: 2px 3px 0 rgba(0, 0, 0, 0.205); */
+    text-shadow: 2px 3px 0 rgba(0, 0, 0, 0.205);
 }
 
 .rev-mes {
@@ -400,19 +398,18 @@ body.theme-3 .about-img-col {
 .page-mes p {
     text-align: left;
     font-family: 'Roboto Serif', serif;
-    font-size: 16px !important;
     font-weight: 400;
     color: var(--color61);
 }
 
-.rev-mes h1,
-.page-mes h1 {
+.rev-mes h3,
+.page-mes h3 {
     text-align: left;
 }
 
-.my-library h1 {
-    font-family: 'Caprasimo', cursive;
+.my-library h3 {
     text-align: left;
+    text-shadow: 2px 3px 0 rgba(0, 0, 0, 0.205);
 }
 
 .my-library p {

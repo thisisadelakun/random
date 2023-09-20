@@ -14,6 +14,9 @@ import trad from '../../assets/trad.webp'
 import angfolio from '../../assets/angfolio.webp'
 import gtg from '../../assets/gtg.webp'
 
+// import resume
+import resume from '../../assets/Abayomi_Adelakun_Resume.pdf'
+
 // import react-icons
 import { CgClose, CgMenuRight } from 'react-icons/cg';
 import { FaInstagram, FaLinkedin, FaGithub, FaYoutube, FaCodepen, FaArrowRight, FaJava } from 'react-icons/fa';
@@ -33,7 +36,7 @@ export const authorInfo = {
     "name": "Abayomi Adelakun",
     "firstName": "Abayomi",
     "lastName": "Adelakun",
-    "email": "info@adelakunabayomi.com",
+    "email": "adelakunabayomi123@gmail.com",
     "number": "+234-810-3358-829",
     "location": "Lagos, Nigeria",
     "jobTitle": "Web & Mobile Developer",
@@ -43,6 +46,7 @@ export const authorInfo = {
     "bmc": bmc,
     "logo1": "A",
     "logo2": "|",
+    "resume": resume,
 }
 
 export const images = [
