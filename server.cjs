@@ -1,26 +1,30 @@
 const express = require('express');
 const path = require('path');
-const app = express();
 const compression = require('compression');
+
+const app = express();
 
 app.use(compression());
 
-// Serve static files from the dist directory
-app.use(express.static(path.join(__dirname, 'dist')));
+app.use(express.static(path.join(__dirname, 'dist'), {
+  setHeaders: (res, path) => {
+    if (path.endsWith('.js')) {
+      res.setHeader('Content-Type', 'application/javascript');
+    }
+  },
+}));
 
-// Set caching headers for static files
 app.use((req, res, next) => {
-    res.set('Cache-Control', 'public, max-age=604800'); // Cache for 1 week
-    next();
+  res.set('Cache-Control', 'public, max-age=604800');
+  next();
 });
 
-// Serve the index.html file for all routes
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'dist', 'index.html'));
+  res.sendFile(path.join(__dirname, 'dist', 'index.html'));
 });
 
 // Start the server
-const port = process.env.PORT || 5173;
+const port = process.env.PORT || 5174;
 app.listen(port, () => {
-    console.log(`Server is running on port ${port}`);
+  console.log(`Server is running on port ${port}`);
 });

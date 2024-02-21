@@ -1056,7 +1056,7 @@ $('.button').on('click', function() {
         "date": "31 Jan 2023",
         "read": "6 mins read",
         "titles": " Web Typography",
-        "titles": "The Magic of Google Fonts",
+        "subTitles": "The Magic of Google Fonts",
         "tags": ["web development", "css"],
 
         "contents": [

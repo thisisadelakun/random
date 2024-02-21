@@ -36,7 +36,7 @@ export const authorInfo = {
     "name": "Abayomi Adelakun",
     "firstName": "Abayomi",
     "lastName": "Adelakun",
-    "email": "adelakunabayomi123@gmail.com",
+    "email": "contact@adelakunabayomi.com",
     "number": "+234-810-3358-829",
     "location": "Lagos, Nigeria",
     "jobTitle": "Web & Mobile Developer",
@@ -464,8 +464,8 @@ export const mySkills = [
         "skills3": "Bootstrap",
         "skills4": "Javascript",
         "skills5": "Typescript",
-        "skills5": "Angular",
-        "skills5": "Reactjs",
+        "skills6": "Angular",
+        "skills7": "Reactjs",
     },
 
     {

@@ -26,6 +26,9 @@ export default defineConfig({
               path.endsWith('.jpg') ||
               path.endsWith('.jpeg') ||
               path.endsWith('.png') ||
+              path.endsWith('.webp') ||
+              path.endsWith('.svg') ||
+              path.endsWith('.pdf') ||
               path.endsWith('.gif')
             ) {
               res.setHeader('Cache-Control', 'public, max-age=31536000');
