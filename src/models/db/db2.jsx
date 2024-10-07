@@ -13,8 +13,173 @@ export const newIcons = {
 }
 
 export const myLibrary = [
+
     {
         "id": 0,
+        "date": "27 Jun 2024",
+        "read": "5 mins read",
+        "titles": "Buzzwords in AI (PART II)",
+        "subTitles": "Expanding Your Vocabulary",
+        "tags": ["ai", "artificial intelligence"],
+
+        "contents": [
+            // content----1
+            {
+                "title": "",
+                "subTitle": "",
+                "content": `As the field of artificial intelligence grows, so does the vocabulary that accompanies it. Understanding these terms can help you navigate the evolving landscape of AI and better grasp the technologies that are shaping our future. Below are some additional buzzwords in AI, along with their meanings and significance.`,
+                "codeSnippets": []
+            },
+            // content----2
+            {
+                "title": "Generative AI",
+                "subTitle": "",
+                "content": "Generative AI refers to algorithms that can create new content, including text, images, and music, based on learned patterns from existing data. This technology has gained attention for its ability to produce realistic and diverse outputs, such as deepfakes or AI-generated art. Generative AI utilizes models like Generative Adversarial Networks (GANs) and Variational Autoencoders (VAEs) to create novel content, revolutionizing fields like creative arts, marketing, and entertainment.",
+                "codeSnippets": []
+            },
+            // content----3
+            {
+                "title": "Large Language Models (LLMs)",
+                "subTitle": "",
+                "content": "Large Language Models are advanced AI systems trained on vast amounts of text data to understand and generate human language. These models, like OpenAI's GPT-3, can perform various tasks, including translation, summarization, and conversational agents, all while exhibiting human-like understanding. LLMs are transforming how we interact with technology and enabling new applications in natural language processing.",
+                "codeSnippets": []
+            },
+            // content----4
+            {
+                "title": "Data Mining",
+                "subTitle": "",
+                "content": "Data Mining is the process of discovering patterns, correlations, and trends from large sets of data using various techniques, including statistical analysis and machine learning. This practice helps organizations extract meaningful insights from vast amounts of raw data, facilitating better decision-making and predictive modeling. Data mining is widely used in industries such as finance, healthcare, and marketing to identify customer behavior, assess risk, and optimize operations.",
+                "codeSnippets": []
+            },
+            // content----5
+            {
+                "title": "Big Data",
+                "subTitle": "",
+                "content": `Big Data refers to extremely large datasets that cannot be easily managed or processed using traditional data processing techniques. Characterized by the "three Vs"—volume, velocity, and variety—Big Data encompasses structured and unstructured data from various sources, including social media, sensors, and transactional data. The ability to analyze Big Data is critical for businesses to uncover insights, drive strategies, and enhance customer experiences.`,
+                "codeSnippets": []
+            },
+            // content----6
+            {
+                "title": "Neural Networks",
+                "subTitle": "",
+                "content": `Neural Networks are computational models inspired by the human brain, consisting of interconnected nodes (neurons) that process data. These networks can learn complex patterns through training on large datasets, making them a fundamental component of deep learning. Neural Networks are widely used for tasks such as image and speech recognition, natural language processing, and game playing.`,
+                "codeSnippets": []
+            },
+            // content----7
+            {
+                "title": "Chatbots",
+                "subTitle": "",
+                "content": `Chatbots are AI programs designed to simulate human conversation, either through text or voice. They use NLP to understand user queries and respond appropriately, providing assistance in customer service, information retrieval, and personal assistance. Chatbots can be rule-based (following predefined scripts) or AI-driven (utilizing machine learning to improve responses over time), making them increasingly effective in various applications.`,
+                "codeSnippets": []
+            },
+            // content----8
+            {
+                "title": "Robotics",
+                "subTitle": "",
+                "content": `Robotics involves the design and development of robots capable of performing tasks autonomously or semi-autonomously. AI plays a crucial role in enhancing robot capabilities, enabling them to learn from their environment, adapt to new situations, and carry out complex tasks. Applications of robotics range from industrial automation and logistics to healthcare and home assistance.`,
+                "codeSnippets": []
+            },
+            // content----9
+            {
+                "title": "Edge Computing",
+                "subTitle": "",
+                "content": `Edge Computing is a distributed computing paradigm that brings computation and data storage closer to the location where it are needed rather than relying solely on centralized cloud data centers. This approach reduces latency and bandwidth usage while improving response times for applications such as IoT devices and real-time analytics. Edge Computing is particularly valuable in scenarios where immediate processing is essential, such as autonomous vehicles and smart manufacturing.`,
+                "codeSnippets": []
+            },
+            // content----10
+            {
+                "title": "Final Thoughts: Expanding Your AI Lexicon",
+                "subTitle": "",
+                "content": `The AI landscape is filled with evolving buzzwords that reflect the technology's complexity and diversity. By familiarizing yourself with these additional terms, you can better understand the innovations driving AI forward and how they apply to various industries. As AI continues to develop, staying informed about its language and concepts will enable you to engage more meaningfully with this transformative field.`,
+                "codeSnippets": []
+            },
+        ],
+    },
+
+    {
+        "id": 1,
+        "date": "21 Jan 2024",
+        "read": "5 mins read",
+        "titles": "Buzzwords in AI",
+        "subTitles": "Understanding the Lingo of Future",
+        "tags": ["ai", "artificial intelligence"],
+
+        "contents": [
+            // content----1
+            {
+                "title": "",
+                "subTitle": "",
+                "content": `Artificial Intelligence (AI) has rapidly transformed various industries, leading to a surge in innovative technologies and concepts. As AI continues to evolve, so does the jargon associated with it. Here’s a look at some of the most common buzzwords in AI, their meanings, and why they matter.`,
+                "codeSnippets": []
+            },
+            // content----2
+            {
+                "title": "Machine Learning",
+                "subTitle": "",
+                "content": "Machine Learning is perhaps the most widely recognized term in AI. It refers to a subset of AI that enables systems to learn from data and improve performance over time without being explicitly programmed. Through algorithms and statistical models, machines can identify patterns and make decisions based on input data. For instance, ML is crucial in applications like recommendation systems, spam detection, and predictive analytics.",
+                "codeSnippets": []
+            },
+            // content----3
+            {
+                "title": " Deep Learning",
+                "subTitle": "",
+                "content": "Deep Learning is a specialized branch of Machine Learning that utilizes neural networks with many layers (hence “deep”). It mimics the human brain's processing patterns and is particularly effective in handling vast amounts of unstructured data, such as images, audio, and text. Deep Learning has powered advances in computer vision, natural language processing, and speech recognition, making it a cornerstone of many AI applications.",
+                "codeSnippets": []
+            },
+            // content----4
+            {
+                "title": "Natural Language Processing (NLP)",
+                "subTitle": "",
+                "content": `Natural Language Processing is a field of AI focused on the interaction between computers and humans through natural language. It involves the ability of machines to understand, interpret, and generate human language in a way that is both valuable and meaningful. NLP powers applications like chatbots, virtual assistants, and sentiment analysis tools, enhancing user experience and automating communication.`,
+                "codeSnippets": []
+            },
+            // content----5
+            {
+                "title": "Reinforcement Learning",
+                "subTitle": "",
+                "content": `Reinforcement Learning is a type of ML where an agent learns to make decisions by taking actions in an environment to maximize a reward. The agent receives feedback based on its actions, allowing it to learn from experience. This approach has been successful in training models for game-playing (like AlphaGo) and robotics, where trial and error is key to learning optimal behaviors.`,
+                "codeSnippets": []
+            },
+            // content----6
+            {
+                "title": "Explainable AI (XAI)",
+                "subTitle": "",
+                "content": `As AI systems become more complex, the need for transparency in decision-making has increased. Explainable AI refers to methods and techniques that make the outputs of AI systems understandable to humans. XAI aims to clarify how algorithms arrive at specific conclusions, allowing users to trust and interpret the AI's decisions. This is especially important in fields like healthcare and finance, where understanding AI's reasoning is crucial.`,
+                "codeSnippets": []
+            },
+            // content----7
+            {
+                "title": "Computer Vision",
+                "subTitle": "",
+                "content": `Computer Vision enables machines to interpret and make decisions based on visual data. It encompasses a range of technologies that allow computers to analyze images and videos to identify objects, faces, and activities. Applications of computer vision are widespread, from facial recognition in security systems to automated quality control in manufacturing processes.`,
+                "codeSnippets": []
+            },
+            // content----8
+            {
+                "title": "Supervised Learning",
+                "subTitle": "",
+                "content": `Supervised Learning is a type of machine learning where models are trained on labeled data. The algorithm learns to make predictions or classifications based on input-output pairs, allowing it to generalize from training data to unseen data. This approach is widely used in applications such as image classification, speech recognition, and medical diagnosis.`,
+                "codeSnippets": []
+            },
+            // content----9
+            {
+                "title": "Unsupervised Learning",
+                "subTitle": "",
+                "content": `Unsupervised Learning involves training models on data without explicit labels. Instead of predicting outcomes, the algorithm identifies patterns and structures within the data. Common applications include clustering (grouping similar data points) and dimensionality reduction (simplifying data while retaining essential features), making it valuable for exploratory data analysis.`,
+                "codeSnippets": []
+            },
+            // content----10
+            {
+                "title": "Final Thoughts:",
+                "subTitle": "",
+                "content": `The world of AI is rich with buzzwords that reflect its rapid advancements and evolving landscape. Understanding these terms is crucial for anyone looking to navigate the AI ecosystem, whether you're a professional in the field, a business owner, or simply an enthusiastic learner. As AI continues to shape our future, staying informed about the latest trends and terminology will help you keep pace with this transformative technology.`,
+                "codeSnippets": []
+            },
+        ],
+    },
+
+    {
+        "id": 2,
         "date": "7 Jul 2023",
         "read": "8 mins read",
         "titles": "Demystifying SEO for Web Developers",
@@ -133,9 +298,9 @@ export default MyPage;`
         "furtherlinkContent3": `This guide is designed to describe all major aspects of SEO, from finding the terms and phrases 
                                      (keywords) that can generate qualified traffic to your website`,
     },
-
+    
     {
-        "id": 1,
+        "id": 3,
         "date": "29 Jun 2023",
         "read": "7 mins read",
         "titles": "The Art of Website Design",
@@ -217,7 +382,7 @@ export default MyPage;`
     },
 
     {
-        "id": 2,
+        "id": 4,
         "date": "30 May 2023",
         "read": "8 mins read",
         "titles": "A Vite vs Create React App Comparison",
@@ -363,7 +528,7 @@ export default MyPage;`
     },
 
     {
-        "id": 3,
+        "id": 5,
         "date": "14 Apr 2023",
         "read": "7 mins read",
         "titles": "Cultivating Prosperity",
@@ -449,7 +614,7 @@ export default MyPage;`
     },
 
     {
-        "id": 4,
+        "id": 6,
         "date": "30 Mar 2023",
         "read": "10 mins read",
         "titles": "Getting Started with React.js",
@@ -582,7 +747,7 @@ export default HomePage`
     },
 
     {
-        "id": 5,
+        "id": 7,
         "date": "13 Mar 2023",
         "read": "5 mins read",
         "titles": "Driving Africa's Future",
@@ -712,7 +877,7 @@ export default HomePage`
     },
 
     {
-        "id": 6,
+        "id": 8,
         "date": "28 Feb 2023",
         "read": "10 mins read",
         "titles": "The Dynamic World of JavaScript",
@@ -861,7 +1026,7 @@ $('.button').on('click', function() {
     },
 
     {
-        "id": 7,
+        "id": 9,
         "date": "13 Feb 2023",
         "read": "12 mins read",
         "titles": "Mastering the Art of CSS",
@@ -1052,7 +1217,7 @@ $('.button').on('click', function() {
     },
 
     {
-        "id": 8,
+        "id": 10,
         "date": "31 Jan 2023",
         "read": "6 mins read",
         "titles": " Web Typography",
@@ -1165,7 +1330,7 @@ font-weight: 400;
     },
 
     {
-        "id": 9,
+        "id": 11,
         "date": "12 Jan 2023",
         "read": "7 min read",
         "titles": "HTML Essentials",
@@ -1294,7 +1459,7 @@ font-weight: 400;
     },
 
     {
-        "id": 10,
+        "id": 12,
         "date": "29 Dec 2022",
         "read": "5 mins read",
         "titles": "Revolutionizing Logistics",
@@ -1356,7 +1521,7 @@ font-weight: 400;
     },
 
     {
-        "id": 11,
+        "id": 13,
         "date": "15 Dec 2022",
         "read": "7 mins read",
         "titles": "Power of Web Development",
@@ -1451,7 +1616,7 @@ font-weight: 400;
     },
 
     {
-        "id": 12,
+        "id": 14,
         "date": "30 Nov 2022",
         "read": "7 mins read",
         "titles": "Harmony of the Horizon",
@@ -1545,7 +1710,7 @@ font-weight: 400;
     },
 
     {
-        "id": 13,
+        "id": 15,
         "date": "17 Nov 2022",
         "read": "8 mins read",
         "titles": "The Digital Currency Revolution",
@@ -1659,7 +1824,7 @@ font-weight: 400;
     },
 
     {
-        "id": 14,
+        "id": 16,
         "date": "28 Oct 2022",
         "read": "7 mins read",
         "titles": "The Tale of Luna and Max",

@@ -24,7 +24,7 @@ import Carousels from '../../models/recurring/carousels/Carousels';
 const Home = () => {
     const [isScrollVisible, setIsScrollVisible] = useState(false);
 
-    const displayedLibrary = myLibrary.slice(0, 2);
+    const displayedLibrary = myLibrary.slice(0, 3);
 
     useEffect(() => {
         const scrollTimeout = setTimeout(() => {
@@ -52,8 +52,8 @@ const Home = () => {
                             <div className="top-text">
                                 <div className='top-text-col'>
                                     <small className='top-text-sm'>»»</small>
-                                    <h1 className='top-text-h highlight-text'>Web</h1>
-                                    <h1 className='top-text-h highlight-text'>Developer<span className='extras-1'>.</span></h1>
+                                    <h1 className='top-text-h highlight-text'>Data Annotator </h1>
+                                    <h1 className='top-text-h highlight-text'><span className='extras-1'>&</span> Web Developer<span className='extras-1'>.</span></h1>
                                 </div>
                             </div>
 
@@ -157,7 +157,7 @@ const Home = () => {
             <div className="page-main-2">
                 <div className="page-about containers">
                     <div className="page-about-text">
-                        <h3>Discover <br />the Dev,</h3>
+                        <h3>Discover the<br />Tech Explorer ,</h3>
                         <p>
                             {authorAbout.About1Content}
                         </p>
@@ -220,7 +220,7 @@ const Home = () => {
                 <div className="rev-mes">
                     <div className="rev-mes-column">
                         <h3>Gallery</h3>
-                        <p>Selected screenshots of past works.</p>
+                        <p>Selected screenshots & photos from the past.</p>
                         <Carousels />
                     </div>
                     <Sendme />

@@ -101,6 +101,10 @@ export const images = [
 ]
 
 export const authorDetails = {
+    Detail0Title: "Annotation (AI Ops)",
+    Detail0Content: `I annotate and label diverse datasets to train machine learning models. 
+                     With a focus on accuracy, consistency, and data integrity, I resolve ambiguities and collaborate with teams to deliver high-quality 
+                     AI solutions.`,
     Detail1Title: "Development",
     Detail1Content: `When constructing applications, I come armed with precisely the tools needed. I have the ability to work 
                      harmoniously with them, or operate autonomously if required. My emphasis is on crafting rapid and robust solutions, 
@@ -121,26 +125,28 @@ export const authorAboutContent = {
 }
 
 export const authorAbout = {
-    About1Content: `As a versatile developer, driven by creativity, analytical thinking, and an insatiable curiosity. Focused on 
-                    creating interactive digital experiences on the web. My work resides at the crossroads of design and technology, 
-                    where I delve into the realms of problem-solving and innovation. Guided by the trifecta of curiosity, logic, and 
-                    imagination, I unearth valuable insights, reframe challenges, and create purposeful solutions.`,
+    About1Content: `As an Artificial Intelligence Operations specialist and versatile developer, I’m driven by creativity, analytical thinking, and insatiable curiosity. 
+                    My work begins with precise data annotation for machine learning models, ensuring accuracy and reliability in AI technologies. 
+                    Alongside this, I focus on crafting interactive digital experiences on the web. At the intersection of AI, design, and technology, 
+                    I engage in problem-solving and innovation. Guided by curiosity, logic, and imagination, I uncover valuable insights, 
+                    reframe challenges, and deliver purposeful solutions across AI and web development.`,
 
-    AboutMain1Content: `Hi there, I am Abayomi Adelakun a web developer, driven by creativity, analytical thinking, and an 
-                        insatiable curiosity. Focused on creating interactive digital experiences on the web. My work resides at the 
-                        crossroads of design and technology, where I delve into the realms of problem-solving and innovation. Guided by 
-                        the trifecta of curiosity, logic, and imagination, I unearth valuable insights, reframe challenges, and 
-                        create purposeful solutions.`,
+    AboutMain1Content: `Hi there, I am Abayomi Adelakun, a data annotator and web developer, driven by creativity, analytical thinking, and insatiable curiosity. 
+                        I focus on ensuring accurate data annotation for machine learning models while creating interactive digital experiences on the web. 
+                        My work resides at the crossroads of design and technology, where I delve into problem-solving and innovation. 
+                        Guided by curiosity, logic, and imagination, I unearth valuable insights, reframe challenges, and create purposeful solutions.`,
 
     AboutMain2Content: ` With a dedicated focus on user experience and a knack for problem-solving, I'm committed to shaping digital 
                         experiences that seamlessly connect with people. Let's embark on a journey where innovation meets functionality, 
                         and where each line of code is a step toward enhancing the lives of users.`,
 
-    AboutMain3Content: `I am also a graduate of Science Laboratory Technology (B.Tech). I am a person who is positive about every 
-                        aspect of life. During my free time, you'll often find me immersed in the symphonies of music, challenging my 
-                        mind with word games like Scrabble, enjoying a thrilling game of football, and delving into a diverse array of 
-                        online and offline articles, fueling my passion for continuous learning.There are many things I like to do, 
-                        to see, and to experience.  I am a trend learner.`,
+    AboutMain3Content: `I hold a B.Tech in Science Laboratory Technology from Ladoke Akintola University of Technology, Ogbomoso, Nigeria, a professional course 
+                        in full-stack web development from Tech Studio Academy in Lagos, Nigeria, and an AICE (Artificial Intelligence Career Essential) 
+                        certificate from ALX. Additionally, I volunteered for a year with the National Youth Service Corps (NYSC) in Abeokuta, Nigeria.
+                        I maintain a positive outlook on life, and during my free time, you’ll often find me immersed in music, 
+                        challenging my mind with word games like Scrabble, enjoying a thrilling game of football, and exploring a diverse array of online and 
+                        offline articles that fuel my passion for continuous learning. There are many things I like to do, see, and experience, 
+                        and I am a lifelong learner.`,
 }
 
 
@@ -452,13 +458,26 @@ export const workContent = {
 
 export const libraryContent = {
     "homeTitle": "Library",
-    "homeSubtitle": "Contents about web development, design, trends and stories.",
+    "homeSubtitle": "Contents about emerging technologies, artificial intelligence, web development, design, and stories.",
 }
 
 export const mySkills = [
     {
         "id": 0,
-        "skillsTitle": "Frontend",
+        "skillsTitle": "Core Skills",
+        "skills1": "Dataset Labeling & Annotation",
+        "skills2": "Analytical Skills",
+        "skills3": "Critical Thinking",
+        "skills4": "Teamwork & Collaboration",
+        "skills5": "Property (Estate) Management",
+        "skills6": "Organizational Skills",
+        "skills7": "Lab Safety",
+        "skills8": "Lab Techniques",
+    },
+
+    {
+        "id": 1,
+        "skillsTitle": "Web Development",
         "skills1": "HTML",
         "skills2": "CSS",
         "skills3": "Bootstrap",
@@ -466,32 +485,21 @@ export const mySkills = [
         "skills5": "Typescript",
         "skills6": "Angular",
         "skills7": "Reactjs",
+        "skills8": "Firebase",
     },
 
-    {
-        "id": 1,
-        "skillsTitle": "Backend",
-        "skills1": "Firebase",
-        "skills2": "Python",
-        "skills3": "Django",
-    },
 
     {
         "id": 2,
-        "skillsTitle": "Tools",
-        "skills1": "VSC",
-        "skills2": "Git",
-        "skills3": "Apache Cordova",
-        "skills4": "Vite",
+        "skillsTitle": "Tools & Technologies",
+        "skills1": "Virtual Studio Code (VSC)",
+        "skills2": "Data Annotation Tools",
+        "skills3": "Machine Learning Model Training",
+        "skills4": "Git",
+        "skills5": "Apache Cordova",
+        "skills6": "Vite",
+        "skills7": "and more...",
     },
-
-    {
-        "id": 3,
-        "skillsTitle": "Others",
-        "skills1": "Good team - working skills",
-        "skills2": "Analytical skills",
-        "skills3": "Content Writing",
-    }
 ]
 
 export const myFaqContent = {
